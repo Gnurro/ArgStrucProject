@@ -30,7 +30,7 @@ for file in os.listdir(CORPUS_PATH):
                                                         'type': child.attrib['type']}
 
         # print(cur_seg_dict)
-        # print(cur_rel_dict)
+        print(cur_rel_dict)
 
         cur_adu_dist_dict = dict()
 
@@ -92,6 +92,7 @@ for file in os.listdir(CORPUS_PATH):
         linear_strats.append(
             {'file': file, 'linear_strat': cur_linear_strat}
         )
+        # break
 
 
 # print(attach_dist_dict)
