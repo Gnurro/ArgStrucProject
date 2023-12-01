@@ -32,16 +32,6 @@ for filename in os.listdir(folder_path):
         xml_data.append(root)
 
 
-# In[4]:
-
-
-# Now, xml_data contains the root elements of all XML files in the folder
-# You can iterate through xml_data and perform further processing
-for data in xml_data:
-    # Your processing logic here
-    pass
-
-
 # In[6]:
 
 
@@ -125,7 +115,7 @@ for filename in os.listdir(folder_path):
         tree = ET.parse(xml_file_path)
         root = tree.getroot()
 
-        # Identify ADU elements (modify based on your XML structure)
+        # Identify ADU elements 
         adu_elements = root.findall('.//adu')
 
         # Iterate over elements in the XML tree
