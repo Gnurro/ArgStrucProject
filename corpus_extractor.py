@@ -2,11 +2,20 @@
 
 import xml.etree.ElementTree as ET
 import os
+import json
 
 CORPUS_PATH = "corpus/en/"
 
+# database dict to hold all instances:
+database = dict()
+
 for file_name in os.listdir(CORPUS_PATH):
     if file_name[-4:] == ".xml":
+        cur_instance_id = file_name.replace(".xml", "").replace("micro_", "")
+
+        # dict to hold data of current instance:
+        cur_inst_data = dict()
+
         arggraph_tree = ET.parse(f"{CORPUS_PATH}{file_name}")
         arggraph_root = arggraph_tree.getroot()
 
@@ -17,6 +26,9 @@ for file_name in os.listdir(CORPUS_PATH):
         cur_topic_stance = "unknown"  # default fallback topic stance
         if 'stance' in arggraph_root.attrib:
             cur_topic_stance = arggraph_root.attrib['stance']
+
+        cur_inst_data['topic'] = cur_topic
+        cur_inst_data['stance'] = cur_topic_stance
 
         # get edge info first, as it's needed for handling units later
         # dictionaries holding edge information of current file:
@@ -37,14 +49,20 @@ for file_name in os.listdir(CORPUS_PATH):
                                                           'trg': element.attrib['trg'],
                                                           'type': element.attrib['type']}
 
-        print("cur_seg_dict:", cur_seg_dict)
-        print("cur_adu_rel_dict:", cur_adu_rel_dict)
+        # print("cur_seg_dict:", cur_seg_dict)
+        # print("cur_rel_dict:", cur_rel_dict)
+        # print("cur_adu_rel_dict:", cur_adu_rel_dict)
+
+        cur_inst_data['relations'] = cur_rel_dict
 
         # get EDUs and ADUs, using edge info to properly connect them
         # dictionaries holding unit information of current file:
         cur_edu_dict = dict()
         # {EDU-id: {'text': EDU-text, 'adu_id': ADU-id, 'rel': {'type': rel-type, 'trg': rel-trg-id}} ... }
         cur_adu_dict = dict()  # {ADU-id: ADU-stance, ... }
+
+        cur_central_adu = str()
+        cur_central_pos = int()
 
         for element in arggraph_root:
             if element.tag == 'edu':
@@ -59,15 +77,24 @@ for file_name in os.listdir(CORPUS_PATH):
                 # current unit's relation target and type:
                 cur_rel_trg: dict = {}  # {'type': relation-type, 'trg': relation-target-id}
                 if cur_adu_id in cur_adu_rel_dict:
-                    cur_rel_trg = {'type': cur_adu_rel_dict[cur_adu_id]['type'], 'trg': cur_adu_rel_dict[cur_adu_id]['trg']}
+                    cur_rel_trg = {'type': cur_adu_rel_dict[cur_adu_id]['type'],
+                                   'trg': cur_adu_rel_dict[cur_adu_id]['trg']}
+                else:
+                    cur_central_adu = cur_adu_id
+                    cur_central_pos = int(cur_adu_id[1:])
                 cur_edu_dict[element.attrib['id']]['rel'] = cur_rel_trg
             elif element.tag == 'adu':
                 # add current ADU and its stance to dict:
                 if element.attrib['id'] not in cur_adu_dict:
                     cur_adu_dict[element.attrib['id']] = element.attrib['type']
 
-        print("cur_edu_dict", cur_edu_dict)
-        print("cur_adu_dict", cur_adu_dict)
+        # print("cur_edu_dict", cur_edu_dict)
+        # print("cur_adu_dict", cur_adu_dict)
+
+        cur_inst_data['unit_roles'] = list(cur_adu_dict.values())
+
+        cur_inst_data['central_adu'] = cur_central_adu
+        cur_inst_data['central_pos'] = cur_central_pos
 
         # relation connection chains:
         # ADUs that have a relation to a relation ('reb'uttal/'und'ercut/'add'ing linked support) are assumed to have
@@ -97,20 +124,55 @@ for file_name in os.listdir(CORPUS_PATH):
                 # if the 'open' chain does not end with a relation, it ends with an ADU and is resolved:
                 cur_chains.append(open_chain)
 
-        print("cur_open_chains", cur_open_chains)
-        print("cur_chains", cur_chains)
+        # print("cur_open_chains", cur_open_chains)
+        # print("cur_chains", cur_chains)
 
-        """
-        for chain in cur_chains:
-            # print(chain)
-            distance = int(chain[1][1:]) - int(chain[0][1:])
-            # print(distance)
-            if distance not in attach_dist_dict:
-                attach_dist_dict[distance] = 1
+        cur_units = list()
+
+        for edu_id, content in cur_edu_dict.items():
+            cur_unit = dict()
+            cur_unit['edu_id'] = edu_id
+            cur_unit['adu_id'] = content['adu_id']
+            cur_unit['text'] = content['text']
+            cur_unit['rel'] = content['rel']
+            cur_unit['adu_stance'] = cur_adu_dict[content['adu_id']]
+
+            attach = ""
+            for chain in cur_chains:
+                if chain[0] == content['adu_id']:
+                    attach = chain[1]
+            cur_unit['attach'] = attach
+
+            attach_dist = 0
+            if attach:
+                attach_dist = int(attach[1:]) - int(content['adu_id'][1:])
+            cur_unit['attach_dist'] = attach_dist
+
+            cur_units.append(cur_unit)
+
+        cur_inst_data['units'] = cur_units
+
+        cur_lin_strat = list()
+
+        for unit in cur_units:
+            if unit['attach_dist'] > 0:
+                cur_lin_strat.append("f")
+            elif unit['attach_dist'] < 0:
+                cur_lin_strat.append("b")
             else:
-                attach_dist_dict[distance] += 1
+                cur_lin_strat.append("c")
 
-            cur_adu_dist_dict[chain[0]] = distance
-        """
+        cur_inst_data['lin_strat'] = cur_lin_strat
 
-        break
+        # print("cur_inst_data", cur_inst_data)
+
+        database[cur_instance_id] = cur_inst_data
+
+        # break
+
+# print(database)
+""""""
+db_json = json.dumps(database, indent=2)
+
+with open("extracted_db.json", 'w', encoding='utf-8') as out_file:
+    out_file.write(db_json)
