@@ -1,6 +1,7 @@
 """ Checking permutation-related unit aspects in extracted database """
 
 import json
+import re
 
 # load database:
 with open("extracted_db.json", 'r', encoding='utf-8') as db_file:
@@ -53,4 +54,30 @@ def split_clause_follow_rel_inspect():
             print(f"{split_unit[1]['text']}[{split_unit[1]['rel']['type']}->]{follow_text}")
 
 
-split_clause_follow_rel_inspect()
+# split_clause_follow_rel_inspect()
+
+
+# ANAPHORA
+
+PRONOUN_PATTERN = r'\b(he|she|it|they|him|her|them|his|hers|its|theirs)\b'
+PRONOUN_PATTERN_2 = r'\b(this|these|that|those|former|latter|who|whom|whose|what|which)\b'
+
+
+def get_pronoun_units():
+    pronoun_units: list = list()
+    for inst_id, inst in database.items():
+        inst_units = inst['units']
+        for unit in inst_units:
+            pronouns = re.findall(PRONOUN_PATTERN, unit['text'], re.IGNORECASE)
+            pronouns += re.findall(PRONOUN_PATTERN_2, unit['text'], re.IGNORECASE)
+            # print(pronouns)
+            if pronouns:
+                pronoun_units.append((inst_id, pronouns, unit))
+        # break
+
+    return pronoun_units
+
+
+pronoun_units = get_pronoun_units()
+for pronoun_unit in pronoun_units:
+    print(pronoun_unit)
