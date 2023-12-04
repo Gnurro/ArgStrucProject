@@ -10,9 +10,9 @@ with open("extracted_db.json", 'r', encoding='utf-8') as db_file:
 # SPLIT UNITS
 
 
-def get_split_units():
+def get_split_units(texts_db: dict):
     split_units: list = list()
-    for inst_id, inst in database.items():
+    for inst_id, inst in texts_db.items():
         inst_units = inst['units']
         for unit in inst_units:
             if unit['text'][0].islower():
@@ -24,7 +24,7 @@ def get_split_units():
 
 
 def split_clause_prior_rel_inspect():
-    split_units: list = get_split_units()
+    split_units: list = get_split_units(database)
 
     for split_unit in split_units:
         # print(split_unit)
@@ -41,7 +41,7 @@ def split_clause_prior_rel_inspect():
 
 
 def split_clause_follow_rel_inspect():
-    split_units: list = get_split_units()
+    split_units: list = get_split_units(database)
 
     for split_unit in split_units:
         # print(split_unit)
@@ -107,12 +107,36 @@ def get_simple_set() -> set:
 # print(get_simple_set())
 
 
+def get_nonsplit_db(texts_db: dict) -> dict:
+    """
+    Get a dict of texts that have no split units.
+    :return: Dict of texts that have no split units.
+    """
+    all_texts_set = set(texts_db.keys())
+    split_unit_texts = set()
+    # print(get_split_units(texts_db))
+    for split_unit in get_split_units(texts_db):
+        split_unit_texts.add(split_unit[0])
+    # print(split_unit_texts)
+    nonsplit_set = all_texts_set.difference(split_unit_texts)
+    # print(nonsplit_set)
+    # for text_id in nonsplit_set:
+    for text_id in split_unit_texts:
+        # print(text_id)
+        texts_db.pop(text_id)
+
+    return texts_db
+
+
+# print(get_nonsplit_db(database))
+
+
 # LINEARIZATION STRATEGIES
 
 
-def get_central_first_texts() -> dict:
+def get_central_first_texts(texts_db: dict) -> dict:
     central_first_texts: dict = dict()
-    for inst_id, inst in database.items():
+    for inst_id, inst in texts_db.items():
         if inst['lin_strat'][0] == "c":
             central_first_texts[inst_id] = inst
     return central_first_texts
@@ -124,9 +148,9 @@ for text_id, content in get_central_first_texts().items():
 """
 
 
-def get_central_last_texts() -> dict:
+def get_central_last_texts(texts_db: dict) -> dict:
     central_last_texts: dict = dict()
-    for inst_id, inst in database.items():
+    for inst_id, inst in texts_db.items():
         if inst['lin_strat'][-1] == "c":
             central_last_texts[inst_id] = inst
     return central_last_texts
@@ -155,4 +179,7 @@ def pretty_text_db(text_database: dict):
         pretty_text(content)
 
 
-pretty_text_db(get_central_first_texts())
+# Pretty-print all central-first texts without split units:
+pretty_text_db(get_nonsplit_db(get_central_first_texts(database)))
+# Pretty-print all central-last texts without split units:
+pretty_text_db(get_nonsplit_db(get_central_last_texts(database)))
