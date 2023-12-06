@@ -1,6 +1,8 @@
 """ Calculating various statistics etc from extracted database """
 
 import json
+from copy import deepcopy
+
 
 # load database:
 with open("extracted_db.json", 'r', encoding='utf-8') as db_file:
@@ -122,3 +124,54 @@ def relation_frequencies(topic: str = "", stance: str = "") -> dict:
 # print(relation_frequencies())
 # print(relation_frequencies(topic="waste_separation"))
 # print(relation_frequencies(stance="pro"))
+
+
+def linear_strategy_frequencies() -> dict:
+    """
+    Frequencies of linear strategies.
+    :return: Dictionary with frequencies of linear strategies.
+    """
+    lin_strat_counts: dict = dict()
+    for inst_id, inst in database.items():
+        lin_strat = tuple(inst['lin_strat'])
+        if lin_strat not in lin_strat_counts:
+            lin_strat_counts[lin_strat] = 1
+        else:
+            lin_strat_counts[lin_strat] += 1
+    return lin_strat_counts
+
+
+# print(linear_strategy_frequencies())
+
+
+def abstract_lin_strat_frequencies() -> dict:
+    """
+    Frequencies of abstracted linear strategies.
+    :return: Dictionary with frequencies of abstracted linear strategies.
+    """
+    abs_lin_strat_counts: dict = dict()
+    for inst_id, inst in database.items():
+        cur_strat = inst['lin_strat']
+        cur_abs_strat = list()
+        for direction in cur_strat:
+            if len(cur_abs_strat) == 0:
+                cur_abs_strat.append(direction)
+            else:
+                if cur_abs_strat[-1] == direction:
+                    cur_abs_strat[-1] = f"{direction}+"
+                elif cur_abs_strat[-1] == f"{direction}+":
+                    pass
+                else:
+                    cur_abs_strat.append(direction)
+
+        cur_abs_strat = tuple(cur_abs_strat)
+
+        if cur_abs_strat not in abs_lin_strat_counts:
+            abs_lin_strat_counts[cur_abs_strat] = 1
+        else:
+            abs_lin_strat_counts[cur_abs_strat] += 1
+
+    return abs_lin_strat_counts
+
+
+# print(abstract_lin_strat_frequencies())
