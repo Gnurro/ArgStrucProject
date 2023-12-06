@@ -167,7 +167,7 @@ for text_id, content in get_central_last_texts().items():
 def pretty_text(text_content):
     text_units = text_content['units']
     for text_unit in text_units:
-        print(text_unit['edu_id'], text_unit['text'])
+        print(text_unit['edu_id'], text_unit['adu_stance'], text_unit['text'])
 
 
 # pretty_text(database['b001'])
@@ -175,11 +175,12 @@ def pretty_text(text_content):
 
 def pretty_text_db(text_database: dict):
     for text_id, content in text_database.items():
-        print(f"Text {text_id}")
+        print(f"Text {text_id}, {content['topic']}: {content['stance']}")
         pretty_text(content)
 
 
 # Pretty-print all central-first texts without split units:
-pretty_text_db(get_nonsplit_db(get_central_first_texts(database)))
+# pretty_text_db(get_nonsplit_db(get_central_first_texts(database)))
 # Pretty-print all central-last texts without split units:
 pretty_text_db(get_nonsplit_db(get_central_last_texts(database)))
+
