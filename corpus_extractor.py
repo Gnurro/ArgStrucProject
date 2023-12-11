@@ -130,6 +130,7 @@ for file_name in os.listdir(CORPUS_PATH):
         # print("cur_open_chains", cur_open_chains)
         # print("cur_chains", cur_chains)
 
+        # combine extracted unit data:
         cur_units = list()
 
         for edu_id, content in cur_edu_dict.items():
@@ -155,6 +156,7 @@ for file_name in os.listdir(CORPUS_PATH):
 
         cur_inst_data['units'] = cur_units
 
+        # graph tracing:
         for unit in cur_units:
             cur_unit_branch = list()
             # print("current unit:", unit['adu_id'])
@@ -180,10 +182,15 @@ for file_name in os.listdir(CORPUS_PATH):
                         cur_unit_branch.append(cur_adu_rel_dict[cur_last_branch]['id'])
                         cur_unit_branch.append(cur_adu_rel_dict[cur_last_branch]['trg'])
                 # print(cur_inst_data['central_adu'])
-            # print(cur_unit_branch)
+            # print("full unit arg graph trace:", cur_unit_branch)
             cur_unit_depth = len(cur_unit_branch)-1
-            # print(len(cur_unit_branch))
+            # print("current unit arg graph depth:", cur_unit_depth)
             unit['depth'] = cur_unit_depth
+            # get intermediate trace:
+            if cur_unit_depth >= 2:
+                inter_trace = cur_unit_branch[1:-1]
+                # print("intermediate trace:", inter_trace)
+                unit['arg_trace'] = inter_trace
             # print()
 
         cur_lin_strat = list()
