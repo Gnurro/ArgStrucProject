@@ -191,6 +191,8 @@ for file_name in os.listdir(CORPUS_PATH):
                 inter_trace = cur_unit_branch[1:-1]
                 # print("intermediate trace:", inter_trace)
                 unit['arg_trace'] = inter_trace
+            else:
+                unit['arg_trace'] = []
             # print()
 
         cur_lin_strat = list()

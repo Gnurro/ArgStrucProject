@@ -115,7 +115,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       }
     ],
     "lin_strat": [
@@ -203,7 +204,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       },
       {
         "edu_id": "e4",
@@ -292,7 +294,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       },
       {
         "edu_id": "e2",
@@ -451,7 +454,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       },
       {
         "edu_id": "e4",
@@ -541,7 +545,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       },
       {
         "edu_id": "e2",
@@ -670,7 +675,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       },
       {
         "edu_id": "e2",
@@ -829,7 +835,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       },
       {
         "edu_id": "e4",
@@ -998,7 +1005,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       }
     ],
     "lin_strat": [
@@ -1046,7 +1054,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       },
       {
         "edu_id": "e2",
@@ -1151,7 +1160,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       },
       {
         "edu_id": "e2",
@@ -1263,7 +1273,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       },
       {
         "edu_id": "e2",
@@ -1396,7 +1407,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       }
     ],
     "lin_strat": [
@@ -1449,7 +1461,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       },
       {
         "edu_id": "e2",
@@ -1573,7 +1586,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       },
       {
         "edu_id": "e2",
@@ -1695,7 +1709,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       },
       {
         "edu_id": "e2",
@@ -1892,7 +1907,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       }
     ],
     "lin_strat": [
@@ -1946,7 +1962,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       },
       {
         "edu_id": "e2",
@@ -2141,7 +2158,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       }
     ],
     "lin_strat": [
@@ -2290,7 +2308,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       }
     ],
     "lin_strat": [
@@ -2437,7 +2456,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       }
     ],
     "lin_strat": [
@@ -2486,7 +2506,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       },
       {
         "edu_id": "e2",
@@ -2592,7 +2613,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       },
       {
         "edu_id": "e2",
@@ -2749,7 +2771,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       },
       {
         "edu_id": "e4",
@@ -2839,7 +2862,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       },
       {
         "edu_id": "e2",
@@ -3003,7 +3027,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       },
       {
         "edu_id": "e4",
@@ -3115,7 +3140,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       },
       {
         "edu_id": "e2",
@@ -3256,7 +3282,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       },
       {
         "edu_id": "e2",
@@ -3380,7 +3407,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       },
       {
         "edu_id": "e2",
@@ -3506,7 +3534,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       },
       {
         "edu_id": "e2",
@@ -3625,7 +3654,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       },
       {
         "edu_id": "e2",
@@ -3724,7 +3754,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       },
       {
         "edu_id": "e2",
@@ -3822,7 +3853,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       },
       {
         "edu_id": "e2",
@@ -3914,7 +3946,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       },
       {
         "edu_id": "e2",
@@ -4000,7 +4033,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       },
       {
         "edu_id": "e2",
@@ -4192,7 +4226,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       }
     ],
     "lin_strat": [
@@ -4252,7 +4287,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       },
       {
         "edu_id": "e2",
@@ -4399,7 +4435,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       },
       {
         "edu_id": "e2",
@@ -4528,7 +4565,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       },
       {
         "edu_id": "e2",
@@ -4677,7 +4715,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       },
       {
         "edu_id": "e2",
@@ -4826,7 +4865,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       },
       {
         "edu_id": "e2",
@@ -4976,7 +5016,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       },
       {
         "edu_id": "e2",
@@ -5176,7 +5217,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       },
       {
         "edu_id": "e5",
@@ -5267,7 +5309,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       },
       {
         "edu_id": "e2",
@@ -5446,7 +5489,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       },
       {
         "edu_id": "e5",
@@ -5590,7 +5634,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       }
     ],
     "lin_strat": [
@@ -5714,7 +5759,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       }
     ],
     "lin_strat": [
@@ -5839,7 +5885,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       }
     ],
     "lin_strat": [
@@ -5963,7 +6010,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       }
     ],
     "lin_strat": [
@@ -6089,7 +6137,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       }
     ],
     "lin_strat": [
@@ -6238,7 +6287,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       }
     ],
     "lin_strat": [
@@ -6327,7 +6377,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       },
       {
         "edu_id": "e4",
@@ -6492,7 +6543,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       },
       {
         "edu_id": "e6",
@@ -6664,7 +6716,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       }
     ],
     "lin_strat": [
@@ -6742,7 +6795,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       },
       {
         "edu_id": "e3",
@@ -6962,7 +7016,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       }
     ],
     "lin_strat": [
@@ -7062,7 +7117,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       }
     ],
     "lin_strat": [
@@ -7144,7 +7200,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       },
       {
         "edu_id": "e3",
@@ -7357,7 +7414,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       }
     ],
     "lin_strat": [
@@ -7482,7 +7540,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       }
     ],
     "lin_strat": [
@@ -7524,7 +7583,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       },
       {
         "edu_id": "e2",
@@ -7616,7 +7676,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       },
       {
         "edu_id": "e2",
@@ -7859,7 +7920,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       }
     ],
     "lin_strat": [
@@ -7914,7 +7976,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       },
       {
         "edu_id": "e2",
@@ -8045,7 +8108,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       },
       {
         "edu_id": "e2",
@@ -8170,7 +8234,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       },
       {
         "edu_id": "e2",
@@ -8310,7 +8375,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       },
       {
         "edu_id": "e3",
@@ -8421,7 +8487,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       },
       {
         "edu_id": "e2",
@@ -8545,7 +8612,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       },
       {
         "edu_id": "e2",
@@ -8670,7 +8738,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       },
       {
         "edu_id": "e2",
@@ -8830,7 +8899,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       },
       {
         "edu_id": "e4",
@@ -8918,7 +8988,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       },
       {
         "edu_id": "e2",
@@ -9046,7 +9117,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       },
       {
         "edu_id": "e2",
@@ -9176,7 +9248,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       },
       {
         "edu_id": "e2",
@@ -9299,7 +9372,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       },
       {
         "edu_id": "e2",
@@ -9462,7 +9536,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       },
       {
         "edu_id": "e4",
@@ -9558,7 +9633,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       },
       {
         "edu_id": "e2",
@@ -9717,7 +9793,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       },
       {
         "edu_id": "e4",
@@ -9841,7 +9918,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       },
       {
         "edu_id": "e4",
@@ -9965,7 +10043,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       },
       {
         "edu_id": "e4",
@@ -10072,7 +10151,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       },
       {
         "edu_id": "e3",
@@ -10216,7 +10296,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       },
       {
         "edu_id": "e4",
@@ -10309,7 +10390,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       },
       {
         "edu_id": "e2",
@@ -10472,7 +10554,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       },
       {
         "edu_id": "e4",
@@ -10599,7 +10682,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       },
       {
         "edu_id": "e4",
@@ -10694,7 +10778,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       },
       {
         "edu_id": "e2",
@@ -10823,7 +10908,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       },
       {
         "edu_id": "e2",
@@ -10968,7 +11054,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       },
       {
         "edu_id": "e2",
@@ -11125,7 +11212,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       },
       {
         "edu_id": "e4",
@@ -11214,7 +11302,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       },
       {
         "edu_id": "e2",
@@ -11408,7 +11497,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       }
     ],
     "lin_strat": [
@@ -11462,7 +11552,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       },
       {
         "edu_id": "e2",
@@ -11580,7 +11671,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       },
       {
         "edu_id": "e2",
@@ -11691,7 +11783,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       },
       {
         "edu_id": "e2",
@@ -11842,7 +11935,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       },
       {
         "edu_id": "e2",
@@ -12068,7 +12162,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       },
       {
         "edu_id": "e5",
@@ -12235,7 +12330,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       },
       {
         "edu_id": "e2",
@@ -12392,7 +12488,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       },
       {
         "edu_id": "e4",
@@ -12481,7 +12578,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       },
       {
         "edu_id": "e2",
@@ -12599,7 +12697,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       },
       {
         "edu_id": "e2",
@@ -12720,7 +12819,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       },
       {
         "edu_id": "e3",
@@ -12825,7 +12925,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       },
       {
         "edu_id": "e2",
@@ -13045,7 +13146,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       }
     ],
     "lin_strat": [
@@ -13193,7 +13295,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       }
     ],
     "lin_strat": [
@@ -13305,7 +13408,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       },
       {
         "edu_id": "e5",
@@ -13451,7 +13555,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       }
     ],
     "lin_strat": [
@@ -13511,7 +13616,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       },
       {
         "edu_id": "e2",
@@ -13655,7 +13761,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       },
       {
         "edu_id": "e2",
@@ -13792,7 +13899,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       },
       {
         "edu_id": "e2",
@@ -14024,7 +14132,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       }
     ],
     "lin_strat": [
@@ -14072,7 +14181,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       },
       {
         "edu_id": "e2",
@@ -14170,7 +14280,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       },
       {
         "edu_id": "e2",
@@ -14352,7 +14463,8 @@
         "adu_stance": "pro",
         "attach": "",
         "attach_dist": 0,
-        "depth": 0
+        "depth": 0,
+        "arg_trace": []
       },
       {
         "edu_id": "e6",
