@@ -3,6 +3,7 @@
 import xml.etree.ElementTree as ET
 import os
 import json
+from copy import deepcopy
 
 CORPUS_PATH = "corpus/en/"
 
@@ -43,7 +44,8 @@ for file_name in os.listdir(CORPUS_PATH):
                     cur_seg_dict[element.attrib['src']] = element.attrib['trg']
                 # relation edges:
                 else:
-                    cur_adu_rel_dict[element.attrib['src']] = {'trg': element.attrib['trg'],
+                    cur_adu_rel_dict[element.attrib['src']] = {'id': element.attrib['id'],
+                                                               'trg': element.attrib['trg'],
                                                                'type': element.attrib['type']}
                     cur_rel_dict[element.attrib['id']] = {'src': element.attrib['src'],
                                                           'trg': element.attrib['trg'],
@@ -77,7 +79,8 @@ for file_name in os.listdir(CORPUS_PATH):
                 # current unit's relation target and type:
                 cur_rel_trg: dict = {}  # {'type': relation-type, 'trg': relation-target-id}
                 if cur_adu_id in cur_adu_rel_dict:
-                    cur_rel_trg = {'type': cur_adu_rel_dict[cur_adu_id]['type'],
+                    cur_rel_trg = {'id': cur_adu_rel_dict[cur_adu_id]['id'],
+                                   'type': cur_adu_rel_dict[cur_adu_id]['type'],
                                    'trg': cur_adu_rel_dict[cur_adu_id]['trg']}
                 else:
                     cur_central_adu = cur_adu_id
@@ -152,6 +155,37 @@ for file_name in os.listdir(CORPUS_PATH):
 
         cur_inst_data['units'] = cur_units
 
+        for unit in cur_units:
+            cur_unit_branch = list()
+            # print("current unit:", unit['adu_id'])
+            cur_unit_branch.append(unit['adu_id'])
+
+            if unit['rel']:
+                # print("current unit relation:", unit['rel'])
+                cur_unit_branch.append(unit['rel']['id'])
+                cur_unit_branch.append(unit['rel']['trg'])
+
+            while cur_unit_branch[-1] != cur_inst_data['central_adu']:
+                cur_last_branch = deepcopy(cur_unit_branch[-1])
+
+                if cur_last_branch != cur_inst_data['central_adu']:
+                    # print("current last branch element:", cur_last_branch)
+                    if cur_last_branch[0] == "c":
+                        # print("relation target")
+                        # print("relation:", cur_rel_dict[cur_last_branch])
+                        cur_unit_branch.append(cur_rel_dict[cur_last_branch]['trg'])
+                    elif cur_unit_branch[-1][0] == "a":
+                        # print("adu target")
+                        # print("target adu relation:", cur_adu_rel_dict[cur_last_branch])
+                        cur_unit_branch.append(cur_adu_rel_dict[cur_last_branch]['id'])
+                        cur_unit_branch.append(cur_adu_rel_dict[cur_last_branch]['trg'])
+                # print(cur_inst_data['central_adu'])
+            # print(cur_unit_branch)
+            cur_unit_depth = len(cur_unit_branch)-1
+            # print(len(cur_unit_branch))
+            unit['depth'] = cur_unit_depth
+            # print()
+
         cur_lin_strat = list()
 
         for unit in cur_units:
@@ -176,3 +210,4 @@ db_json = json.dumps(database, indent=2)
 
 with open("extracted_db.json", 'w', encoding='utf-8') as out_file:
     out_file.write(db_json)
+

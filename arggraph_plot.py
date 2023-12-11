@@ -6,7 +6,8 @@ import graphviz
 with open("extracted_db.json", 'r', encoding='utf-8') as db_file:
     database: dict = json.load(db_file)
 
-text = database['b002']
+# text = database['b002']
+text = database['b001']
 # print(text)
 
 graph = graphviz.Digraph('arg_graph', comment='Argument Graph')
