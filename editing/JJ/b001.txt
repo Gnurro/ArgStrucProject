@@ -1,0 +1,84 @@
+(Applying 12.12.23 procedure draft)
+Original order:
+e1 opp Yes, it's annoying and cumbersome to separate your rubbish properly all the time.
+e2 opp Three different bin bags stink away in the kitchen and have to be sorted into different wheelie bins.
+e3 pro But still Germany produces way too much rubbish
+e4 pro and too many resources are lost when what actually should be separated and recycled is burnt.
+e5 pro We Berliners should take the chance and become pioneers in waste separation!
+1. Inspection:
+1.1
+No inseparable bigrams
+No bigram/unit move no-gos
+No clear unit/position no-gos
+1.2
+No referentials
+2. (going width-first)
+Move: [1,2,3,4,5]->[5,1,2,3,4]
+e5 pro We Berliners should take the chance and become pioneers in waste separation!
+e1 opp Yes, it's annoying and cumbersome to separate your rubbish properly all the time.
+e2 opp Three different bin bags stink away in the kitchen and have to be sorted into different wheelie bins.
+e3 pro But still Germany produces way too much rubbish
+e4 pro and too many resources are lost when what actually should be separated and recycled is burnt.
+- No edits needed
+---
+Move: [1,2,3,4,5]->[2,1,3,4,5]
+e2 opp Three different bin bags stink away in the kitchen and have to be sorted into different wheelie bins.
+e1 opp Yes, it's annoying and cumbersome to separate your rubbish properly all the time.
+e3 pro But still Germany produces way too much rubbish
+e4 pro and too many resources are lost when what actually should be separated and recycled is burnt.
+e5 pro We Berliners should take the chance and become pioneers in waste separation!
+- No edits needed
+---
+Move: [1,2,3,4,5]->[1,2,4,3,5]
+e1 opp Yes, it's annoying and cumbersome to separate your rubbish properly all the time.
+e2 opp Three different bin bags stink away in the kitchen and have to be sorted into different wheelie bins.
+
+e4 pro and too many resources are lost when what actually should be separated and recycled is burnt.
+[-"and "]
+["too"->"Too"]
+-> Too many resources are lost when what actually should be separated and recycled is burnt.
+
+e3 pro But still Germany produces way too much rubbish
+[+"."]
+-> But still Germany produces way too much rubbish.
+[Comment: Awkward, but mentally adding 'anyways'/'in general' seems intuitive, thus no further edit.]
+
+e5 pro We Berliners should take the chance and become pioneers in waste separation!
+---
+Move: [1,2,3,4,5]->[1,2,3,5,4]
+e1 opp Yes, it's annoying and cumbersome to separate your rubbish properly all the time.
+e2 opp Three different bin bags stink away in the kitchen and have to be sorted into different wheelie bins.
+
+e3 pro But still Germany produces way too much rubbish
+[+"."]
+-> But still Germany produces way too much rubbish.
+
+e5 pro We Berliners should take the chance and become pioneers in waste separation!
+
+e4 pro and too many resources are lost when what actually should be separated and recycled is burnt.
+[-"and "]
+["too"->"Too"]
+-> Too many resources are lost when what actually should be separated and recycled is burnt.
+---
+Move: [1,2,3,4,5]->[1,2,5,3,4]
+e1 opp Yes, it's annoying and cumbersome to separate your rubbish properly all the time.
+e2 opp Three different bin bags stink away in the kitchen and have to be sorted into different wheelie bins.
+e5 pro We Berliners should take the chance and become pioneers in waste separation!
+
+e3 pro But still Germany produces way too much rubbish
+[-"But "]
+["still"->"Still"]
+-> Still Germany produces way too much rubbish
+[Comment: e3 rebut relation to e1 is broken, and e3 'but' following e5 might lead to flipped stance.]
+
+e4 pro and too many resources are lost when what actually should be separated and recycled is burnt.
+[Comment: Bumpy, as one might expect a great pioneering idea to support e5 after it, but it doesn't come.]
+---
+Move: [1,2,3,4,5]->[1,5,2,3,4]
+e1 opp Yes, it's annoying and cumbersome to separate your rubbish properly all the time.
+e5 pro We Berliners should take the chance and become pioneers in waste separation!
+e2 opp Three different bin bags stink away in the kitchen and have to be sorted into different wheelie bins.
+e3 pro But still Germany produces way too much rubbish
+e4 pro and too many resources are lost when what actually should be separated and recycled is burnt.
+- No edits needed
+[Comment: Bumpy, as one might expect a great pioneering idea to support e5 after it, but it doesn't come.]
