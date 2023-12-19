@@ -21,6 +21,18 @@ e3 pro But still Germany produces way too much rubbish
 e4 pro and too many resources are lost when what actually should be separated and recycled is burnt.
 - No edits needed
 ---
+Move: [5,1,2,3,4]->[5,1,2,4,3]
+e5 pro We Berliners should take the chance and become pioneers in waste separation!
+e1 opp Yes, it's annoying and cumbersome to separate your rubbish properly all the time.
+e2 opp Three different bin bags stink away in the kitchen and have to be sorted into different wheelie bins.
+e4 pro and too many resources are lost when what actually should be separated and recycled is burnt.
+[-"and "]
+["too"->"Too"]
+-> Too many resources are lost when what actually should be separated and recycled is burnt.
+e3 pro But still Germany produces way too much rubbish
+[+"."]
+-> But still Germany produces way too much rubbish.
+---
 Move: [1,2,3,4,5]->[2,1,3,4,5]
 e2 opp Three different bin bags stink away in the kitchen and have to be sorted into different wheelie bins.
 e1 opp Yes, it's annoying and cumbersome to separate your rubbish properly all the time.

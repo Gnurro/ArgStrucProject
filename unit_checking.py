@@ -161,6 +161,20 @@ for text_id, content in get_central_last_texts().items():
     print(text_id, content)
 """
 
+
+def get_central_other_texts(texts_db: dict) -> dict:
+    central_other_texts: dict = dict()
+    for inst_id, inst in texts_db.items():
+        cur_is_other: bool = True
+        if inst['lin_strat'][0] == "c":
+            cur_is_other = False
+        if inst['lin_strat'][-1] == "c":
+            cur_is_other = False
+        if cur_is_other:
+            central_other_texts[inst_id] = inst
+    return central_other_texts
+
+
 # UTILITY
 
 
@@ -189,4 +203,7 @@ def pretty_text_db(text_database: dict):
 # Pretty-print all central-last texts:
 # pretty_text_db(get_central_last_texts(database))
 
-pretty_text(database['b001'])
+
+if __name__ == "__main__":
+    pretty_text(database['b001'])
+

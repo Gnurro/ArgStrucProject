@@ -46,13 +46,13 @@ def length_frequencies() -> dict:
 # print(length_frequencies())
 
 
-def central_position_frequencies() -> dict:
+def central_position_frequencies(texts_db: dict = database) -> dict:
     """
     Frequencies of central claim positions.
     :return: Dictionary with frequencies of central claim positions.
     """
     central_pos_counts: dict = dict()
-    for inst_id, inst in database.items():
+    for inst_id, inst in texts_db.items():
         central_pos = inst['central_pos']
         if central_pos not in central_pos_counts:
             central_pos_counts[central_pos] = 1
@@ -126,13 +126,13 @@ def relation_frequencies(topic: str = "", stance: str = "") -> dict:
 # print(relation_frequencies(stance="pro"))
 
 
-def linear_strategy_frequencies() -> dict:
+def linear_strategy_frequencies(texts_db: dict = database) -> dict:
     """
     Frequencies of linear strategies.
     :return: Dictionary with frequencies of linear strategies.
     """
     lin_strat_counts: dict = dict()
-    for inst_id, inst in database.items():
+    for inst_id, inst in texts_db.items():
         lin_strat = tuple(inst['lin_strat'])
         if lin_strat not in lin_strat_counts:
             lin_strat_counts[lin_strat] = 1
@@ -144,13 +144,13 @@ def linear_strategy_frequencies() -> dict:
 # print(linear_strategy_frequencies())
 
 
-def abstract_lin_strat_frequencies() -> dict:
+def abstract_lin_strat_frequencies(texts_db: dict = database) -> dict:
     """
     Frequencies of abstracted linear strategies.
     :return: Dictionary with frequencies of abstracted linear strategies.
     """
     abs_lin_strat_counts: dict = dict()
-    for inst_id, inst in database.items():
+    for inst_id, inst in texts_db.items():
         cur_strat = inst['lin_strat']
         cur_abs_strat = list()
         for direction in cur_strat:
