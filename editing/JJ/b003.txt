@@ -1,0 +1,33 @@
+Central claim unit: a1
+Original order:
+e1 pro Health insurance companies should not cover treatment in complementary medicine
+e2 opp unless the promised effect and its medical benefit have been concretely proven.
+e3 pro Yet this very proof is lacking in most cases.
+e4 opp Patients do often report relief of their complaints after such treatments.
+e5 pro But as long as it is unclear as to how this works, the funds should rather be spent on therapies where one knows with certainty.
+1. Inspection:
+1.1
+Inseparable bigrams: [(e1,e2),(e2,e3)]; COMMENT: this is more about e1-e3 strongly referring to each other. rearrangement might still be possible, refer to phase 2.
+No bigram/unit move no-gos, aside from bigram chain
+No clear unit/position no-gos
+1.2
+e3: 'this very proof' -> e2 'promised effect and its medical benefit have been concretely proven'; no simple NP available
+e4: 'such treatments' -> e1 'treatment in complementary medicine'; NP: 'treatment in complementary medicine'; COMMENT: awkward, but maximally preserving
+e5: 'this' [39:43] -> e1 'complementary medicine'; NP: 'complementary medicine'; COMMENT: might also refer to all of e4, which is far more complex than a simple NP. replacement with topic NP seems viable.
+2.
+(trying to move central to last for survey)
+Move: [1,2,3,4,5]->[2,3,4,5,1]
+e2 opp unless the promised effect and its medical benefit have been concretely proven.
+e3 pro Yet this very proof is lacking in most cases.
+e4 opp Patients do often report relief of their complaints after such treatments.
+e5 pro But as long as it is unclear as to how this works, the funds should rather be spent on therapies where one knows with certainty.
+e1 pro Health insurance companies should not cover treatment in complementary medicine
+COMMENT: simple move breaks sentence and reference
+---
+Move: [2,3,4,5,1]->[3,4,5,2,1]
+e3 pro Yet this very proof is lacking in most cases.
+e4 opp Patients do often report relief of their complaints after such treatments.
+e5 pro But as long as it is unclear as to how this works, the funds should rather be spent on therapies where one knows with certainty.
+e2 opp unless the promised effect and its medical benefit have been concretely proven.
+e1 pro Health insurance companies should not cover treatment in complementary medicine
+COMMENT: simple move breaks sentence and reference; e3 reference of e2 broken; e1 last breaks structure on too many levels -> moving on to next text for survey prep

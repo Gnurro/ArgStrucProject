@@ -22,7 +22,7 @@ def create_editing_files(text_database, sub_dir: str):
     dir_path = f"editing/{sub_dir}/"
     for text_id, content in text_database.items():
         with open(f"{dir_path}{text_id}.txt", 'w', encoding='utf-8') as out_file:
-            out_file.write("Original order:\n")
+            out_file.write(f"Central claim unit: {content['central_adu']}\nOriginal order:\n")
             out_file.write(editable_text(content))
 
 

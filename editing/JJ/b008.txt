@@ -1,0 +1,31 @@
+Central claim unit: a5
+Original order:
+e1 opp Of course it would be nice and simple if after a fun night out with a party acquaintance you could simply take the 'morning-after pill' and feel at ease.
+e2 pro But it's not that simple.
+e3 pro Perhaps a new life was already created that night.
+e4 pro I would kill it without further thought.
+e5 pro That's why a visit to the doctor and professional advice should remain mandatory.
+1. Inspection:
+1.1
+No inseparable bigrams
+No bigram/unit move no-gos
+No clear unit/position no-gos
+1.2
+e2: "it" [4:6] -> e1 "Of course it would be nice and simple if after a fun night out with a party acquaintance you could simply take the 'morning-after pill' and feel at ease."; no simple NP available
+e4: "it" [13:15] -> e3 "a new life"; NP: "a new life"
+e5: "That" [0:4] -> e4 "I would kill it without further thought."; no simple NP available
+e5: "That" [0:4] -> e2 "But it's not that simple."; no simple NP available
+2.
+(trying to move central to last for survey)
+Move: [1,2,3,4,5]->[5,1,2,3,4]
+e5 pro That's why a visit to the doctor and professional advice should remain mandatory.
+[-"That's why "]
+["a" -> "A"]
+-> A visit to the doctor and professional advice should remain mandatory.
+COMMENT: Topic established in next sentence, which 'leaves this hanging', but moving topic over would be a massive change to both units
+
+e1 opp Of course it would be nice and simple if after a fun night out with a party acquaintance you could simply take the 'morning-after pill' and feel at ease.
+e2 pro But it's not that simple.
+e3 pro Perhaps a new life was already created that night.
+e4 pro I would kill it without further thought.
+COMMENT: some implications are likely broken, changing meaning of the whole argument; but it seems very interesting to get survey data on this, thus using this edit; moving on with survey prep

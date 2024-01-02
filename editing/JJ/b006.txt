@@ -1,0 +1,23 @@
+Central claim unit: a1
+Original order:
+e1 pro The death penalty is a legal means that as such is not practicable in Germany.
+e2 pro For one thing, inviolable human dignity is anchored in our constitution,
+e3 pro and furthermore no one may have the right to adjudicate upon the death of another human being.
+e4 opp Even if many people think that a murderer has already decided on the life or death of another person,
+e5 pro this is precisely the crime that we should not repay with the same.
+1. Inspection:
+1.1
+Inseparable bigrams: [(e4,e5)]
+No bigram/unit move no-gos
+No clear unit/position no-gos
+1.2
+e5: "this" [0:4] -> e4 "a murderer has already decided on the life or death of another person"; No simple NP available
+2.
+(trying to move central to last for survey)
+Move: [1,2,3,4,5]->[2,3,4,5,1]
+e2 pro For one thing, inviolable human dignity is anchored in our constitution,
+e3 pro and furthermore no one may have the right to adjudicate upon the death of another human being.
+e4 opp Even if many people think that a murderer has already decided on the life or death of another person,
+e5 pro this is precisely the crime that we should not repay with the same.
+e1 pro The death penalty is a legal means that as such is not practicable in Germany.
+Comment: e2->e1 indirect reference now somewhat awkward, due to the enumeration and unclear topic; e1 last stylistically off, but not editing in "thus" or the like to preserve original text; usable for survey, moving on to next text for survey
