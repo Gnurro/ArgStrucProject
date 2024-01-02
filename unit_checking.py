@@ -198,12 +198,12 @@ def pretty_text_db(text_database: dict):
 # Pretty-print all central-last texts without split units:
 # pretty_text_db(get_nonsplit_db(get_central_last_texts(database)))
 
-# Pretty-print all central-first texts:
-# pretty_text_db(get_central_first_texts(database))
-# Pretty-print all central-last texts:
-# pretty_text_db(get_central_last_texts(database))
-
 
 if __name__ == "__main__":
-    pretty_text(database['b001'])
+    # pretty_text(database['b001'])
+
+    # Pretty-print all central-first texts:
+    pretty_text_db(get_central_first_texts(database))
+    # Pretty-print all central-last texts:
+    # pretty_text_db(get_central_last_texts(database))
 
