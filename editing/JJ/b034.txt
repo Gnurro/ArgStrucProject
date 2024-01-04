@@ -1,0 +1,7 @@
+Central claim unit: a1
+Original order:
+e1 pro Tuition fees should not generally be charged by universities.
+e2 pro Universities are for all citizens, independent of their finances.
+e3 pro Education and training are fundamental rights which the state, the society must provide.
+e4 pro If a university lacks the funds, sponsors must be found.
+e5 opp Unfortunately this can lead to disagreeable dependencies in some cases.

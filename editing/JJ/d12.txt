@@ -1,0 +1,7 @@
+Central claim unit: a1
+Original order:
+e1 pro I can only recommend the new smartphone XYZ-123 to everyone.
+e2 opp Of course the camera could be better,
+e3 opp as it only has mediocre resolution
+e4 opp and images in dark surroundings are often snowy.
+e5 pro But for snap shots that's still enough.

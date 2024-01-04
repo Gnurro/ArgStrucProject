@@ -1,0 +1,25 @@
+Central claim unit: a1
+Original order:
+e1 pro Health insurance companies should naturally cover alternative medical treatments.
+e2 opp Not all practices and approaches that are lumped together under this term may have been proven in clinical trials,
+e3 pro yet it's precisely their positive effect when accompanying conventional 'western' medical therapies that's been demonstrated as beneficial.
+e4 pro Besides many general practitioners offer such counselling and treatments in parallel anyway -
+e5 pro and who would want to question their broad expertise?
+1. Inspection:
+1.1
+No inseparable bigrams
+No bigram/unit move no-gos
+No clear unit/position no-gos
+1.2
+e2: "this term" [73:82] -> e1 "alternative medical treatments"; NP: "the term alternative medical treatments"
+2.
+(trying to move central for survey)
+Move: [1,2,3,4,5]->[2,3,4,5,1]
+e2 opp Not all practices and approaches that are lumped together under this term may have been proven in clinical trials,
+["this term"->"the term alternative medical treatments"]
+-> Not all practices and approaches that are lumped together under the term alternative medical treatments may have been proven in clinical trials,
+e3 pro yet it's precisely their positive effect when accompanying conventional 'western' medical therapies that's been demonstrated as beneficial.
+e4 pro Besides many general practitioners offer such counselling and treatments in parallel anyway -
+e5 pro and who would want to question their broad expertise?
+e1 pro Health insurance companies should naturally cover alternative medical treatments.
+COMMENT: first unit topic establishment repaired; usable for survey

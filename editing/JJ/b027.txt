@@ -1,0 +1,7 @@
+Central claim unit: a1
+Original order:
+e1 pro The death penalty should be abandoned everywhere.
+e2 pro From a Christian and humanistic perspective it is not allowed to kill someone.
+e3 opp Proponents of the death penalty count on its deterring effect as well as the ultimate elimination of any potential threat.
+e4 pro However also the threat of the death penalty in the respective countries apparently cannot prevent murder and violent crime.
+e5 pro Moreover it turns out time and again that innocent people are also convicted and executed.

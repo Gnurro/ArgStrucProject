@@ -1,0 +1,7 @@
+Central claim unit: a5
+Original order:
+e1 pro The morning-after pill has a number of side effects.
+e2 pro A differentiated analysis of its side effects is not achievable for a layperson without medical advice.
+e3 opp However these are clearly stated on the package insert,
+e4 opp and a request for an early termination of a pregnancy is the right of every woman.
+e5 pro The morning-after pill should only be prescribed after counselling by a physician or pharmacist.

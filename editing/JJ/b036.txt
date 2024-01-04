@@ -1,0 +1,8 @@
+Central claim unit: a1
+Original order:
+e1 pro Video games ought to be included in the ranks of Olympic events.
+e2 pro The performance often required by players is considerable and by all means comparable to physical efforts.
+e3 pro Various skills are promoted and required by different games,
+e4 pro including planning abilities, reaction time, and reasoning to name but a few.
+e5 opp Considering their requirements, some video games are not relevant as sports,
+e6 pro but this issue should be solvable through a clearly structured preselection process.

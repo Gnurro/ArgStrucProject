@@ -1,0 +1,8 @@
+Central claim unit: a1
+Original order:
+e1 pro Secret services must be more tightly regulated in order to prevent excessive surveillance.
+e2 pro After all, secret services tend to develop a life of their own (a state within a state), which would be irresponsible for democratic states.
+e3 pro Besides, intelligence services intervene massively in the privacy of citizens
+e4 pro and must therefore be monitored more closely to prevent abuse.
+e5 opp Parliamentary control however hampers the work of intelligence services
+e6 opp for it jeopardizes the secrecy and security of confidential data and informants.

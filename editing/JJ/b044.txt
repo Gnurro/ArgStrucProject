@@ -1,0 +1,7 @@
+Central claim unit: a1
+Original order:
+e1 pro As a central airport Berlin Tegel is particularly attractive for business travellers and should by all means remain operational.
+e2 pro It is an asset for the economy.
+e3 opp The negative impact of air traffic however is considerable.
+e4 opp Air traffic is extremely environmentally unfriendly.
+e5 opp Particularly in Tegel, the residents have been bearing the stress of aircraft noise for decades.

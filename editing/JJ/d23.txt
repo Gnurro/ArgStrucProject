@@ -1,0 +1,7 @@
+Central claim unit: a1
+Original order:
+e1 pro Tomorrow I will skydive for the first time in my life.
+e2 opp Yes, there is a certain risk to life.
+e3 pro But I want to experience this incredible moment of freedom that skydivers report time and again.
+e4 pro Besides, Jochen was given a parachute jump the other day as a gift,
+e5 pro and it mustn't be that this wannabe-adventurer has one up on me.

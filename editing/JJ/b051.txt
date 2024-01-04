@@ -1,0 +1,8 @@
+Central claim unit: a6
+Original order:
+e1 opp Due to the increase in opening hours on Sundays and holidays there is a rise in employment.
+e2 pro However it's mainly temps (that is, students, pupils etc.) who are employed,
+e3 pro so this has hardly any effect on the level of full-time employment and the number of unemployed.
+e4 pro On top of that, private and family life suffers massively because of this reduction and shifting in designated off-times.
+e5 pro And it’s only the large companies that can afford the additional personnel expenditure.
+e6 pro For these reasons supermarkets and shopping centres should not be allowed to be open for business on arbitrary Sundays and holidays.

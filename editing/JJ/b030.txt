@@ -1,0 +1,6 @@
+Central claim unit: a1
+Original order:
+e1 pro School uniforms should not be worn in our schools.
+e2 opp They do offer the benefit that the competition over brand-name clothes and the discrimination of the socially weak are prevented.
+e3 pro Nevertheless hardly anyone wishes to dress themselves or their children in a standard uniform.
+e4 pro Plus such uniforms also stand for ideological conformity and for the suppression of individual self-development.

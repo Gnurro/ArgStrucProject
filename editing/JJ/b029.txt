@@ -1,0 +1,7 @@
+Central claim unit: a1
+Original order:
+e1 pro The TV/radio licence fee can only be required of all citizens/households equally.
+e2 opp Critics point out that they are not using what's on offer by public broadcasting.
+e3 pro I do doubt that there is anyone who has never at least indirectly watched the programming of the public broadcasters.
+e4 pro However, it is impossible to monitor this and collect more customized fees.
+e5 pro Just as with other choices in culture or infrastructure, public broadcasters are also to be financed, regardless of whether individuals make use of their programming or not.

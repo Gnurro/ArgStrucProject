@@ -1,0 +1,7 @@
+Central claim unit: a5
+Original order:
+e1 pro 'Property entails commitment' is one of the tenets of our social order.
+e2 opp Everyone should be able to get the utmost profit from his or her property.
+e3 pro A fixing of rent prices according to the market alone, however, will lead to a further division of society.
+e4 pro The rich and poor live in different neighbourhoods.
+e5 pro A constant increase in rent upon a change of tenants hence cannot be desired by society.

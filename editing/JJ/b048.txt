@@ -1,0 +1,7 @@
+Central claim unit: a5
+Original order:
+e1 pro Every German citizen has a right to education.
+e2 opp Quality at universities has its price,
+e3 opp which is why students also ought to be involved in this cost factor.
+e4 pro But education must not be a question of money in a wealthy society such as Germany.
+e5 pro Therefore universities should not charge tuition fees in Germany.

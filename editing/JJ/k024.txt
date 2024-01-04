@@ -1,0 +1,9 @@
+Central claim unit: a1
+Original order:
+e1 pro Dog owners should pay higher fines for dog dirt left on pavements,
+e2 opp although there aren't enough bins and bag-dispensers for dog dirt.
+e3 pro One reason for this is that they have thus far hardly had to fear the consequences despite the obligation to clean up.
+e4 pro A higher fine, so dog owners would have to dig deeper into their pockets, is supposed to be a deterrent after all.
+e5 pro The city, especially the green spaces, should be kept tidy after all,
+e6 pro for they are there for our recreation.
+e7 pro Besides you're not allowed to leave other rubbish without punishment.

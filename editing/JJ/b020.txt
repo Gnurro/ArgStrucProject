@@ -1,0 +1,8 @@
+Central claim unit: a6
+Original order:
+e1 pro Olympic events are rooted in old traditions.
+e2 opp On the other hand, the events have a culturally determined character.
+e3 opp Our society is strongly digitized and influenced by computers.
+e4 pro Yet sports are usually associated with physical training.
+e5 pro Since however skat, chess etc. are not accepted as Olympic events,
+e6 pro computer games should also not be recognized as Olympic events.

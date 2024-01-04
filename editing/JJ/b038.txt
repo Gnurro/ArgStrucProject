@@ -1,0 +1,8 @@
+Central claim unit: a1
+Original order:
+e1 pro School uniforms should be introduced in our schools again.
+e2 pro This provides an at least superficial equalization in our heavily economically oriented society,
+e3 pro which may reduce discrimination of financially and/or socially disadvantaged children.
+e4 pro Furthermore, it would facilitate the finding of truants, who may wish to get away with fewer classes at school.
+e5 opp Uniforms always and immediately provoke fear of losing one's individuality
+e6 pro but what's really lacking in schools today is rather a real sense of community, which would possibly be strengthened by an equal, collective appearance.

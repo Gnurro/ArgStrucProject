@@ -1,0 +1,40 @@
+Central claim unit: a1
+Original order:
+e1 pro Alternative treatments should be subsidized in the same way as conventional treatments,
+e2 pro since both methods can lead to the prevention, mitigation or cure of an illness.
+e3 pro Besides it should be in the interest of the health insurers to recognize alternative medicine as treatment,
+e4 pro since there is a chance of recovery.
+e5 pro It doesn't matter after all that those who administer the treatment don't have 'doctor status'.
+1. Inspection:
+1.1
+Inseparable bigrams: [(e1,e2),(e3,e4)]
+No bigram/unit move no-gos
+No clear unit/position no-gos
+1.2
+e2: "both methods" [18:30] -> e1 "Alternative treatments" + "conventional treatments"; NP: "alternative and conventional treatments"
+2.
+(trying to move central for survey)
+Move: [1,2,3,4,5]->[2,3,4,5,1]
+e2 pro since both methods can lead to the prevention, mitigation or cure of an illness.
+e3 pro Besides it should be in the interest of the health insurers to recognize alternative medicine as treatment,
+e4 pro since there is a chance of recovery.
+e5 pro It doesn't matter after all that those who administer the treatment don't have 'doctor status'.
+e1 pro Alternative treatments should be subsidized in the same way as conventional treatments,
+COMMENT: breaks (e1,e2), attempt to move bigram next
+---
+Move: [2,3,4,5,1]->[3,4,5,2,1]
+e3 pro Besides it should be in the interest of the health insurers to recognize alternative medicine as treatment,
+[-"Besides "]
+["it"->"It"]
+-> It should be in the interest of the health insurers to recognize alternative medicine as treatment,
+e4 pro since there is a chance of recovery.
+e5 pro It doesn't matter after all that those who administer the treatment don't have 'doctor status'.
+e2 pro since both methods can lead to the prevention, mitigation or cure of an illness.
+["since"->"Since"]
+["."->","]
+-> Since both methods can lead to the prevention, mitigation or cure of an illness,
+e1 pro Alternative treatments should be subsidized in the same way as conventional treatments,
+["Alternative"->"alternative"]
+[","->"."]
+-> alternative treatments should be subsidized in the same way as conventional treatments.
+COMMENT: e3 could now be perceived as central claim unit, as it is very similar and communicates the same overall stance; switching order of e1,e2 does not lead to open reference as "both methods" is inferable; edits preserve surface structure well; usable for survey

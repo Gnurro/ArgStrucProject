@@ -1,0 +1,7 @@
+Central claim unit: a1
+Original order:
+e1 pro The BA dissertation should, if not make up the entire grade, then at least constitute a larger share of it.
+e2 opp For a good overall grade opens many doors,
+e3 pro but is not of top priority for employers.
+e4 pro With a BA dissertation one can, however, demonstrate interests and subject matter expertise particularly well.
+e5 pro After all one doesn't excel in every subject.

@@ -1,0 +1,8 @@
+Central claim unit: a1
+Original order:
+e1 pro It is quite clear that Sunday should remain a day of rest.
+e2 pro For you can go shopping 6 days a week,
+e3 pro as shops are open till 10pm on some days.
+e4 pro Thus Sundays should remain a day for getting together with family,
+e5 pro otherwise there will be a new kind of leisure activity where people spend their time in supermarkets instead of outside or in conversation etc.
+e6 pro Furthermore, there's no need to keep shops open on Sundays.

@@ -1,0 +1,24 @@
+Central claim unit: a1
+Original order:
+e1 pro Well, I as an employee find it very practical to be able to shop at least on weekends.
+e2 opp Sure, other people have to work in the shops on the weekend,
+e3 pro but they can have days off during the week and run errands at their leisure while I'm stuck in the office.
+e4 pro Plus, the state wants me to spend my money,
+e5 pro and how am I supposed to do that when the shops aren't open when I'm off work?
+1. Inspection:
+1.1
+No inseparable bigrams
+No bigram/unit move no-gos
+No clear unit/position no-gos
+1.2
+e3: "they" [8:12] -> e2 "other people"; NP: "other people"
+e5: "do that" [32:26] -> e4 "spend my money"; VP: "spend my money"
+2.
+(trying to move central for survey)
+Move: [1,2,3,4,5]->[2,3,4,5,1]
+e2 opp Sure, other people have to work in the shops on the weekend,
+e3 pro but they can have days off during the week and run errands at their leisure while I'm stuck in the office.
+e4 pro Plus, the state wants me to spend my money,
+e5 pro and how am I supposed to do that when the shops aren't open when I'm off work?
+e1 pro Well, I as an employee find it very practical to be able to shop at least on weekends.
+COMMENT: topic remains inferable from first unit; usable for survey

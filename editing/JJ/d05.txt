@@ -1,0 +1,7 @@
+Central claim unit: a1
+Original order:
+e1 pro Today I will delete my Facebook account.
+e2 pro Not only because I'm constantly astonished about who wants to be my friend.
+e3 pro I'm also tired of my data boosting the market value of that corporation.
+e4 opp Facebook warns me emphatically that I may lose contact with my friends.
+e5 pro And yet now I'll actually have all the more time for them.

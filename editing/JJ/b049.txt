@@ -1,0 +1,7 @@
+Central claim unit: a5
+Original order:
+e1 opp The bachelor thesis reflects both the content and the methods of the topics covered during a degree programme.
+e2 pro But one can make occasional mistakes in the thesis.
+e3 pro If this carries more weight, many good individual assignments done during the course of study may be obscured.
+e4 pro A good grade for the thesis also significantly depends on the supervision of a dedicated teacher.
+e5 pro Due to the many random factors the bachelor thesis should not play a bigger role.

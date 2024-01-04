@@ -1,0 +1,21 @@
+Central claim unit: a1
+Original order:
+e1 pro For dog dirt left on the pavement dog owners should by all means pay a bit more.
+e2 opp Indeed it's not the fault of the animals,
+e3 pro but once you step in it, their excrement seems to stick rather persistently to your soles.
+1. Inspection:
+1.1
+No inseparable bigrams
+No bigram/unit move no-gos
+No clear unit/position no-gos
+1.2
+e2: "the animals" [40:51] -> e1 "dog"; NP: "the dogs"
+2.
+(trying to move central for survey)
+Move: [1,2,3]->[2,3,1]
+e2 opp Indeed it's not the fault of the animals,
+["animals"->"dogs"]
+-> Indeed it's not the fault of the dogs,
+e3 pro but once you step in it, their excrement seems to stick rather persistently to your soles.
+e1 pro For dog dirt left on the pavement dog owners should by all means pay a bit more.
+COMMENT: slightly awkward, but acceptable; usable for survey

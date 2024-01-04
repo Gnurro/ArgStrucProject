@@ -1,0 +1,21 @@
+Central claim unit: a4
+Original order:
+e1 opp Some may find the idea of a school uniform anachronistic,
+e2 opp or regard it as too much of an intervention into the leeway of students and parents to make decisions.
+e3 pro Indeed, however, it's already the case today that students of apparently 'uniform-free' schools are essentially wearing a uniform consisting of certain brand-name garments.
+e4 pro A simply designed practical outfit would even out the overall visual image of a school, and direct attention towards the character and achievements of the students - and not their buying power.
+1. Inspection:
+1.1
+No inseparable bigrams
+No bigram/unit move no-gos
+No clear unit/position no-gos
+1.2
+e2: "it" [12:14] -> e1 "a school uniform"; NP: "a school uniform"
+2.
+(trying to move central for survey)
+Move: [1,2,3,4]->[4,1,2,3]
+e4 pro A simply designed practical outfit would even out the overall visual image of a school, and direct attention towards the character and achievements of the students - and not their buying power.
+e1 opp Some may find the idea of a school uniform anachronistic,
+e2 opp or regard it as too much of an intervention into the leeway of students and parents to make decisions.
+e3 pro Indeed, however, it's already the case today that students of apparently 'uniform-free' schools are essentially wearing a uniform consisting of certain brand-name garments.
+COMMENT: topic not clearly introduced in first unit anymore, but easy to infer from e4; usable for survey

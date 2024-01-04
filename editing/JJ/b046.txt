@@ -1,0 +1,7 @@
+Central claim unit: a5
+Original order:
+e1 pro Intelligence services apparently enjoy indiscriminate liberties.
+e2 pro No one can follow their activities in detail.
+e3 opp Of course a certain level of secrecy is the basis for the work of intelligence services.
+e4 pro The unregulated work of the secret services, however, carries the danger of misuse of their authority.
+e5 pro That's why intelligence services must be regulated in the framework of parliamentary oversight committees.

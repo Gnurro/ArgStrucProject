@@ -1,0 +1,14 @@
+Central claim unit: a5
+Original order:
+e1 opp The idea of the bachelor degree is to put together a cumulative grade from various individual assignments in order to generate a final grade.
+e2 opp This is also more akin to the real working world later, where performance isn't singular, but constant and has to be delivered over longer periods.
+e3 opp That's why it makes sense that the bachelor thesis only makes up a relatively small portion of the final grade (15 out of 120 credits).
+e4 pro However, the effort required for the individual equally weighted modules differs strongly.
+e5 pro It would therefore be wise to adjust the required effort for final theses accordingly.
+1. Inspection:
+1.1
+No inseparable bigrams
+No bigram/unit move no-gos
+No clear unit/position no-gos
+1.2
+e2: "This" [0:4] -> e1 "a cumulative grade from various individual assignments in order to generate a final grade"; no simple NP available

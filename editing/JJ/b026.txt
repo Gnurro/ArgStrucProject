@@ -1,0 +1,8 @@
+Central claim unit: a1
+Original order:
+e1 pro The statutory health insurance companies should also cover treatments with non-medical and alternative practitioners.
+e2 opp Their treatment methods and successes are not amply researched or proven.
+e3 pro Yet many patients subjectively experience relief or are cured of their complaints,
+e4 pro which ultimately also saves costs for conventional treatments and medication.
+e5 pro Also conventional medicine is in many cases not successful,
+e6 pro and, moreover, entails significant risks and side effects.

@@ -1,0 +1,7 @@
+Central claim unit: a5
+Original order:
+e1 pro Germany's aging society is undergoing demographic change,
+e2 pro and the age of those who are physically and mentally fit is increasing steadily.
+e3 pro Thus social security and pension costs are increasing.
+e4 opp Yet no one should be required to work for more than 40 years.
+e5 pro Raising the relative retirement age on the basis of the physical fitness of the average citizen is fair.

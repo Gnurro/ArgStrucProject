@@ -1,0 +1,25 @@
+Central claim unit: a1
+Original order:
+e1 pro It is unfair and unjustifiable that new tenants have to pay a much higher rent than previous residents.
+e2 opp Clearly the landlord has to pay for some repairs before a new lease.
+e3 pro But surely these costs could be covered by a minimal increase in rent over the course of the entire lease.
+e4 pro All the more so as for an adequate profit the rental rate as compared to the base rent need not be raised for every new lease.
+1. Inspection:
+1.1
+No inseparable bigrams
+No bigram/unit move no-gos
+No clear unit/position no-gos
+1.2
+e3: "these costs" [28:39] -> e2 "pay for some repairs before a new lease"; no simple NP available; possible: "repair costs"
+2.
+(trying to move central for survey)
+Move: [1,2,3,4]->[2,3,4,1]
+e2 opp Clearly the landlord has to pay for some repairs before a new lease.
+["the"->"a"]
+-> Clearly a landlord has to pay for some repairs before a new lease.
+COMMENT: no specific landlord established; meaning unchanged
+
+e3 pro But surely these costs could be covered by a minimal increase in rent over the course of the entire lease.
+e4 pro All the more so as for an adequate profit the rental rate as compared to the base rent need not be raised for every new lease.
+e1 pro It is unfair and unjustifiable that new tenants have to pay a much higher rent than previous residents.
+COMMENT: usable for survey

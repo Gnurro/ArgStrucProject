@@ -1,0 +1,7 @@
+Central claim unit: a1
+Original order:
+e1 pro No, the retirement age should be raised to 65 again.
+e2 opp People are getting older on average,
+e3 pro but they are not sicker and not duller because of it.
+e4 pro Without them we'd forgo a great deal of collected experience.
+e5 pro And we'd have to offer more leisure activities for seniors.

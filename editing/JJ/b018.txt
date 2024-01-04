@@ -1,0 +1,7 @@
+Central claim unit: a5
+Original order:
+e1 opp The choice of an attending physician is at the discretion of the patient.
+e2 pro Yet the funds of the health insurance companies are a common benefit for all premium payers.
+e3 pro They should not be spent on personal preferences without proven use.
+e4 pro The effectiveness of many natural remedies has not been demonstrated.
+e5 pro Therefore no unproven and unrecognized treatments by naturopaths should be reimbursed by the insurance companies.

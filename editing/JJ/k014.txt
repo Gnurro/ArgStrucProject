@@ -1,0 +1,7 @@
+Central claim unit: a1
+Original order:
+e1 pro Intelligence services should be more closely regulated by parliament,
+e2 pro for, as the most recent NSA wiretapping scandal has shown, the federal state government is allegedly not always familiar with the scope of operations of its intelligence services.
+e3 pro Checks could contribute to restricting the so far rather opaque scope of action of individual services.
+e4 opp Yet it remains questionable whether the actual implementation of such supervision would at the same time lead to a stronger observance of laws,
+e5 opp as ultimately this decision is in the hands of the respective government leaders.

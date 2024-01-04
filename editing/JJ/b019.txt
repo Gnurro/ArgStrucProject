@@ -1,0 +1,8 @@
+Central claim unit: a6
+Original order:
+e1 opp It is desirable that no one channels his or her wealth past the tax authorities.
+e2 opp Those who do or try to should be held accountable if at all possible.
+e3 pro Having said that, state funds are often wasted on nonsensical investments,
+e4 pro so that this ideal appears unworthy of support in many ways.
+e5 pro Besides, the trading of information is obviously driven by greed of gain.
+e6 pro Tax data that are not made available for free should therefore not be acquired by the state.

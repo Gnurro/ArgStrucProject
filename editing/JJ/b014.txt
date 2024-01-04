@@ -1,0 +1,23 @@
+Central claim unit: a1
+Original order:
+e1 pro Actually only those people should pay a TV & radio licence fee who really watch ARD, ZDF, Arte etc.
+e2 opp It is in fact good to support sophisticated programming through fees.
+e3 pro Curiously, however, there are still adverts and product placements on the public channels.
+e4 pro What are you paying for, then? That the same actors time and again get to have a laugh at exotic shooting locations?
+e5 pro Also the scripts are often copied off each other.
+1. Inspection:
+1.1
+No inseparable bigrams
+No bigram/unit move no-gos
+No clear unit/position no-gos
+1.2
+No referentials; COMMENT: no clear referentials, but e5->e4 has complex implication reference
+2.
+(trying to move central for survey)
+Move: [1,2,3,4,5]->[2,3,4,5,1]
+e2 opp It is in fact good to support sophisticated programming through fees.
+e3 pro Curiously, however, there are still adverts and product placements on the public channels.
+e4 pro What are you paying for, then? That the same actors time and again get to have a laugh at exotic shooting locations?
+e5 pro Also the scripts are often copied off each other.
+e1 pro Actually only those people should pay a TV & radio licence fee who really watch ARD, ZDF, Arte etc.
+COMMENT: topic of mandatory, public fees not clearly stated in leading unit, but easily inferable; usable for survey
