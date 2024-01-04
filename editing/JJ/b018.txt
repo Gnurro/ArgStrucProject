@@ -5,3 +5,22 @@ e2 pro Yet the funds of the health insurance companies are a common benefit for 
 e3 pro They should not be spent on personal preferences without proven use.
 e4 pro The effectiveness of many natural remedies has not been demonstrated.
 e5 pro Therefore no unproven and unrecognized treatments by naturopaths should be reimbursed by the insurance companies.
+1. Inspection:
+1.1
+No inseparable bigrams
+No bigram/unit move no-gos
+No clear unit/position no-gos
+1.2
+e3: "They" [0:4] -> e2 "the funds of the health insurance companies"; NP: "the funds of the health insurance companies"
+2.
+(trying to move central for survey)
+Move: [1,2,3,4,5]->[5,1,2,3,4]
+e5 pro Therefore no unproven and unrecognized treatments by naturopaths should be reimbursed by the insurance companies.
+[-"Therefore"] COMMENT: backward reference not possible
+["no"->"No"]
+-> No unproven and unrecognized treatments by naturopaths should be reimbursed by the insurance companies.
+e1 opp The choice of an attending physician is at the discretion of the patient.
+e2 pro Yet the funds of the health insurance companies are a common benefit for all premium payers.
+e3 pro They should not be spent on personal preferences without proven use.
+e4 pro The effectiveness of many natural remedies has not been demonstrated.
+COMMENT: usable for survey

@@ -6,3 +6,24 @@ e3 pro Having said that, state funds are often wasted on nonsensical investments
 e4 pro so that this ideal appears unworthy of support in many ways.
 e5 pro Besides, the trading of information is obviously driven by greed of gain.
 e6 pro Tax data that are not made available for free should therefore not be acquired by the state.
+1. Inspection:
+1.1
+No inseparable bigrams
+No bigram/unit move no-gos
+No clear unit/position no-gos
+1.2
+e2: "Those who do or try to" [0:22] -> e1 "one channels his or her wealth past the tax authorities"; no simple NP available
+e3: "that" [16:20] -> e2+e1; no simple NP available
+e4: "this ideal" [18:28] -> e2 whole unit; no simple NP available
+2.
+(trying to move central for survey)
+Move: [1,2,3,4,5,6]->[6,1,2,3,4,5]
+e6 pro Tax data that are not made available for free should therefore not be acquired by the state.
+[-"therefore"] COMMENT: backward reference not possible
+-> Tax data that are not made available for free should not be acquired by the state.
+e1 opp It is desirable that no one channels his or her wealth past the tax authorities.
+e2 opp Those who do or try to should be held accountable if at all possible.
+e3 pro Having said that, state funds are often wasted on nonsensical investments,
+e4 pro so that this ideal appears unworthy of support in many ways.
+e5 pro Besides, the trading of information is obviously driven by greed of gain.
+COMMENT: usable for survey

@@ -5,3 +5,19 @@ e2 pro From a Christian and humanistic perspective it is not allowed to kill som
 e3 opp Proponents of the death penalty count on its deterring effect as well as the ultimate elimination of any potential threat.
 e4 pro However also the threat of the death penalty in the respective countries apparently cannot prevent murder and violent crime.
 e5 pro Moreover it turns out time and again that innocent people are also convicted and executed.
+1. Inspection:
+1.1
+No inseparable bigrams
+No bigram/unit move no-gos
+No clear unit/position no-gos
+1.2
+No referentials
+2.
+(trying to move central for survey)
+Move: [1,2,3,4,5]->[2,3,4,5,1]
+e2 pro From a Christian and humanistic perspective it is not allowed to kill someone.
+e3 opp Proponents of the death penalty count on its deterring effect as well as the ultimate elimination of any potential threat.
+e4 pro However also the threat of the death penalty in the respective countries apparently cannot prevent murder and violent crime.
+e5 pro Moreover it turns out time and again that innocent people are also convicted and executed.
+e1 pro The death penalty should be abandoned everywhere.
+COMMENT: specific topic not introduced in first unit, but second, not impacting apparent viability; usable for survey

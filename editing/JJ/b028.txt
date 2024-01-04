@@ -5,3 +5,23 @@ e2 pro This would impede or prevent access to those who are financially weaker.
 e3 pro The anticipated objectives of tuition fees can be achieved by other means.
 e4 pro There are other instruments to motivate tighter discipline while studying.
 e5 pro And funding-wise it ought to be considered how costs incurred by students from other (federal) states can be reimbursed.
+1. Inspection:
+1.1
+No inseparable bigrams
+No bigram/unit move no-gos
+Unit/position no-gos:
+e4 requires that the tuition fee topic is established to license "other instruments" as salient alternatives
+e5 requires that the tuition fee topic is established to license salient alternatives for funding considerations
+1.2
+e2: "This" [0:4] -> e1 "universities in Germany"..."charge tuition fees"; NP: "university tuition fees in Germany" COMMENT: "tuition fees charged by universities in Germany" would be more preserving, but seems unnatural; omitting "in Germany" would impede state argument in e5
+2.
+(trying to move central for survey)
+Move: [1,2,3,4,5]->[2,3,4,5,1]
+e2 pro This would impede or prevent access to those who are financially weaker.
+["This"->"University tuition fees in Germany"]
+-> University tuition fees in Germany would impede or prevent access to those who are financially weaker. COMMENT: "those who are financially weaker" has some ambiguity, but this is the case in the original as well
+e3 pro The anticipated objectives of tuition fees can be achieved by other means.
+e4 pro There are other instruments to motivate tighter discipline while studying.
+e5 pro And funding-wise it ought to be considered how costs incurred by students from other (federal) states can be reimbursed.
+e1 pro The universities in Germany should not under any circumstances charge tuition fees.
+COMMENT: usable for survey

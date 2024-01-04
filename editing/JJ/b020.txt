@@ -6,3 +6,38 @@ e3 opp Our society is strongly digitized and influenced by computers.
 e4 pro Yet sports are usually associated with physical training.
 e5 pro Since however skat, chess etc. are not accepted as Olympic events,
 e6 pro computer games should also not be recognized as Olympic events.
+1. Inspection:
+1.1
+Inseparable bigrams: [(e5,e6)]
+No bigram/unit move no-gos
+No clear unit/position no-gos
+1.2
+e2: "the events" [29:39] -> e1 "Olympic events"; NP: "Olympic events"
+2.
+(trying to move central for survey)
+Move: [1,2,3,4,5,6]->[6,1,2,3,4,5]
+e6 pro computer games should also not be recognized as Olympic events.
+e1 pro Olympic events are rooted in old traditions.
+e2 opp On the other hand, the events have a culturally determined character.
+e3 opp Our society is strongly digitized and influenced by computers.
+e4 pro Yet sports are usually associated with physical training.
+e5 pro Since however skat, chess etc. are not accepted as Olympic events,
+COMMENT: breaking e5->e6 support; not viable, next move to keep bigram together
+---
+Move: [6,1,2,3,4,5]->[6,5,1,2,3,4]
+e6 pro computer games should also not be recognized as Olympic events.
+["computer"->"Computer"]
+[-"also"]
+["."->","]
+-> Computer games should not be recognized as Olympic events,
+e5 pro Since however skat, chess etc. are not accepted as Olympic events,
+["Since"->"since"]
+[-"however"] COMMENT: marker for rebuttal, but this unit plainly supports central claim, as already annotated in arggraph; seems rather confusing/redundant in original text already
+[+"also"] COMMENT: used in first part of compound sentence to indicate same category assignments, thus inserting here instead to preserve original semantics as much as possible
+[","->"."]
+-> since skat, chess etc. are also not accepted as Olympic events.
+e1 pro Olympic events are rooted in old traditions.
+e2 opp On the other hand, the events have a culturally determined character.
+e3 opp Our society is strongly digitized and influenced by computers.
+e4 pro Yet sports are usually associated with physical training.
+COMMENT: seems less awkward than original due to removal of e5 "however"; usable for survey

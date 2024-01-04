@@ -5,3 +5,19 @@ e2 opp Landlords may want to earn as much as possible,
 e3 opp and many, consistent with market principles, are prepared to pay higher rents,
 e4 pro but that people with the same income suddenly must pay more and can't live in the same flat anymore seems implausible.
 e5 pro Gentrification destroys entire districts and their culture.
+1. Inspection:
+1.1
+No inseparable bigrams
+No bigram/unit move no-gos
+No clear unit/position no-gos
+1.2
+No referentials
+2.
+(trying to move central for survey)
+Move: [1,2,3,4,5]->[2,3,4,5,1]
+e2 opp Landlords may want to earn as much as possible,
+e3 opp and many, consistent with market principles, are prepared to pay higher rents,
+e4 pro but that people with the same income suddenly must pay more and can't live in the same flat anymore seems implausible.
+e5 pro Gentrification destroys entire districts and their culture.
+e1 pro Rent prices should be limited by a cap when there's a change of tenant.
+COMMENT: usable for survey

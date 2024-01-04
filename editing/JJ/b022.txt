@@ -5,3 +5,20 @@ e2 opp People are getting older on average,
 e3 pro but they are not sicker and not duller because of it.
 e4 pro Without them we'd forgo a great deal of collected experience.
 e5 pro And we'd have to offer more leisure activities for seniors.
+1. Inspection:
+1.1
+Inseparable bigrams: [(e2,e3)]
+No bigram/unit move no-gos
+No clear unit/position no-gos
+1.2
+e3: "they" [8:12] -> e2 "People"; NP: "People"; COMMENT: might not be a viable replacement NP, proper reference is probably "people who are getting older (which applies to the average person)"
+e3: "it" [52:54] -> e2 "getting older on average"; no simple NP available
+2.
+(trying to move central for survey)
+Move: [1,2,3,4,5]->[2,3,4,5,1]
+e2 opp People are getting older on average,
+e3 pro but they are not sicker and not duller because of it.
+e4 pro Without them we'd forgo a great deal of collected experience.
+e5 pro And we'd have to offer more leisure activities for seniors.
+e1 pro No, the retirement age should be raised to 65 again.
+COMMENT: e1 "No" works as emphatic rethoric element here, whereas the original is (wrongly) replying to the writing prompt, so this seems less awkward; usable for survey

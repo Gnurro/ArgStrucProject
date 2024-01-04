@@ -5,3 +5,27 @@ e2 pro For affordable living space is scarce.
 e3 pro Besides, a higher degree of luxury (expensive flats) is not necessary for the majority of the people, but rather a flat at all.
 e4 pro Plus everyone has to move approx. 3-10 times in his or her life,
 e5 pro because the size of the desired accommodation changes over the course of a lifetime.
+1. Inspection:
+1.1
+Inseparable bigrams: [(e1,e2)] COMMENT: e2 support for central unit e1 should be preserved
+No bigram/unit move no-gos
+No clear unit/position no-gos
+1.2
+No referentials
+2.
+(trying to move central for survey)
+Move: [1,2,3,4,5]->[2,3,4,5,1]
+e2 pro For affordable living space is scarce.
+e3 pro Besides, a higher degree of luxury (expensive flats) is not necessary for the majority of the people, but rather a flat at all.
+e4 pro Plus everyone has to move approx. 3-10 times in his or her life,
+e5 pro because the size of the desired accommodation changes over the course of a lifetime.
+e1 pro A stop must be put to exorbitant rents by imposing a limit on rent increases when changing residences.
+COMMENT: e2->e1 support broken, next move to keep bigram together
+---
+Move: [2,3,4,5,1]->[3,4,5,2,1]
+e3 pro Besides, a higher degree of luxury (expensive flats) is not necessary for the majority of the people, but rather a flat at all.
+e4 pro Plus everyone has to move approx. 3-10 times in his or her life,
+e5 pro because the size of the desired accommodation changes over the course of a lifetime.
+e2 pro For affordable living space is scarce.
+e1 pro A stop must be put to exorbitant rents by imposing a limit on rent increases when changing residences.
+COMMENT: e2->e1 might be nicer as a combined sentence or with another connective than "For", but leaving it unchanged for preservation; usable for survey

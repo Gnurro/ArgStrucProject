@@ -6,3 +6,23 @@ e3 pro Yet many patients subjectively experience relief or are cured of their co
 e4 pro which ultimately also saves costs for conventional treatments and medication.
 e5 pro Also conventional medicine is in many cases not successful,
 e6 pro and, moreover, entails significant risks and side effects.
+1. Inspection:
+1.1
+Inseparable bigrams: [(e2,e3) COMMENT: e3 meaning can only be implicitly inferred by it directly following e2; (e5,e6) COMMENT: odd unit split, would likely require too much editing to separate]
+No bigram/unit move no-gos
+No clear unit/position no-gos
+1.2
+e2: "Their" [0:5] -> e1 "non-medical and alternative practitioners"; NP: "non-medical and alternative practitioners'"
+e4: "which" [0:5] -> e3 whole unit; no simple NP available
+2.
+(trying to move central for survey)
+Move: [1,2,3,4,5,6]->[2,3,4,5,6,1]
+e2 opp Their treatment methods and successes are not amply researched or proven.
+["Their"->"Non-medical and alternative practitioners'"]
+-> Non-medical and alternative practitioners' treatment methods and successes are not amply researched or proven.
+e3 pro Yet many patients subjectively experience relief or are cured of their complaints,
+e4 pro which ultimately also saves costs for conventional treatments and medication.
+e5 pro Also conventional medicine is in many cases not successful,
+e6 pro and, moreover, entails significant risks and side effects.
+e1 pro The statutory health insurance companies should also cover treatments with non-medical and alternative practitioners.
+COMMENT: usable for survey

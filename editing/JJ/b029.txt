@@ -5,3 +5,13 @@ e2 opp Critics point out that they are not using what's on offer by public broad
 e3 pro I do doubt that there is anyone who has never at least indirectly watched the programming of the public broadcasters.
 e4 pro However, it is impossible to monitor this and collect more customized fees.
 e5 pro Just as with other choices in culture or infrastructure, public broadcasters are also to be financed, regardless of whether individuals make use of their programming or not.
+1. Inspection:
+1.1
+Inseparable bigrams: [(e1,e2),(e2,e3),(e3,e4)] COMMENT: this text relies heavily on implications that can only be inferred after the topic is established, AND each unit from e2 on requires the common ground expansion of the prior unit
+Bigram/unit move no-gos: all units; moving any unit in this text would interfere with its recursive expansion of common ground
+No clear unit/position no-gos
+1.2
+e4: "this" [41:45] -> e3 "there is anyone who has never at least indirectly watched the programming of the public broadcasters"; no simple NP available
+2.
+No moves possible
+COMMENT: what a text... it's great, though it's not even clear which main stance is taken without knowing the writing prompt
