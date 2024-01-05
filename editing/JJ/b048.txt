@@ -5,3 +5,23 @@ e2 opp Quality at universities has its price,
 e3 opp which is why students also ought to be involved in this cost factor.
 e4 pro But education must not be a question of money in a wealthy society such as Germany.
 e5 pro Therefore universities should not charge tuition fees in Germany.
+1. Inspection:
+1.1
+Inseparable bigrams: [(e2,e3)]
+Unit move no-go: e3 must directly follow e2 COMMENT: reference is circular in this bigram, as is the implied dependence of the two premises
+No clear unit/position no-gos
+1.2
+e3: "which" [0:5] -> e2 whole unit; no simple NP available
+e3: "this cost factor" [51:67] -> e2 whole unit; no simple NP available
+2.
+(trying to move central for survey)
+Move: [1,2,3,4,5]->[5,1,2,3,4]
+e5 pro Therefore universities should not charge tuition fees in Germany.
+[-"Therefore"] COMMENT: backwards reference not possible
+["universities"->"Universities"]
+-> Universities should not charge tuition fees in Germany.
+e1 pro Every German citizen has a right to education.
+e2 opp Quality at universities has its price,
+e3 opp which is why students also ought to be involved in this cost factor.
+e4 pro But education must not be a question of money in a wealthy society such as Germany.
+COMMENT: usable for survey

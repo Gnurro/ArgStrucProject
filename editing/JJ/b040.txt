@@ -6,3 +6,21 @@ e3 pro due to the dirt, the stench and the often considerable effort to get rid 
 e4 pro Besides, the fines for public urination by a human are higher than for leaving behind dog dirt on the pavement, which is disproportionate.
 e5 opp Some dog owners assume that paying a dog licence fee covers the removal of such waste,
 e6 pro but according to this logic one could hardly make the taxpayer accountable for almost any offense.
+1. Inspection:
+1.1
+Inseparable bigrams: [(e2,e3) COMMENT: specific support for the "stepping in it" premise; (e5,e6) COMMENT: specific rebuttal of the "dog tax covers it" premise;]
+No bigram/unit move no-gos
+No clear unit/position no-gos
+1.2
+e3: "it" [76:78] -> e2 "dog dirt" (one stepped in); NP: "dog dirt"
+e5: "such waste" [75:85] -> e4 "dog dirt" (on pavements); NP: "dog dirt"
+2.
+(trying to move central for survey)
+Move: [1,2,3,4,5,6]->[2,3,4,5,6,1]
+e2 pro Stepping in dog dirt is gross and absolutely ruins your day
+e3 pro due to the dirt, the stench and the often considerable effort to get rid of it.
+e4 pro Besides, the fines for public urination by a human are higher than for leaving behind dog dirt on the pavement, which is disproportionate.
+e5 opp Some dog owners assume that paying a dog licence fee covers the removal of such waste,
+e6 pro but according to this logic one could hardly make the taxpayer accountable for almost any offense.
+e1 pro There should be much higher fines for dog dirt left on pavements.
+COMMENT: specific topic only introduced in third unit, but still viable; usable for survey

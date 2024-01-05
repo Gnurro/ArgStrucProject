@@ -6,3 +6,32 @@ e3 pro Various skills are promoted and required by different games,
 e4 pro including planning abilities, reaction time, and reasoning to name but a few.
 e5 opp Considering their requirements, some video games are not relevant as sports,
 e6 pro but this issue should be solvable through a clearly structured preselection process.
+1. Inspection:
+1.1
+Inseparable bigrams: [(e1,e2), (e3,e4)]
+No bigram/unit move no-gos
+No clear unit/position no-gos
+1.2
+e3: "games" [59:64] -> e1 "Video games"; NP: "Video games"
+e6: "this issue" [4:14] -> e5 "some video games are not relevant as sports"; no simple NP available
+2.
+(trying to move central for survey)
+Move: [1,2,3,4,5,6]->[2,3,4,5,6,1]
+e2 pro The performance often required by players is considerable and by all means comparable to physical efforts.
+e3 pro Various skills are promoted and required by different games,
+e4 pro including planning abilities, reaction time, and reasoning to name but a few.
+e5 opp Considering their requirements, some video games are not relevant as sports,
+e6 pro but this issue should be solvable through a clearly structured preselection process.
+e1 pro Video games ought to be included in the ranks of Olympic events.
+COMMENT: e2 requires established main topic, bigram broken, next move to attempt repair
+---
+Move: [2,3,4,5,6,1]->[3,4,5,6,2,1]
+e3 pro Various skills are promoted and required by different games,
+[+"video"] COMMENT: properly introducing topic; just "games" is ambiguous in olympics context
+-> Various skills are promoted and required by different video games,
+e4 pro including planning abilities, reaction time, and reasoning to name but a few.
+e5 opp Considering their requirements, some video games are not relevant as sports,
+e6 pro but this issue should be solvable through a clearly structured preselection process.
+e2 pro The performance often required by players is considerable and by all means comparable to physical efforts.
+e1 pro Video games ought to be included in the ranks of Olympic events.
+COMMENT: usable for survey

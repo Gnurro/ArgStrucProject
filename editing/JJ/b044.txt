@@ -5,3 +5,22 @@ e2 pro It is an asset for the economy.
 e3 opp The negative impact of air traffic however is considerable.
 e4 opp Air traffic is extremely environmentally unfriendly.
 e5 opp Particularly in Tegel, the residents have been bearing the stress of aircraft noise for decades.
+1. Inspection:
+COMMENT: e1 is likely a case where 'enveloping' units would be a better representation, as discussed in the corpus papers
+1.1
+No inseparable bigrams
+No bigram/unit move no-gos
+No clear unit/position no-gos
+1.2
+e2: "It" [0:2] -> e1 "airport Berlin Tegel"; NP: "airport Berlin Tegel"
+2.
+(trying to move central for survey)
+Move: [1,2,3,4,5]->[2,3,4,5,1]
+e2 pro It is an asset for the economy.
+["It"->"The airport Berlin Tegel"]
+-> The airport Berlin Tegel is an asset for the economy.
+e3 opp The negative impact of air traffic however is considerable.
+e4 opp Air traffic is extremely environmentally unfriendly.
+e5 opp Particularly in Tegel, the residents have been bearing the stress of aircraft noise for decades.
+e1 pro As a central airport Berlin Tegel is particularly attractive for business travellers and should by all means remain operational.
+COMMENT: topic introduced in first unit due to resolving referential; usable for survey

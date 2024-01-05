@@ -6,3 +6,15 @@ e3 pro for that course can only lead to escalation in some form.
 e4 pro Furthermore, Ukraine is culturally and geographically much closer than other countries that the EU (used to) get involved with.
 e5 opp Indeed one could argue that a country has to deal with internal political changes itself,
 e6 pro but political power also brings about political responsibility, in this case the responsibility to protect the Ukrainian people from the rather strong interests of the two Great Powers.
+1. Inspection:
+1.1
+Inseparable bigrams: [(e1,e2),(e2,e3)] COMMENT: this chain relies on extending common ground while relying on some world knowledge, reference to which would likely be lost by changing its order
+No bigram/unit move no-gos
+No clear unit/position no-gos
+1.2
+e2: "that conflict" [20:33] -> e1 "political events in Ukraine"; no simple NP available COMMENT: the scope of the reference would be off
+e2: "The developments in that conflict" [0:33] -> e1 "political events in Ukraine"; no simple NP available COMMENT: the scope of the reference would be off as well
+e3: "that course" [4:15] -> e2 whole unit; no simple NP available
+2.
+(trying to move central for survey)
+COMMENT: due to the inseparable order in e1-e2-e3, e1 can not be moved to the final position

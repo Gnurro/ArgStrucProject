@@ -6,3 +6,24 @@ e3 pro which may reduce discrimination of financially and/or socially disadvanta
 e4 pro Furthermore, it would facilitate the finding of truants, who may wish to get away with fewer classes at school.
 e5 opp Uniforms always and immediately provoke fear of losing one's individuality
 e6 pro but what's really lacking in schools today is rather a real sense of community, which would possibly be strengthened by an equal, collective appearance.
+1. Inspection:
+1.1
+No inseparable bigrams
+No bigram/unit move no-gos
+No clear unit/position no-gos
+1.2
+e2: "This" [0:4] -> e1 "School uniforms"..."be introduced"; NP: "introduction of school uniforms"
+e3: "which" [0:5] -> e2 "superficial equalization"; NP: "superficial equalization" COMMENT: likely not a good referential to replace
+e4: "it" [13:15] -> e1 "School uniforms"..."be introduced"; NP: "school uniforms"/"introduction of school uniforms"
+2.
+(trying to move central for survey)
+Move: [1,2,3,4,5,6]->[2,3,4,5,6,1]
+e2 pro This provides an at least superficial equalization in our heavily economically oriented society,
+["This"->"The introduction of school uniforms"]
+-> The introduction of school uniforms provides an at least superficial equalization in our heavily economically oriented society,
+e3 pro which may reduce discrimination of financially and/or socially disadvantaged children.
+e4 pro Furthermore, it would facilitate the finding of truants, who may wish to get away with fewer classes at school.
+e5 opp Uniforms always and immediately provoke fear of losing one's individuality
+e6 pro but what's really lacking in schools today is rather a real sense of community, which would possibly be strengthened by an equal, collective appearance.
+e1 pro School uniforms should be introduced in our schools again.
+COMMENT: topic introduced in first unit through editing; usable for survey

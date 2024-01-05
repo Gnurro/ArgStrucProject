@@ -5,3 +5,19 @@ e2 pro Universities are for all citizens, independent of their finances.
 e3 pro Education and training are fundamental rights which the state, the society must provide.
 e4 pro If a university lacks the funds, sponsors must be found.
 e5 opp Unfortunately this can lead to disagreeable dependencies in some cases.
+1. Inspection:
+1.1
+No inseparable bigrams
+No bigram/unit move no-gos
+No clear unit/position no-gos
+1.2
+e5: "this" [18:22] -> e4 "sponsors must be found"; NP: "sponsoring"/"university sponsoring"
+2.
+(trying to move central for survey)
+Move: [1,2,3,4,5]->[2,3,4,5,1]
+e2 pro Universities are for all citizens, independent of their finances.
+e3 pro Education and training are fundamental rights which the state, the society must provide.
+e4 pro If a university lacks the funds, sponsors must be found.
+e5 opp Unfortunately this can lead to disagreeable dependencies in some cases.
+e1 pro Tuition fees should not generally be charged by universities.
+COMMENT: topic not clearly introduced until last unit, but e2 should provide enough context; usable for survey

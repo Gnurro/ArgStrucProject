@@ -5,3 +5,20 @@ e2 pro which are often less costly than medication from conventional medicine, w
 e3 pro Often natural treatments do not put as much of a strain on the patient.
 e4 pro Such therapies can frequently result in an improvement in the condition through the active participation of the patient.
 e5 pro The health insurance companies ought to be enabled to recognize a doctor's decision for natural treatment and also to cover it.
+1. Inspection:
+1.1
+No inseparable bigrams
+No bigram/unit move no-gos
+No clear unit/position no-gos
+1.2
+e2: "which" [0:5] -> e1 "Complementary medicine"..."treatments"; NP: "Complementary medicine treatments"
+e4: "Such therapies" [0:14] -> e3 "natural treatments"; NP: "natural treatments"
+2.
+(trying to move central for survey)
+Move: [1,2,3,4,5]->[5,1,2,3,4]
+e5 pro The health insurance companies ought to be enabled to recognize a doctor's decision for natural treatment and also to cover it.
+e1 pro Complementary medicine includes treatments with proven health benefits in many areas
+e2 pro which are often less costly than medication from conventional medicine, which are also paid for after all.
+e3 pro Often natural treatments do not put as much of a strain on the patient.
+e4 pro Such therapies can frequently result in an improvement in the condition through the active participation of the patient.
+COMMENT: usable for survey

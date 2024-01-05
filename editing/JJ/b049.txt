@@ -5,3 +5,20 @@ e2 pro But one can make occasional mistakes in the thesis.
 e3 pro If this carries more weight, many good individual assignments done during the course of study may be obscured.
 e4 pro A good grade for the thesis also significantly depends on the supervision of a dedicated teacher.
 e5 pro Due to the many random factors the bachelor thesis should not play a bigger role.
+1. Inspection:
+1.1
+No inseparable bigrams
+No bigram/unit move no-gos
+No clear unit/position no-gos
+1.2
+e3: "this" [3:8] -> e2 "mistakes in the thesis"; NP: "mistakes in the thesis" COMMENT: this takes the direct antecedent, but the referential can refer to the (bachelor's) thesis in general without impeding the unit's meaning, see next replacement
+e3: "this" [3:8] -> e2 "the thesis"/e1 "The bachelor thesis"; NP: "The bachelor thesis"
+2.
+(trying to move central for survey)
+Move: [1,2,3,4,5]->[5,1,2,3,4]
+e5 pro Due to the many random factors the bachelor thesis should not play a bigger role. COMMENT: "the" is awkward here, but it is just as awkward in the original position, not editing preserves this
+e1 opp The bachelor thesis reflects both the content and the methods of the topics covered during a degree programme.
+e2 pro But one can make occasional mistakes in the thesis.
+e3 pro If this carries more weight, many good individual assignments done during the course of study may be obscured.
+e4 pro A good grade for the thesis also significantly depends on the supervision of a dedicated teacher.
+COMMENT: usable for survey

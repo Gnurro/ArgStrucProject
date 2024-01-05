@@ -5,3 +5,20 @@ e2 pro Even with state-of-the-art contraceptives there can be mistakes and probl
 e3 pro and an unwanted pregnancy can place a significant strain on both the parents and the child for the rest of their lives.
 e4 opp Some worry about careless use of such measures,
 e5 pro but this problem should rather be addressed with comprehensive prior education.
+1. Inspection:
+1.1
+No inseparable bigrams
+No bigram/unit move no-gos
+No clear unit/position no-gos
+1.2
+e4: "such measures" [41:54] -> e2 "contraceptives"/"state-of-the-art contraceptives"; NP: "contraceptives"/"state-of-the-art contraceptives"
+e5: "this problem" [4:16] -> e4 "careless use of such measures"; NP: "careless use of contraceptives"
+2.
+(trying to move central for survey)
+Move: [1,2,3,4,5]->[2,3,4,5,1]
+e2 pro Even with state-of-the-art contraceptives there can be mistakes and problems
+e3 pro and an unwanted pregnancy can place a significant strain on both the parents and the child for the rest of their lives.
+e4 opp Some worry about careless use of such measures,
+e5 pro but this problem should rather be addressed with comprehensive prior education.
+e1 pro The morning-after pill ought to be available over-the-counter in pharmacies.
+COMMENT: there is ambiguous reference in the original text, as e4 "such measures" might refer to "the morning-after pill", while the plural suggests a reference to "state-of-the-art contraceptives". as the latter seems the more natural reference in the first place, not preserving the ambiguity is viable; usable for survey

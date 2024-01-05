@@ -4,3 +4,18 @@ e1 pro There should be a higher fine for dog dirt on the pavement.
 e2 pro Dog dirt is disgusting and a hygiene problem.
 e3 pro Also children, adults and other animals aren't allowed to leave droppings on the pavement.
 e4 pro If you dispose of the waste then and there yourself, no fine is necessary.
+1. Inspection:
+1.1
+No inseparable bigrams
+No bigram/unit move no-gos
+No clear unit/position no-gos
+1.2
+No referentials
+2.
+(trying to move central for survey)
+Move: [1,2,3,4]->[2,3,4,1]
+e2 pro Dog dirt is disgusting and a hygiene problem.
+e3 pro Also children, adults and other animals aren't allowed to leave droppings on the pavement.
+e4 pro If you dispose of the waste then and there yourself, no fine is necessary.
+e1 pro There should be a higher fine for dog dirt on the pavement.
+COMMENT: specific topic only introduced in e4, but result still viable; usable for survey

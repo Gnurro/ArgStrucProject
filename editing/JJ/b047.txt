@@ -5,3 +5,20 @@ e2 pro A differentiated analysis of its side effects is not achievable for a lay
 e3 opp However these are clearly stated on the package insert,
 e4 opp and a request for an early termination of a pregnancy is the right of every woman.
 e5 pro The morning-after pill should only be prescribed after counselling by a physician or pharmacist.
+1. Inspection:
+1.1
+No inseparable bigrams
+No bigram/unit move no-gos
+No clear unit/position no-gos
+1.2
+e2: "its" [29:32] -> e1 "The morning-after pill"; NP: "the morning-after pill's"
+e3: "these" [8:13] -> e2 "side effects"; NP: "side effects"
+2.
+(trying to move central for survey)
+Move: [1,2,3,4,5]->[5,1,2,3,4]
+e5 pro The morning-after pill should only be prescribed after counselling by a physician or pharmacist.
+e1 pro The morning-after pill has a number of side effects.
+e2 pro A differentiated analysis of its side effects is not achievable for a layperson without medical advice.
+e3 opp However these are clearly stated on the package insert,
+e4 opp and a request for an early termination of a pregnancy is the right of every woman.
+COMMENT: usable for survey

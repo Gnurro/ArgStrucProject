@@ -4,3 +4,23 @@ e1 pro One should not re-introduce capital punishment in Germany,
 e2 pro since no one can claim the right to rule over the life or death of another human being.
 e3 pro Capital punishment will not deter anyone else from an atrocity.
 e4 pro Everyone must be given the chance to hone their conscience and possibly make amends for their deed.
+1. Inspection:
+1.1
+No inseparable bigrams
+No bigram/unit move no-gos
+No clear unit/position no-gos
+1.2
+No referentials
+2.
+(trying to move central for survey)
+Move: [1,2,3,4]->[2,3,4,1]
+e2 pro since no one can claim the right to rule over the life or death of another human being.
+[-"since"]
+["no"->"No"]
+-> No one can claim the right to rule over the life or death of another human being.
+e3 pro Capital punishment will not deter anyone else from an atrocity.
+e4 pro Everyone must be given the chance to hone their conscience and possibly make amends for their deed.
+e1 pro One should not re-introduce capital punishment in Germany,
+[","->"."]
+-> One should not re-introduce capital punishment in Germany.
+COMMENT: usable for survey

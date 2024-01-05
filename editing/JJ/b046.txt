@@ -5,3 +5,23 @@ e2 pro No one can follow their activities in detail.
 e3 opp Of course a certain level of secrecy is the basis for the work of intelligence services.
 e4 pro The unregulated work of the secret services, however, carries the danger of misuse of their authority.
 e5 pro That's why intelligence services must be regulated in the framework of parliamentary oversight committees.
+1. Inspection:
+1.1
+No inseparable bigrams
+No bigram/unit move no-gos
+No clear unit/position no-gos
+1.2
+e2: "their" [18:23] -> e1 "Intelligence services"; NP: "Intelligence services"/"Intelligence service"
+e5: "That" [0:4] -> e4 "danger of misuse of their authority"; no simple NP available COMMENT: this "That" likely refers not only to the direct antecedent in e4, but the entirety of the premises before/'all of the above' and can thus be omitted without disrupting the text
+2.
+(trying to move central for survey)
+Move: [1,2,3,4,5]->[5,1,2,3,4]
+e5 pro That's why intelligence services must be regulated in the framework of parliamentary oversight committees.
+[-"That's why"] COMMENT: see comment on referential replacement above
+["intelligence"->"Intelligence"]
+-> Intelligence services must be regulated in the framework of parliamentary oversight committees.
+e1 pro Intelligence services apparently enjoy indiscriminate liberties.
+e2 pro No one can follow their activities in detail.
+e3 opp Of course a certain level of secrecy is the basis for the work of intelligence services.
+e4 pro The unregulated work of the secret services, however, carries the danger of misuse of their authority.
+COMMENT: usable for survey

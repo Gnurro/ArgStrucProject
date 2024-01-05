@@ -3,3 +3,23 @@ Original order:
 e1 pro I find the peripheral housing development at Tempelhofer Feld right for urban planning reasons,
 e2 pro as the area is right in the middle of the city (capital).
 e3 pro The size of the field allows for both housing and generous open space.
+1. Inspection:
+1.1
+No inseparable bigrams
+No bigram/unit move no-gos
+No clear unit/position no-gos
+1.2
+e2: "the area" [11:19] -> e1 "Tempelhofer Feld"; NP: "Tempelhofer Feld"/"the Tempelhofer Feld"
+e3: "the field" [21:29] -> e1 "Tempelhofer Feld"; NP: "Tempelhofer Feld"/"the Tempelhofer Feld"
+2.
+(trying to move central for survey)
+Move: [1,2,3]->[2,3,1]
+e2 pro as the area is right in the middle of the city (capital).
+[-"as"]
+["the area"->"The Tempelhofer Feld"]
+-> The Tempelhofer Feld is right in the middle of the city (capital).
+e3 pro The size of the field allows for both housing and generous open space.
+e1 pro I find the peripheral housing development at Tempelhofer Feld right for urban planning reasons,
+[","->"."]
+-> I find the peripheral housing development at Tempelhofer Feld right for urban planning reasons.
+COMMENT: usable for survey
