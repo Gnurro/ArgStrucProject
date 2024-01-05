@@ -1,0 +1,35 @@
+Micro_b056
+Central claim unit: a6
+Original order:
+[e1] [pro] A violation of international law should be more than enough to consider a reaction!
+[e2] [pro] Humanity has made enough mistakes throughout history by waiting too long, and when it has finally reacted, the only remaining option has usually been war.
+[e3] [opp] It's to be noted that in our civilized world, in a democratic country, the people can determine their own fate,
+[e4] [pro] as long as the motivation of those people isn't triggered by propaganda, corruption and military pressure.
+[e5] [pro] Since, however, in Russia besides gas and oil only propaganda and corruption rule,
+[e6] [pro] the EU should intervene right away.
+1.Inspection
+1.1
+Inseparable bigrams: [e3],[e4] and [e4], [e5] ; [e5] supports [e4] which undercuts the rebuttal of [e3]
+No bigram/unit move no-gos
+Bigram/unit position no-gos: [e3] introduces the notion that “people can determine their own fate”
+but under the condition in [e4]  “as long as the motivation of those people isn't triggered by propaganda, corruption and military pressure”  following by the example “ Since, however, in Russia besides gas and oil only propaganda and corruption rule”
+1.2
+No referentials
+
+2.Central claim [a6]: Last->first
+Move: [1,2,3,4,5,6]->[6,1,2,3,4,5]
+
+[e6] [pro] the EU should intervene right away.
+“-the”
+-> EU should intervene right away.
+[e1] [pro] A violation of international law should be more than enough to consider a reaction!
+[e2] [pro] Humanity has made enough mistakes throughout history by waiting too long, and when it has finally reacted, the only remaining option has usually been war.
+[e3] [opp] It's to be noted that in our civilized world, in a democratic country, the people can determine their own fate,
+[e4] [pro] as long as the motivation of those people isn't triggered by propaganda, corruption and military pressure.
+[e5] [pro] Since, however, in Russia besides gas and oil only propaganda and corruption rule,
+“,”->”.”
+“- since”
+“however”->” However”
+-> However, in Russia besides gas and oil only propaganda and corruption rule.
+Comment: Moving central claim from the last to the first position, makes “since” redundant 
+Usable for survay
