@@ -1,0 +1,7 @@
+Central claim unit: a1
+Original order:
+e1 pro You should watch less television,
+e2 pro as too much TV makes you stupid in the long run,
+e3 pro like your brother.
+e4 opp It would be an exception if you only watched quiz shows,
+e5 pro but you tend to watch Big Brother and X-Diaries.

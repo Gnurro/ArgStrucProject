@@ -1,0 +1,6 @@
+Central claim unit: a1
+Original order:
+e1 pro If there were higher fines for leaving dog dirt on pavements, there would presumably be less dog dirt,
+e2 pro which in turn would result in generally clean pavements.
+e3 opp Higher fines may not be ideal, particularly for financially weaker individuals,
+e4 pro but cleaning up after their dogs does happen to be the obligation of the owners.

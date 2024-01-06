@@ -1,0 +1,7 @@
+Central claim unit: a1
+Original order:
+e1 pro Actually it would be justified if all German universities charged tuition fees.
+e2 pro As long as it is ensured that the funds really benefit the universities directly, one can continue to regard this as social justice.
+e3 pro Those who study later decide this early on, anyway.
+e4 pro It's always possible to take out a student loan or to earn a scholarship.
+e5 pro To oblige non-academics to finance others' degrees through taxes, however, is not just.

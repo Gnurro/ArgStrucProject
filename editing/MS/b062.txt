@@ -1,0 +1,43 @@
+b062
+Central claim unit: a1
+Original order:
+[e1] [pro] I am not of the opinion that the retirement age should be set at 63 years.
+[e2] [pro] This would mean that organizations would be lacking a great deal of manpower in the future.
+[e3] [pro] The introductory phase of retirement at 63 would also be a particular challenge
+[e4] [pro] as upon introduction many current employees of advanced age would immediately be eligible to retire.
+[e5] [pro] This is detrimental for Germany as a business location and leaves employers without a transition period.
+[e6] [pro] The danger here is that experienced junior staff is not available in sufficient numbers.
+
+1.Inspection
+1.1
+Inseparable bigrams: [e1],[e2] and [e3], [e4]. Support of e2->e1 should be maintained , [e3],[e4] are strongly connected, separating challenges the cohesion of whole text
+No unit/bigram move no-go
+No clear unit/bigram position no-go
+1.2
+[e2]: “This”-> [e1] “retirement age should be set at 63 years”; no simple NP
+[e5]: “This”-> [e4] “as upon introduction many current employees of advanced age would immediately be eligible to retire”; no simple NP
+
+2. Main claim[a1], [first->last]
+Move: [1,2,3,4,5,6]-> [2,3,4,5,6,1]
+
+[e2] [pro] This would mean that organizations would be lacking a great deal of manpower in the future.
+[e3] [pro] The introductory phase of retirement at 63 would also be a particular challenge
+[e4] [pro] as upon introduction many current employees of advanced age would immediately be eligible to retire.
+[e5] [pro] This is detrimental for Germany as a business location and leaves employers without a transition period.
+[e6] [pro] The danger here is that experienced junior staff is not available in sufficient numbers.
+[e1] [pro] I am not of the opinion that the retirement age should be set at 63 years.
+
+Comment: breaks support relation [e2]->[e1] , inseparable bigrams; not viable; next move to keep bigram together
+
+Move: [2,3,4,5,6,1]-> [3,4,5,6,1,2]
+[e3] [pro] The introductory phase of retirement at 63 would also be a particular challenge
++“,”
+-“also”-> implies addition which in this case is not previously referenced, backwards not allowed
+-> The introductory phase of retirement at 63 would be a particular challenge,
+[e4] [pro] as upon introduction many current employees of advanced age would immediately be eligible to retire.
+[e5] [pro] This is detrimental for Germany as a business location and leaves employers without a transition period.
+[e6] [pro] The danger here is that experienced junior staff is not available in sufficient numbers.
+[e1] [pro] I am not of the opinion that the retirement age should be set at 63 years.
+->An addition of a connective here such as, “Thus” would make easier the transition to conclusion for the reader, but since it doesn’t already exists, in the original text,  the addition is not possible.
+[e2] [pro] This would mean that organizations would be lacking a great deal of manpower in the future.
+Comment: usable for survey, even thought it concludes roughly, the reader might be awkwardly surprised.

@@ -1,0 +1,29 @@
+b064
+Central claim unit: a6
+Original order:
+[e1] [pro] I think Berlin with its two inner-city airports was lucky not having to experience an airplane catastrophe for decades.
+[e2] [pro] For safety reasons alone I find continued operation wrong.
+[e3] [pro] Also, Berlin urgently needs inner-city areas for business and industry, and for housing.
+[e4] [pro] Closing down Tegel will have health benefits for hundreds of thousands in the approach path.
+[e5] [pro] These areas will be upgraded economically due to these factors (housing health and employment).
+[e6] [pro] After the new BER Airport has been commissioned, Tegel should definitely be closed.
+
+1.Inspection
+1.1
+No inseparable bigrams
+No unit/bigram move no-go
+No unit/bigram position no-go
+1.2
+[e5]: “These”->[e3] “inner-city“; NP: „inner-city areas”
+
+2.Main claim[a6], [last->first]
+Move: [1,2,3,4,5,6]->[6,1,2,3,4,5]
+
+[e6] [pro] After the new BER Airport has been commissioned, Tegel should definitely be closed.
+[e1] [pro] I think Berlin with its two inner-city airports was lucky not having to experience an airplane catastrophe for decades.
+[e2] [pro] For safety reasons alone I find continued operation wrong.
+[e3] [pro] Also, Berlin urgently needs inner-city areas for business and industry, and for housing.
+[e4] [pro] Closing down Tegel will have health benefits for hundreds of thousands in the approach path.
+[e5] [pro] These areas will be upgraded economically due to these factors (housing health and employment).
+
+Comment: usable for survey

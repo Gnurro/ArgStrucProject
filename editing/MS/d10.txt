@@ -1,0 +1,7 @@
+Central claim unit: a1
+Original order:
+e1 pro In a few decades our society will have a disproportionate number of old people:
+e2 pro the life expectancy is constantly rising,
+e3 pro and at the same time birth rates are declining.
+e4 opp Although having children has become more fashionable again in recent years,
+e5 pro these short-term fluctuations in birth rates don't change the general trend at all.
