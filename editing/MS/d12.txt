@@ -1,14 +1,13 @@
 d12
 
 Central claim unit: a1
+
 Original order:
 [e1] [pro] I can only recommend the new smartphone XYZ-123 to everyone.
 [e2] [opp] Of course the camera could be better,
 [e3] [opp] as it only has mediocre resolution
 [e4] [opp] and images in dark surroundings are often snowy.
 [e5] [pro] But for snap shots that's still enough.
-
-
 
 
 1.Inspection
@@ -19,9 +18,10 @@ No Unit/bigram move no-go
 Unit/bigram position no-go: [e5] should always conclude [e2],[e3],[e4]
 
 1.2
-No referentials
+[e5]:"that's"->[e2],[e3],[e4], whole entities; simple NP is not possible
 
-2.Main claim[a1], [first->last]
+2.Main claim[a1]:First->last
+
 Move:[ 1,2,3,4,5]->[2,3,4,5,1]
 
 [e2] [opp] Of course the camera could be better,
@@ -30,4 +30,9 @@ Move:[ 1,2,3,4,5]->[2,3,4,5,1]
 [e5] [pro] But for snap shots that's still enough.
 [e1] [pro] I can only recommend the new smartphone XYZ-123 to everyone.
 
-Comment: its not uncommon  or non-negotiable for the main claim to have distance from the arguments, even if it makes the text rough for the reader. In this case the reader might get the implication about the main reference from the beginning, might be interesting to see the feedback on this
+-"only"-> seems redudunt
+->I can recommend the new smartphone XYZ-123 to everyone.
+
+Comment: its not uncommon  or non-negotiable for the main claim to have distance from the arguments, even if it makes the text rough for the reader. 
+In this case the reader might get the wrong implication about the main topic from the beginning,it is ambiguous but again due to the short length of 
+the text can be usable.

@@ -1,7 +1,47 @@
 Central claim unit: a1
+
 Original order:
-e1 pro Supermarkets and shopping centres should be allowed to open on any Sundays and holidays.
-e2 opp This may be a change for the employees that cannot to be implemented easily.
-e3 pro However, especially for working customers this would mean greater flexibility and fewer nerve-racking peak times during the week.
-e4 pro Considering the growing digitization of society, the traditional model of the weekend will soon be obsolete.
-e5 pro Many European countries, for instance the Netherlands, Sweden and Great Britain, have already understood this and successfully adjusted the opening hours for retailers.
+
+[e1] [pro] Supermarkets and shopping centres should be allowed to open on any Sundays and holidays.
+[e2] [opp] This may be a change for the employees that cannot to be implemented easily.
+[e3] [pro] However, especially for working customers this would mean greater flexibility and fewer nerve-racking peak times during the week.
+[e4] [pro] Considering the growing digitization of society, the traditional model of the weekend will soon be obsolete.
+[e5] [pro] Many European countries, for instance the Netherlands, Sweden and Great Britain, have already understood this and successfully adjusted the opening hours for retailers.
+
+1.Inspection
+
+1.1
+Inseparable bigrams: [e1],[e2],[e3] and [e4],[e5]
+Unit/bigram move no-go
+Unit/bigram position no-go
+
+1.2
+[e2]:"This"->[e1] "Supermarkets and shopping centres should be allowed to open on any Sundays and holidays", whole entity;simple NP is not possible
+[e3]:"this"->[e1] comment:same as above
+[e5]:"this"->[e4] "Considering the growing digitization of society, the traditional model of the weekend will soon be obsolete",whole entity;simple NP is not possible
+
+2.Main claim[a1],[first->last]
+
+Move"[1,2,3,4,5]->[2,3,4,5,1]
+
+
+[e2] [opp] This may be a change for the employees that cannot to be implemented easily.
+[e3] [pro] However, especially for working customers this would mean greater flexibility and fewer nerve-racking peak times during the week.
+[e4] [pro] Considering the growing digitization of society, the traditional model of the weekend will soon be obsolete.
+[e5] [pro] Many European countries, for instance the Netherlands, Sweden and Great Britain, have already understood this and successfully adjusted the opening hours for retailers.
+[e1] [pro] Supermarkets and shopping centres should be allowed to open on any Sundays and holidays.
+
+
+Comment:inseparable bigram [e1],[e2],[e3] breaks, make next move
+
+Move:[2,3,4,5,1]->[3,4,5,2,1]
+
+
+
+[e4] [pro] Considering the growing digitization of society, the traditional model of the weekend will soon be obsolete.
+[e5] [pro] Many European countries, for instance the Netherlands, Sweden and Great Britain, have already understood this and successfully adjusted the opening hours for retailers.
+[e2] [opp] This may be a change for the employees that cannot to be implemented easily.
+[e3] [pro] However, especially for working customers this would mean greater flexibility and fewer nerve-racking peak times during the week.
+[e1] [pro] Supermarkets and shopping centres should be allowed to open on any Sundays and holidays.
+
+Comment: not usable for survey, it needs a lot of editing ; it is ambiguous concerning what the main topic is about

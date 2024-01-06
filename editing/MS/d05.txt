@@ -1,5 +1,6 @@
 d05
 Central claim unit: a1
+
 Original order:
 [e1] [pro] Today I will delete my Facebook account.
 [e2] [pro] Not only because I'm constantly astonished about who wants to be my friend.
@@ -15,6 +16,7 @@ Unit/bigram move no-go: simple moves with minimum editing are not possible in th
 Unit/bigram position no-go: all.
 
 1.2
-[e2]: “who”-> “every person
+
+No referentials
 
 Comment: No shuffling is possible

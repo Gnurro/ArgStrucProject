@@ -1,28 +1,33 @@
 Micro_b057
 Central claim unit: a4
+
 Original order:
 [e1] [opp] Retirement at 63, that's something everyone who has toiled away (nonstop) up to this point surely deserves.
 [e2] [pro] Only the question remains whether this early 'leisure' will be nicer if you have no idea what do to all day and you statistically still have almost 20 (!!!) years to go?
 [e3] [pro] Also, one isn't taking responsibility for society if one gives up one's experienced, healthy and highly qualified capabilities earlier than necessary for private/personal reasons.
 [e4] [pro] Especially now, as there is a lack of skilled labour, it's irresponsible for the economy and prosperity to retire at 63.
+
 1.Inspection
 1.1
 No inseparable bigrams
 No bigram/unit move no-gos
 No clear unit/position no-gos
+
 1.2
-[e2]: “this” -> [e1] “Retirement at 63” ; NP: “ Retirement at 63 or ” converting to NP makes the sentence awkward and the reference “early leisure” doesn’t make the impression it is supposed to from the motive of the writer
-[e3]: “one”, “one“, one’s” -> PP->NP: “one person/citizen” , “one person/citizen”, “one person’s/citizen’s” (Im sure there is also another way to depict this but for the life of me it couldn’t occur in my brain!)
+[e2]: “this” -> [e1] “Retirement at 63” ; NP: “ Retirement at 63 or ” converting to NP makes the sentence awkward and the reference “early leisure” doesn’t make the emphasis it is intended;
+no simple NP is possible
+
 
 2.Central claim [a4]: Last->first
+
 Move: [1,2,3,4]->[4,1,2,3]
+
 [e4] [pro] Especially now, as there is a lack of skilled labour, it's irresponsible for the economy and prosperity to retire at 63.
 [e1] [opp] Retirement at 63, that's something everyone who has toiled away (nonstop) up to this point surely deserves.
 [e2] [pro] Only the question remains whether this early 'leisure' will be nicer if you have no idea what do to all day and you statistically still have almost 20 (!!!) years to go?
-“-(!!!)”
--> Only the question remains whether this early 'leisure' will be nicer if you have no idea what do to all day and you statistically still have almost 20 years to go?
 [e3] [pro] Also, one isn't taking responsibility for society if one gives up one's experienced, healthy and highly qualified capabilities earlier than necessary for private/personal reasons.
-[No edits needed]
+
+
 Comment: usable for survey
 
 

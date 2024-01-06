@@ -1,7 +1,29 @@
 Central claim unit: a5
+
 Original order:
-e1 opp If Germany were to introduce the death penalty, convicted felons could not be paroled or break out of prison and commit new felonies.
-e2 pro However, a death would not be of any more use to those affected and their relatives than if the felon receives a long sentence.
-e3 pro Plus we don't live in medieval times anymore.
-e4 pro Handing out capital punishment is unethical.
-e5 pro We don't need it.
+[e1] [opp] If Germany were to introduce the death penalty, convicted felons could not be paroled or break out of prison and commit new felonies.
+[e2] [pro] However, a death would not be of any more use to those affected and their relatives than if the felon receives a long sentence.
+[e3] [pro] Plus we don't live in medieval times anymore.
+[e4] [pro] Handing out capital punishment is unethical.
+[e5] [pro] We don't need it.
+
+1.Inspection
+1.1
+
+Inseparable bigrams: [e1],[e2]
+No unit/bigram move no-go
+No unit/bigram position no-go
+
+1.2
+
+[e2]:"those" -> implies "those people who are affected"; simple NP not possible
+
+2.Main claim[a5]: Last->first
+
+[e5] [pro] We don't need it.
+[e1] [opp] If Germany were to introduce the death penalty, convicted felons could not be paroled or break out of prison and commit new felonies.
+[e2] [pro] However, a death would not be of any more use to those affected and their relatives than if the felon receives a long sentence.
+[e3] [pro] Plus we don't live in medieval times anymore.
+[e4] [pro] Handing out capital punishment is unethical.
+
+Comment: usable for survey

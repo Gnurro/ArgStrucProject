@@ -12,7 +12,7 @@ Original order:
 
 1.1
 
-Inseparable bigrams: [e2],[e3]
+Inseparable bigrams: [e2],[e3],[e4]
 No unit/bigram move no-go
 No unit/bigram position no-go
 
@@ -20,7 +20,8 @@ No unit/bigram position no-go
 
 [e5]: "that"-> [e2],[e3] whole entity; not possible for a simple NP
 
-2.Main claim[a1],[first->last]
+2.Main claim[a1]: First->last
+
 Move:[1,2,3,4,5]->[2,3,4,5,1]
 
 

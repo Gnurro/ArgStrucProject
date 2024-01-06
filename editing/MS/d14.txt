@@ -9,10 +9,12 @@ Original order:
 [e5] [pro] Yesterday, when the bouncer wouldn't let us in, he was suddenly gone.
 
 1.Inspection
+
 1.1
-Inseparable bigrams: [e2],[e3],[e4]
+Inseparable bigrams: [e2],[e3]
 No Unit/bigram move no-go
-Unit/bigram position no-go: [e5] should always conclude [e2],[e3],[e4]
+No Unit/bigram position no-go
+
 1.2
 No referentials
 
@@ -20,8 +22,10 @@ No referentials
 Move:[ 1,2,3,4,5]->[2,3,4,5,1]
 
 [e2] [opp] As a boy he did use to scuffle with the other choirboys,
+
 “he”->”Fritz”
 ->As a boy Fritz did use to scuffle with the other choirboys,
+
 [e3] [pro] but that hardly counts as a proper brawl.
 [e4] [pro] And he always chickens out when things get dicey.
 [e5] [pro] Yesterday, when the bouncer wouldn't let us in, he was suddenly gone.

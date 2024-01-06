@@ -1,5 +1,6 @@
 b059
 Central claim unit: a5
+
 Original order:
 [e1] [pro] Rent prices are already regulated in favour of tenants due to existing laws and the rent index.
 [e2] [pro] In view of the high prices for buying flats with existing rent contracts, these are an unattractive investment.
@@ -8,22 +9,26 @@ Original order:
 [e5] [pro] A cap on rent increases upon tenant change is therefore not to be supported.
 
 1.Inspection
+
 1.1
-No inseparable bigrams
+Inseparable bigrams : [e3],[e4]
 No unit/bigram move no-go
 No unit/bigram position no-go
 1.2
 [e2]: “these” -> [e2] “buying flats with existing rent contracts”; no simple NP.
 
 2. Main claim[a5], [last->first]
+
 Move: [1,2,3,4,5]-> [5,1,2,3,4]
 
 [e5] [pro] A cap on rent increases upon tenant change is therefore not to be supported.
+
 “-therefore”-> implies conclusion thus could be confusing, backwards reference not possible
 -> A cap on rent increases upon tenant change is not to be supported.
+
 [e1] [pro] Rent prices are already regulated in favour of tenants due to existing laws and the rent index.
 [e2] [pro] In view of the high prices for buying flats with existing rent contracts, these are an unattractive investment.
 [e3] [opp] Even if one might think that additional rent control is needed besides the current tenant protection,
 [e4] [pro] one should not deny longstanding owners the opportunity to adjust their returns to market level.
 
-Comment: usable for survey, [e5] works stylistically and pragmatically at the beginning of the text
+Comment: usable for survey, [e5] works stylistically and structurally at the beginning of the text

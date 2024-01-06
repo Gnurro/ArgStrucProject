@@ -1,5 +1,6 @@
 d06
 Central claim unit: a1
+
 Original order:
 [e1] [pro] Peter should close his snack bar as soon as possible.
 [e2] [pro] Pricing pressures are just too high,
@@ -13,10 +14,12 @@ Original order:
 Inseparable bigrams: [e4],[e5]
 No Unit/bigram move no-go
 No Unit/bigram position no-go
-1.2
-[e3]:”his”->[e1] “Peter” ; NP „Peter‘s“
 
-2.Main claim[a1], [first->last]
+1.2
+
+
+2.Main claim[a1]:First->last
+
 Move: [1,2,3,4,5]->[2,3,4,5,1]
 
 [e2] [pro] Pricing pressures are just too high,
@@ -27,4 +30,4 @@ Move: [1,2,3,4,5]->[2,3,4,5,1]
 [e5] [pro] but that won't do the trick if the whole neighbourhood is going down the drain in the end.
 [e1] [pro] Peter should close his snack bar as soon as possible.
 
-Comment: usable for survey, somehow could give the impression that it’s intentional to use the main claim as an emphasis  at the end that “Peter should close the snack bar”
+Comment: usable for survey, somehow could give the impression that it’s intentional to use the main claim as an emphasis  at the end.

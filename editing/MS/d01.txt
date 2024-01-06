@@ -1,5 +1,6 @@
 d01
 Central claim unit: a1
+
 Original order:
 [e1] [pro] Freddy and I must be siblings.
 [e2] [pro] We both have the exact same two moles on our left arm
@@ -9,13 +10,17 @@ Original order:
 
 1.Inspection
 1.1
-Inseparable bigrams: [e1],[e2],[e3] and [e4],[e5]
-unit/bigram move no-go : simple moves seem to be not working,the conditions cannot apply backwards 
-Unit/bigram position no-go : every unit of the text is strongly connected to each other, therefore changing or flipping the units/bigrams make the whole text collapse
-1.2
-No referentials
+Inseparable bigrams: [e2],[e3] and [e4],[e5]
+unit/bigram move no-go: it seems that only one move is possible, flipping [e1] and that already makes the text "funny"
+Unit/bigram position no-go : apart maybe [e1], every unit of the text is strongly connected to each other, therefore changing or flipping the units/bigrams make the text incohesive
 
-2.Main claim[a1], [first->last]
+1.2
+
+[e3]: "that"-> [e2]: "have the exact same two moles on our left arm", whole entity; simple NP not possible
+[e4]: "this"->[e2],[e3]: whole entities; simple NP not possible
+
+2.Main claim[a1]:First->last
+
 Move: [1,2,3,4,5]->[2,3,4,5,1]
 
 [e2] [pro] We both have the exact same two moles on our left arm
@@ -24,6 +29,6 @@ Move: [1,2,3,4,5]->[2,3,4,5,1]
 [e5] [pro] But that much of a coincidence is simply impossible.
 [e1] [pro] Freddy and I must be siblings.
 
-Comment: the main claim introduces a conditional situation, which in order to be fulfilled without major changes to the original text,
-simple unit moves are not possible. 
+Comment:  This "funny structure" is almost working, only due to the short length of the text, otherwise it wouldn't be possible. 
+usable for survey
 

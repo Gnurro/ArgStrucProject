@@ -1,4 +1,5 @@
 Central claim unit: a1
+
 Original order:
 [e1] [pro] Berlin's basketball team has just come out of a sobering season.
 [e2] [pro] Especially the home games have seen the team stay behind expectations.
@@ -19,8 +20,10 @@ No referentials
 Move: [1,2,3,4,5]->[2,3,4,5,1]
 
 [e2] [pro] Especially the home games have seen the team stay behind expectations.
+
 -“especially”: there is no previous reference to support
 -> The home games have seen the team stay behind expectations.
+
 [e3] [pro] A sad highlight: Losing 60:87 to the weakish Mannheimers in a sold-out stadium.
 [e4] [opp] Indeed the team ended up third in the league,
 [e5] [pro] but given the cost of the star-players one could've expected more.
