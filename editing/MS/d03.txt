@@ -1,7 +1,19 @@
+d03
 Central claim unit: a1
 Original order:
-e1 pro It was clearly a mistake to include Tom in our football team.
-e2 pro He's just not a team player, and often goes it alone.
-e3 pro Plus he comes to training way too rarely,
-e4 opp although he plays very well without training.
-e5 pro But the worst thing is his habit of always complaining to the referee.
+[e1] [pro] It was clearly a mistake to include Tom in our football team.
+[e2] [pro] He's just not a team player, and often goes it alone.
+[e3] [pro] Plus he comes to training way too rarely,
+[e4] [opp] although he plays very well without training.
+[e5] [pro] But the worst thing is his habit of always complaining to the referee.
+
+1.Inspection
+1.1
+Inseparable bigrams: [e1],[e2],[e3],[e4] and [e5]
+Unit/bigram move no-go: simple moves are not possible here.
+Unit/bigram position no-go: the text is tightly structured and cohesive, for this reason every pre-existing condition should not be disrupted.
+
+1.2
+[e2],[e3],[e4] : “he” ->[e1] “Tom”; NP: Tom
+
+Comment: No shuffling is possible

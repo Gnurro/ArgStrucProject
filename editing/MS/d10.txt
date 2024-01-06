@@ -1,7 +1,34 @@
+d10
 Central claim unit: a1
 Original order:
-e1 pro In a few decades our society will have a disproportionate number of old people:
-e2 pro the life expectancy is constantly rising,
-e3 pro and at the same time birth rates are declining.
-e4 opp Although having children has become more fashionable again in recent years,
-e5 pro these short-term fluctuations in birth rates don't change the general trend at all.
+[e1] [pro] In a few decades our society will have a disproportionate number of old people:
+[e2] [pro] the life expectancy is constantly rising,
+[e3] [pro] and at the same time birth rates are declining.
+[e4] [opp] Although having children has become more fashionable again in recent years,
+[e5] [pro] these short-term fluctuations in birth rates don't change the general trend at all.
+
+
+
+1.Inspection
+1.1
+Inseparable bigrams: [e2],[e3] and [e4],[e5]
+No Unit/bigram move no-go
+No Unit/bigram position no-go
+1.2
+[e5]: “these”->[e4] “having children has become more fashionable again in recent years”; referring to a whole incident?
+
+2.Main claim[a1], [first->last]
+
+Move:[1,2,3,4,5]-> [2,3,4,5,1]
+
+[e2] [pro] the life expectancy is constantly rising,
+“the”->”The”
+-> The life expectancy is constantly rising,
+[e3] [pro] and at the same time birth rates are declining.
+[e4] [opp] Although having children has become more fashionable again in recent years,
+[e5] [pro] these short-term fluctuations in birth rates don't change the general trend at all.
+[e1] [pro] In a few decades our society will have a disproportionate number of old people:
+“:”->”.”
+-> In a few decades our society will have a disproportionate number of old people
+
+Comment: usable for survey; even though it is the central claim, it gives the impression of a conclusive unit as well, after the listed arguments 
