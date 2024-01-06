@@ -10,7 +10,7 @@ Original order:
 1.Inspection
 1.1
 Inseparable bigrams: [e1],[e2],[e3] and [e4],[e5]
-unit/bigram move no-go : simple moves seem to be not be allowed 
+unit/bigram move no-go : simple moves seem to be not working,the conditions cannot apply backwards 
 Unit/bigram position no-go : every unit of the text is strongly connected to each other, therefore changing or flipping the units/bigrams make the whole text collapse
 1.2
 No referentials
@@ -24,5 +24,6 @@ Move: [1,2,3,4,5]->[2,3,4,5,1]
 [e5] [pro] But that much of a coincidence is simply impossible.
 [e1] [pro] Freddy and I must be siblings.
 
-Comment: breaking a generalization [e1],[e2], even in English syntax, which is more flexible that for example German one, still collapses the argument and is not allowed.
+Comment: the main claim introduces a conditional situation, which in order to be fulfilled without major changes to the original text,
+simple unit moves are not possible. 
 
