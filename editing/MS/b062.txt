@@ -11,7 +11,7 @@ Original order:
 
 1.Inspection
 1.1
-Inseparable bigrams: [e1],[e2] and [e3], [e4]. Support of e2->e1 should be maintained , [e3],[e4] are strongly connected, separating challenges the cohesion of whole text
+Inseparable bigrams: [e1,e2][e3,e4]. Support of e2->e1 should be maintained , [e3],[e4] are strongly connected, separating challenges the cohesion of whole text
 No unit/bigram move no-go
 No clear unit/bigram position no-go
 1.2

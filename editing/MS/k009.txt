@@ -1,8 +1,39 @@
 Central claim unit: a1
+
 Original order:
-e1 pro Germany should by no means introduce capital punishment.
-e2 pro If there were capital punishment, this would mean people are allowed to put themselves above others and rule over their lives.
-e3 pro Capital punishment would be murder and would have to be punished with the death penalty itself.
-e4 pro What, then, ought to be done with criminals who have committed truly awful crimes such as murder or rape - should they simply be allowed to live on
-e5 opp although they have taken or destroyed another life?
-e6 pro Yes, for it is a much graver punishment to be imprisoned forever and be tortured by one's own thoughts than to be killed quickly and easily by an injection.
+[e1] [pro] Germany should by no means introduce capital punishment.
+[e2] [pro] If there were capital punishment, this would mean people are allowed to put themselves above others and rule over their lives.
+[e3] [pro] Capital punishment would be murder and would have to be punished with the death penalty itself.
+[e4] [pro] What, then, ought to be done with criminals who have committed truly awful crimes such as murder or rape - should they simply be allowed to live on
+[e5] [opp] although they have taken or destroyed another life?
+[e6] [pro] Yes, for it is a much graver punishment to be imprisoned forever and be tortured by one's own thoughts than to be killed quickly and easily by an injection.
+
+1.Inspection
+
+1.1
+
+Inseparable bigrams: [e3,e4]
+No unit/bigram no-go
+Unit/bigram position no-go:[e4]<-[e3]
+
+1.2
+
+[e2]:"this"->[e2]:"If there were capital punishment", hwole entity;simple NP not possible
+[e2]:"their"->[e2]:"others"; NP:"other people's"
+[e4]:"they"->[e4]"criminals";NP:criminals
+[e5]:"they"->[e4]"criminals";NP:criminals
+
+2.Main claim[a1]:First->last
+
+Move:[1,2,3,4,5,6]->[2,3,4,5,6,1]
+
+
+[e2] [pro] If there were capital punishment, this would mean people are allowed to put themselves above others and rule over their lives.
+[e3] [pro] Capital punishment would be murder and would have to be punished with the death penalty itself.
+[e4] [pro] What, then, ought to be done with criminals who have committed truly awful crimes such as murder or rape - should they simply be allowed to live on
+[e5] [opp] although they have taken or destroyed another life?
+[e6] [pro] Yes, for it is a much graver punishment to be imprisoned forever and be tortured by one's own thoughts than to be killed quickly and easily by an injection.
+[e1] [pro] Germany should by no means introduce capital punishment.
+
+Comment:usable for survey
+

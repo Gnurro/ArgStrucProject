@@ -13,7 +13,7 @@ Original order:
 1.Inspection
 
 1.1
-Inseparable bigrams: [e4],[e5] undercuts the rebuttal of [e4]->[e3], if separated loses cohesion
+Inseparable bigrams: [e4,e5] undercuts the rebuttal of [e4]->[e3], if separated loses cohesion
 No Unit/bigram move no-go
 No Unit/bigram position no-go
 

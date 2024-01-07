@@ -12,7 +12,7 @@ Original order:
 1.Inspection
 
 1.1
-Inseparable bigrams: [e3],[e4] and [e4], [e5] ; semantically strongly connected ;[e5] supports [e4] which undercuts the rebuttal of [e3]
+Inseparable bigrams: [e3,e4,e5] ; semantically strongly connected ;[e5] supports [e4] which undercuts the rebuttal of [e3]
 No bigram/unit move no-gos
 Bigram/unit position no-gos: because of the strong semantic relation the inseparable bigrams need to ascent one another
 

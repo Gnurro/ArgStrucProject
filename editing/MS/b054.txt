@@ -12,7 +12,7 @@ Original order:
 1.Inspection
 
 1.1
-Inseparable bigrams: [e3],[e4]
+Inseparable bigrams: [e3,e4]
 No bigram/unit move no-gos
 Unit/bigram position no-go: [e3]<-[e4],[e3] The fact that “the area belongs to the federal state, or the federation” needs to be established first,
 thus [e4] the fact that Tempelhofer Feld “could even be used for social housing with affordable rents”

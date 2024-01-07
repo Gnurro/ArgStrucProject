@@ -11,7 +11,7 @@ Original order:
 1.Inspection
 
 1.1
-Inseparable bigrams: [e1],[e2],[e3] and [e4],[e5]
+Inseparable bigrams: [e1,e2,e3] and [e4,e5]
 Unit/bigram move no-go: simple moves with minimum editing are not possible in this example. Every argument leads to the next one, thus is strongly cohesive and not breakable.
 Unit/bigram position no-go: all.
 

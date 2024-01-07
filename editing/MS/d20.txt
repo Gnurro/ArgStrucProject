@@ -12,7 +12,7 @@ Original order:
 
 1.1
 
-Inseparable bigrams: [e2],[e3],[e4]
+Inseparable bigrams: [e2,e3,e4]
 No unit/bigram move no-go
 No unit/bigram position no-go
 

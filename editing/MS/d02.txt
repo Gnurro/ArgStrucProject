@@ -9,7 +9,7 @@ Original order:
 
 1.Inspection
 1.1
-Inseparable bigrams: [e1], [e2],[e3] and [e4],[e5]
+Inseparable bigrams: [e1,e2,e3] and [e4],[e5]
 Unit/bigram move no-go: again simple moves are not possible here, all units are building up on each other
 Unit/bigram position no-go: the text is tightly structured and cohesive, for this reason every pre-existing condition should not be disrupted 
 

@@ -11,7 +11,7 @@ Original order:
 1.Inspection
 
 1.1
-Inseparable bigrams: [e1],[e2],[e3] mostly because of strong [e3]->[e2] and [e4],[e5]
+Inseparable bigrams: [e1,e2,e3] mostly because of strong [e3]->[e2] and [e4],[e5]
 Unit/bigram move no-go: simple moves with minimum editing are not possible in this example. 
 Unit/bigram position no-go: it is important, that all units/bigram position does not change because of the strong topical cohesion of the text
 

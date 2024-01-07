@@ -14,7 +14,7 @@ Original order:
 
 1.Inspection
 1.1
-Inseparable bigrams: [e1], [e2],[e3]
+Inseparable bigrams: [e1,e2,e3]
 No bigram/unit move no-gos
 No clear unit/position no-gos
 
