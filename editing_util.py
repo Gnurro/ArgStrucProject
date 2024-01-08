@@ -26,24 +26,6 @@ def create_editing_files(text_database, sub_dir: str):
             out_file.write(editable_text(content))
 
 
-def survey_texts_original_central(texts_list: str, text_database: dict) -> dict:
-    """
-    Gets the original central unit first/last position based on a txt with a text ID per line.
-    :param texts_list: Path to the txt list
-    :param text_database: Dict database of extracted corpus information.
-    :return: Dict {text ID:first/last}.
-    """
-    with open(texts_list, 'r', encoding='utf-8') as txt_list_file:
-        txt_list: list = txt_list_file.read().strip().split("\n")
-    original_central: dict = dict()
-    for txt_id in txt_list:
-        if text_database[txt_id]['central_adu'][1] == "1":
-            original_central[txt_id] = "first"
-        else:
-            original_central[txt_id] = "last"
-    return original_central
-
-
 if __name__ == "__main__":
     # load database:
     with open("extracted_db.json", 'r', encoding='utf-8') as db_file:
@@ -55,4 +37,4 @@ if __name__ == "__main__":
     create_editing_files(get_central_first_texts(database), "JJ")
     create_editing_files(get_central_last_texts(database), "JJ")
     """
-    survey_texts_original_central("editing/JJ/texts_for_survey.txt", database)
+

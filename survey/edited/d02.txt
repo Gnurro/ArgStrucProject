@@ -1,0 +1,32 @@
+Central claim unit: a1
+
+Original order:
+[e1] [pro] Berlin's basketball team has just come out of a sobering season.
+[e2] [pro] Especially the home games have seen the team stay behind expectations.
+[e3] [pro] A sad highlight: Losing 60:87 to the weakish Mannheimers in a sold-out stadium.
+[e4] [opp] Indeed the team ended up third in the league,
+[e5] [pro] but given the cost of the star-players one could've expected more.
+
+1.Inspection
+1.1
+Inseparable bigrams: [e1,e2,e3] and [e4],[e5]
+Unit/bigram move no-go: again simple moves are not possible here, all units are building up on each other
+Unit/bigram position no-go: the text is tightly structured and cohesive, for this reason every pre-existing condition should not be disrupted 
+
+1.2
+No referentials
+
+2.Main claim[a1], [first->last]
+Move: [1,2,3,4,5]->[2,3,4,5,1]
+
+[e2] [pro] Especially the home games have seen the team stay behind expectations.
+
+-“especially”: there is no previous reference to support
+-> The home games have seen the team stay behind expectations.
+
+[e3] [pro] A sad highlight: Losing 60:87 to the weakish Mannheimers in a sold-out stadium.
+[e4] [opp] Indeed the team ended up third in the league,
+[e5] [pro] but given the cost of the star-players one could've expected more.
+[e1] [pro] Berlin's basketball team has just come out of a sobering season.
+
+Comment: Shuffling not possible;the text is becoming unbiguous, without major changes and moving far from the original text.

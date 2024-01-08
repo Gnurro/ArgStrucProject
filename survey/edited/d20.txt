@@ -1,0 +1,35 @@
+Central claim unit: a1
+
+Original order:
+
+[e1] [pro] The prototype of Audi's new sports car has car lovers raving.
+[e2] [opp] The steering system may still need a bit of tweaking,
+[e3] [opp] as the car jack-knifes at higher speeds,
+[e4] [opp] and surely you'll want to be speeding a lot with that beauty.
+[e5] [pro] But aside from that the car caters to pretty much every wish.
+
+1.Inspection
+
+1.1
+
+Inseparable bigrams: [e2,e3,e4]
+No unit/bigram move no-go
+No unit/bigram position no-go
+
+1.2
+
+[e5]: "that"-> [e2],[e3] whole entity; not possible for a simple NP
+
+2.Main claim[a1]: First->last
+
+Move:[1,2,3,4,5]->[2,3,4,5,1]
+
+
+[e2] [opp] The steering system may still need a bit of tweaking,
+[e3] [opp] as the car jack-knifes at higher speeds,
+[e4] [opp] and surely you'll want to be speeding a lot with that beauty.
+[e5] [pro] But aside from that the car caters to pretty much every wish.
+[e1] [pro] The prototype of Audi's new sports car has car lovers raving.
+
+Comment: Even though [e2] directly opposes the main claim this simple move doesn't collapse the argument relation; 
+the use of a concluding remark as "thus" or "therefore" would make the text more elloquent.

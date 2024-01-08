@@ -1,0 +1,39 @@
+Central claim unit: a1
+
+Original order:
+
+[e1] [pro] The implementation of retirement at 63 is no longer socially sustainable,
+[e2] [pro] as the population in Germany has, viewed demographically, a disproportionate number of old people,
+[e3] [pro] and constantly declining birth rates are being recorded.
+[e4] [opp] Admittedly the number of immigrants is constantly rising in Germany,
+[e5] [pro] but without sufficient, well-qualified junior employees there is hardly a possibility for adequate pension financing.
+
+1.Inspection
+
+1.1
+
+Inseparable bigrams:[e4,e5] seperating would break sentence and rebuttal
+No unit/bigram move no-go
+No unit/bigram position no-go
+
+1.2
+
+No referentials
+
+2.Main claim[a1]:First->last
+
+
+[e2] [pro] as the population in Germany has, viewed demographically, a disproportionate number of old people,
+
+"as"->"As
+-> As the population in Germany has, viewed demographically, a disproportionate number of old people,
+
+[e3] [pro] and constantly declining birth rates are being recorded.
+[e4] [opp] Admittedly the number of immigrants is constantly rising in Germany,
+[e5] [pro] but without sufficient, well-qualified junior employees there is hardly a possibility for adequate pension financing.
+[e1] [pro] The implementation of retirement at 63 is no longer socially sustainable,
+
+" ," -> " . "
+->The implementation of retirement at 63 is no longer socially sustainable.
+
+Comment:unsable for survey

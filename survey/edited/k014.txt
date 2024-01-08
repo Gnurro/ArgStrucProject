@@ -1,0 +1,40 @@
+Central claim unit: a1
+
+Original order:
+[e1] [pro] Intelligence services should be more closely regulated by parliament,
+[e2] [pro] for, as the most recent NSA wiretapping scandal has shown, the federal state government is allegedly not always familiar with the scope of operations of its intelligence services.
+[e3] [pro] Checks could contribute to restricting the so far rather opaque scope of action of individual services.
+[e4] [opp] Yet it remains questionable whether the actual implementation of such supervision would at the same time lead to a stronger observance of laws,
+[e5] [opp] as ultimately this decision is in the hands of the respective government leaders.
+
+1.Inspection
+
+1.1
+
+Inseparable bigrams: [e3,e4,e5]. [e4] is refering to the whole [e3] as an entity and breaking [e4,e5] would break the sentence and reference
+No unit/bigram move no-go
+No unit/bigram position no-go
+
+1.2
+
+[e5]:"this"-> [e3] whole entity;no simple NP is possible
+
+2.Main claim[a1]:First->last
+
+
+[e2] [pro] for, as the most recent NSA wiretapping scandal has shown, the federal state government is allegedly not always familiar with the scope of operations of its intelligence services.
+
+-"for," backward connection to the main clause is not possible
+-"as" backward connection to the main clause is not possible
+"the"->"The"
+->The most recent NSA wiretapping scandal has shown, the federal state government is allegedly not always familiar with the scope of operations of its intelligence services.
+
+[e3] [pro] Checks could contribute to restricting the so far rather opaque scope of action of individual services.
+[e4] [opp] Yet it remains questionable whether the actual implementation of such supervision would at the same time lead to a stronger observance of laws,
+[e5] [opp] as ultimately this decision is in the hands of the respective government leaders.
+[e1] [pro] Intelligence services should be more closely regulated by parliament,
+
+"," -> "."
+->Intelligence services should be more closely regulated by parliament.
+
+Comment: After editing its usable for survey.

@@ -1,0 +1,37 @@
+d03
+Central claim unit: a1
+
+Original order:
+[e1] [pro] It was clearly a mistake to include Tom in our football team.
+[e2] [pro] He's just not a team player, and often goes it alone.
+[e3] [pro] Plus he comes to training way too rarely,
+[e4] [opp] although he plays very well without training.
+[e5] [pro] But the worst thing is his habit of always complaining to the referee.
+
+1.Inspection
+1.1
+Inseparable bigrams: [e3,e4] 
+No Unit/bigram move no-go
+No Unit/bigram position no-go
+
+1.2
+No referentials
+
+2.Main claim[a1]: First->last
+
+Move:[1,2,3,4,5[->[2,3,4,5,1]
+
+
+[e2] [pro] He's just not a team player, and often goes it alone.
+
+"He's"->"Tom's"
+->Tom's just not a team player, and often goes it alone.
+
+[e3] [pro] Plus he comes to training way too rarely,
+[e4] [opp] although he plays very well without training.
+[e5] [pro] But the worst thing is his habit of always complaining to the referee.
+[e1] [pro] It was clearly a mistake to include Tom in our football team.
+
+
+
+Comment: usable for survey

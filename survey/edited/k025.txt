@@ -1,0 +1,43 @@
+Central claim unit: a5
+
+Original order:
+[e1] [opp] Capital punishment is not a solution,
+[e2] [opp] as it cannot be ruled out that the judicial process may make mistakes.
+[e3] [pro] Criminals should not be put in luxury prisons, though.
+[e4] [pro] After all there are criminals who enjoy 'living' in prison for its decent board, no taxes to be paid, no stress with work.
+[e5] [pro] Still, the state needs the death penalty as a deterrent to horrific crimes.
+
+1.Inspection
+
+1.1
+
+Inseparable bigrams: [e1,e2]
+No unit/bigram move no-go
+No unit/bigram position no-go
+
+1.2
+
+No referentials
+
+2.Main claim[a5]:Last->first
+
+Move:[1,2,3,4,5]->[5,1,2,3,4]
+
+
+[e5] [pro] Still, the state needs the death penalty as a deterrent to horrific crimes.
+
+-"Still"
+"the"->"The"
+->The state needs the death penalty as a deterrent to horrific crimes.
+[e1] [opp] Capital punishment is not a solution,
+
++"still" allowed rearrangement of connective i the text
+->Capital punishment is still not a solution,
+
+[e2] [opp] as it cannot be ruled out that the judicial process may make mistakes.
+[e3] [pro] Criminals should not be put in luxury prisons, though.
+[e4] [pro] After all there are criminals who enjoy 'living' in prison for its decent board, no taxes to be paid, no stress with work.
+
+Comment:usable for survey after rearranging the connective
+
+

@@ -1,0 +1,33 @@
+Micro_b050
+Central claim unit: a5
+
+Original order:
+[e1] [pro] Germany's aging society is undergoing demographic change,
+[e2] [pro] and the age of those who are physically and mentally fit is increasing steadily.
+[e3] [pro] Thus social security and pension costs are increasing.
+[e4] [opp] Yet no one should be required to work for more than 40 years.
+[e5] [pro] Raising the relative retirement age on the basis of the physical fitness of the average citizen is fair.
+
+1.Inspection:
+
+1.1
+No inseparable bigrams
+No bigram/unit move no-gos
+No clear unit/position no-gos
+
+1.2
+[e2]: “those” -> [e2] “who are physically and mentally fit is increasing steadily”; no simple NP possible
+
+
+
+2.Central claim [a5]: Last->first
+Move: [1,2,3,4,5]->[5,1,2,3,4]
+
+[e5] [pro] Raising the relative retirement age on the basis of the physical fitness of the average citizen is fair.
+[e1] [pro] Germany's aging society is undergoing demographic change,
+[e2] [pro] and the age of those who are physically and mentally fit is increasing steadily.
+[e3] [pro] Thus social security and pension costs are increasing.
+[e4] [opp] Yet no one should be required to work for more than 40 years.
+
+Comment: Topic clearly introduced, no relations break,; usable for survey
+

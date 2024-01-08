@@ -1,0 +1,28 @@
+Central claim unit: a1
+
+Original order:
+[e1] [pro] The TV license fee should only be collected from those who actually make use of the programming of the public broadcasters.
+[e2] [pro] After all there are many people in Germany who pay the fee although they merely use a computer to work.
+[e3] [pro] Yet the fees are demanded from everybody who does not apply for a waiver, no matter how many receiver devices actually exist in the household and how they are being used.
+[e4] [opp] However it is obvious that the license fee officers are not in a position to check the usage of every single device.
+
+1.Inspection
+
+1.1
+No iseparable bigrams
+No unit/bigram move no-go
+No unit/bigram position no-go
+
+1.2
+
+[e2]:"they"->[e2]:"many people"; NP: "many people"
+
+2.Main claim[a1]:First->last
+
+
+[e2] [pro] After all there are many people in Germany who pay the fee although they merely use a computer to work.
+[e3] [pro] Yet the fees are demanded from everybody who does not apply for a waiver, no matter how many receiver devices actually exist in the household and how they are being used.
+[e4] [opp] However it is obvious that the license fee officers are not in a position to check the usage of every single device.
+[e1] [pro] The TV license fee should only be collected from those who actually make use of the programming of the public broadcasters.
+
+Comment:usable for survey

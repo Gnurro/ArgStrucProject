@@ -1,0 +1,32 @@
+d11
+Central claim unit: a1
+
+Original order:
+[e1] [pro] We should go to the Baltic Sea on the weekend.
+[e2] [pro] According to the weather report it'll be perfect beach weather,
+[e3] [pro] and one mustn't let this go to waste,
+[e4] [opp] even if I do have to prepare a presentation for Tuesday.
+[e5] [pro] Besides, I get to use my folks' big, comfy car.
+
+1.Inspection
+
+1.1
+Inseparable bigrams: [e3,e4]
+No Unit/bigram move no-go
+No Unit/bigram position no-go
+
+1.2
+[e3]:"this"->[e2]: "it'll be perfect beach weather"; no simple NP is possible
+
+2.Main claim[a1]: First->last
+
+Move:[ 1,2,3,4,5]->[2,3,4,5,1]
+
+[e2] [pro] According to the weather report it'll be perfect beach weather,
+[e3] [pro] and one mustn't let this go to waste,
+[e4] [opp] even if I do have to prepare a presentation for Tuesday.
+[e5] [pro] Besides, I get to use my folks' big, comfy car.
+[e1] [pro] We should go to the Baltic Sea on the weekend.
+
+Comment: The text is usable, even though it seems kind of  funny stylistically.
+
