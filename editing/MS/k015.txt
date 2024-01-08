@@ -1,6 +1,47 @@
 Central claim unit: a1
+
 Original order:
-e1 pro BER should be re-conceptualized from scratch,
-e2 opp even if billions of Euros have already been invested in the existing airport project
-e3 opp and this would delay the date of completion indefinitely.
-e4 pro Both the drawn-out building operations and the mounting safety issues show clear shortcomings in the entire planning.
+[e1] [pro] BER should be re-conceptualized from scratch,
+[e2] [opp] even if billions of Euros have already been invested in the existing airport project
+[e3] [opp] and this would delay the date of completion indefinitely.
+[e4] [pro] Both the drawn-out building operations and the mounting safety issues show clear shortcomings in the entire planning.
+
+1.Inspection
+
+1.1
+Inseparable bigrams:[e1,e2] if seperated breaks sentence and rebuttal
+No unit/bigram move no-go
+No unit/bigram position no-go
+
+1.2
+
+[e3]:"this"->[e1]"BER should be re-conceptualized from scratch";no simple NP is possible
+
+2.Main claim[a1]:First->last
+
+Move:[1,2,3,4]->[2,3,4,1]
+
+[e2] [opp] even if billions of Euros have already been invested in the existing airport project
+[e3] [opp] and this would delay the date of completion indefinitely.
+[e4] [pro] Both the drawn-out building operations and the mounting safety issues show clear shortcomings in the entire planning.
+[e1] [pro] BER should be re-conceptualized from scratch,
+
+Comment: Inseparable bigram [e1,e2] breaks;moving one step
+
+Move:[2,3,4,1]->[3,4,2,1]
+
+
+[e3] [opp] and this would delay the date of completion indefinitely.
+
+-"and" addition to the main claim is not possible
+"this"->"This"
+->This would delay the date of completion indefinitely.
+
+[e4] [pro] Both the drawn-out building operations and the mounting safety issues show clear shortcomings in the entire planning.
+[e2] [opp] even if billions of Euros have already been invested in the existing airport project
+[e1] [pro] BER should be re-conceptualized from scratch,
+
+
+Comment: the contextual coherence is too ambiguous as only at the end one can realise what the topic is about. 
+Moving the main claim at the last position seem to undermine the efficiency of every argument,as they rely upon the main claim.
+Not usable for survey.
