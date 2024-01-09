@@ -10,9 +10,9 @@ Original order:
 
 1.Inspection
 1.1
-Inseparable bigrams: [e2,e3] and [e4,e5]
-unit/bigram move no-go: it seems that only one move is possible, flipping [e1] and that already makes the text "funny"
-Unit/bigram position no-go : apart maybe [e1], every unit of the text is strongly connected to each other, therefore changing or flipping the units/bigrams make the text incohesive
+Inseparable bigrams: [e4,e5] breaks refernce
+No unit/bigram move no-go
+Unit/bigram position no-go : it seems one move is possible;moving [e1], every unit of the text is strongly connected to each other, therefore changing or flipping the units/bigrams make the text incohesive
 
 1.2
 

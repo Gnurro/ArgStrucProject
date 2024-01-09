@@ -1,6 +1,7 @@
 Non-usable texts:
 
 k004
+d02
 d09
 d07
 d05
@@ -20,7 +21,6 @@ b061
 b062
 b064
 d01
-d02
 d03
 d06
 d10

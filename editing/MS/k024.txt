@@ -41,7 +41,8 @@ Move:[2,3,4,5,6,7,1]->[3,4,5,6,7,2,1]
 [e3] [pro] One reason for this is that they have thus far hardly had to fear the consequences despite the obligation to clean up.
 
 "this"->"higher fines for dog dirt"
-->One reason for higher fines for dog dirt is that they have thus far hardly had to fear the consequences despite the obligation to clean up.
+"they"->"dog owners"
+->One reason for higher fines for dog dirt is that dog owners have thus far hardly had to fear the consequences despite the obligation to clean up.
 
 [e4] [pro] A higher fine, so dog owners would have to dig deeper into their pockets, is supposed to be a deterrent after all.
 [e5] [pro] The city, especially the green spaces, should be kept tidy after all,

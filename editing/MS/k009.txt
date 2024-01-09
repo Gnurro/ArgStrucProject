@@ -12,9 +12,9 @@ Original order:
 
 1.1
 
-Inseparable bigrams: [e3,e4]
+Inseparable bigrams: [e4,e5] would break sentence and reference
 No unit/bigram no-go
-Unit/bigram position no-go:[e4]<-[e3]
+No Unit/bigram position no-go
 
 1.2
 

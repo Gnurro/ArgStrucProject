@@ -1,31 +1,9 @@
-Central claim unit: a1
-
-Original order:
-[e1] [pro] No one should have the possibility to pick up the morning-after pill over the counter at the pharmacy.
-[e2] [opp] Though there'd be the advantage of forgoing the embarrassment of a visit to the doctor or a nighttime trip to the walk-in clinic,
-[e3] [pro] women should still be informed about the risks and have a gynaecological examination before taking it.
-[e4] [pro] Furthermore there's the risk that women could use the over-the-counter morning-after pill as a substitute for contraception.
-
-1.Inspection
-
-1.1
-
-No inseparable bigrams
-No unit/bigram move no-go
-No unit/bigram position no-go
-
-1.2
-
-No referentials
-
-2.Main claim[a1]: First->last
 
 
-[e2] [opp] Though there'd be the advantage of forgoing the embarrassment of a visit to the doctor or a nighttime trip to the walk-in clinic,
-[e3] [pro] women should still be informed about the risks and have a gynaecological examination before taking it.
-[e4] [pro] Furthermore there's the risk that women could use the over-the-counter morning-after pill as a substitute for contraception.
-[e1] [pro] No one should have the possibility to pick up the morning-after pill over the counter at the pharmacy.
+Though there'd be the advantage of forgoing the embarrassment of a visit to the doctor or a nighttime trip to the walk-in clinic,
+women should still be informed about the risks and have a gynaecological examination before taking it.
+Furthermore there's the risk that women could use the over-the-counter morning-after pill as a substitute for contraception.
+No one should have the possibility to pick up the morning-after pill over the counter at the pharmacy.
 
-Comment:can be used for the survey; if the text was longer moving the main claim to the end would not be possible due to the distance and the fact that at the beggining the context is ambiguous
 
 

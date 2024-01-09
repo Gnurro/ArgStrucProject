@@ -1,37 +1,8 @@
-Central claim unit: a5
+A constant increase in rent upon a change of tenants cannot be desired by society.
+'Property entails commitment' is one of the tenets of our social order.
+Everyone should be able to get the utmost profit from his or her property.
+A fixing of rent prices according to the market alone, however, will lead to a further division of society.
+The rich and poor live in different neighbourhoods.
 
-Original order:
-[e1] [pro] 'Property entails commitment' is one of the tenets of our social order.
-[e2] [opp] Everyone should be able to get the utmost profit from his or her property.
-[e3] [pro] A fixing of rent prices according to the market alone, however, will lead to a further division of society.
-[e4] [pro] The rich and poor live in different neighbourhoods.
-[e5] [pro] A constant increase in rent upon a change of tenants hence cannot be desired by society.
-
-1.Inspection
-
-1.1
-No inseparable bigrams
-No unit/bigram move no-go
-No unit/bigram position no-go
-
-1.2
-
-No referentials
-
-2.Main claim[a5]
-
-Move:[1,2,3,4,5]->[5,1,2,3,4]
-
-[e5] [pro] A constant increase in rent upon a change of tenants hence cannot be desired by society.
-
--"hence" conlusive reference backwards cannot be applied
-->A constant increase in rent upon a change of tenants cannot be desired by society.
-
-[e1] [pro] 'Property entails commitment' is one of the tenets of our social order.
-[e2] [opp] Everyone should be able to get the utmost profit from his or her property.
-[e3] [pro] A fixing of rent prices according to the market alone, however, will lead to a further division of society.
-[e4] [pro] The rich and poor live in different neighbourhoods.
-
-Comment:usable for survey
 
 

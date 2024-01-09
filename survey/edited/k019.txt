@@ -1,39 +1,8 @@
-Central claim unit: a6
-
-Original order:
-[e1] [pro] The thought of television exclusively made up of private channels scares me.
-[e2] [opp] Admittedly trash and turmoil are exactly what the majority of people want to see.
-[e3] [pro] But to therefore offer TV according to audience rates only would be dangerous.
-[e4] [pro] Only in public TV programmes can viewers get information that is not profit-oriented.
-[e5] [pro] And since it is the duty of society to collectively finance certain areas that cannot hold their own in a market economy,
-[e6] [pro] everyone should chip in.
-
-1.Inspection
-
-1.1
-
-No inseparable bigrams
-No unit/bigram move no-go
-No unit/bigram position no-go
-
-1.2
-
-No referentials
-
-2.Main claim[a6]:Last->first
-
-Move:[1,2,3,4,5,6]->[6,1,2,3,4,5]
-
-[e6] [pro] everyone should chip in.
-
-"everyone"->"Everyone"
-->Everyone should chip in.
-
-[e1] [pro] The thought of television exclusively made up of private channels scares me.
-[e2] [opp] Admittedly trash and turmoil are exactly what the majority of people want to see.
-[e3] [pro] But to therefore offer TV according to audience rates only would be dangerous.
-[e4] [pro] Only in public TV programmes can viewers get information that is not profit-oriented.
-[e5] [pro] And since it is the duty of society to collectively finance certain areas that cannot hold their own in a market economy,
+Everyone should chip in.
+The thought of television exclusively made up of private channels scares me.
+Admittedly trash and turmoil are exactly what the majority of people want to see.
+But to therefore offer TV according to audience rates only would be dangerous.
+Only in public TV programmes can viewers get information that is not profit-oriented.
+And since it is the duty of society to collectively finance certain areas that cannot hold their own in a market economy,
 
 
-Comment:usable for survey; [e6] at the begging seems like a prompt

@@ -1,34 +1,8 @@
-Central claim unit: a1
-
-Original order:
-
-[e1] [pro] Tomorrow I will skydive for the first time in my life.
-[e2] [opp] Yes, there is a certain risk to life.
-[e3] [pro] But I want to experience this incredible moment of freedom that skydivers report time and again.
-[e4] [pro] Besides, Jochen was given a parachute jump the other day as a gift,
-[e5] [pro] and it mustn't be that this wannabe-adventurer has one up on me.
-
-1.Inspection
-
-1.1
-
-Inseparable bigrams: [e1,e2,e3] mostly because of [e3]->[e1] and [e4],[e5]
-No unit/bigram move no-go
-No unit/bigram position no-go
-
-1.2
-
-[e5]:"this"-> [e4]: "Jochen (who) was given a parachute jump the other day as a gift", whole entity;no simple NP possible
-
-2.Main claim[a1]: Firts->last
-
-Move:[1,2,3,4,5]->[2,3,4,5,1]
 
 
-[e2] [opp] Yes, there is a certain risk to life.
-[e3] [pro] But I want to experience this incredible moment of freedom that skydivers report time and again.
-[e4] [pro] Besides, Jochen was given a parachute jump the other day as a gift,
-[e5] [pro] and it mustn't be that this wannabe-adventurer has one up on me.
-[e1] [pro] Tomorrow I will skydive for the first time in my life.
+Yes, there is a certain risk to life.
+But I want to experience this incredible moment of freedom that skydivers report time and again.
+Besides, Jochen was given a parachute jump the other day as a gift,
+and it mustn't be that this wannabe-adventurer has one up on me.
+Tomorrow I will skydive for the first time in my life.
 
-Comment:usable for survey

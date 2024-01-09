@@ -11,7 +11,7 @@ Original order:
 1.Inspection
 
 1.1
-Inseparable bigrams: [e2,e3]
+Inseparable bigrams: [e2,e3], e3 undercuts the rebuttal [e2], separating would break them undermining the cohesion of the arguments
 No Unit/bigram move no-go
 No Unit/bigram position no-go
 

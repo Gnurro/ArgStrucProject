@@ -1,34 +1,7 @@
-b060
-Central claim unit: a5
 
-Original order:
-[e1] [opp] Owner-run shops may potentially be overwhelmed by additional work times on Sundays and holidays,
-[e2] [pro] then again supermarkets and large shopping centres dominate the market today already.
-[e3] [pro] Thus smaller shops could benefit from the additional freedom,
-[e4] [pro] as customers are on average more laid-back on Sunday.
-[e5] [pro] Opening on Sundays and holidays would therefore help both customers and shops.
-
-1.Inspection
-
-1.1
-Inseparable bigrams: [e3,e4]
-No unit/bigram move no-go
-No unit/bigram position no-go
-1.2
-No referentials
-
-2. Main claim[a5], [last->first]
-Move: [1,2,3,4,5]-> [5,1,2,3,4]
-
-[e5] [pro] Opening on Sundays and holidays would therefore help both customers and shops.
-
--"therefore"
--> Opening on Sundays and holidays would help both customers and shops.
-
-[e1] [opp] Owner-run shops may potentially be overwhelmed by additional work times on Sundays and holidays,
-[e2] [pro] then again supermarkets and large shopping centres dominate the market today already.
-[e3] [pro] Thus smaller shops could benefit from the additional freedom,
-[e4] [pro] as customers are on average more laid-back on Sunday.
-
-Comment: It seems until now that, the move of the central claim from the last to the first position, as in this case, introduces clearer and more structured the main topic.
+Opening on Sundays and holidays would help both customers and shops.
+Owner-run shops may potentially be overwhelmed by additional work times on Sundays and holidays,
+then again supermarkets and large shopping centres dominate the market today already.
+Thus smaller shops could benefit from the additional freedom,
+as customers are on average more laid-back on Sunday.
 

@@ -1,30 +1,5 @@
-b061
-Central claim unit: a1
 
-Original order:
-[e1] [pro] Higher penalties for dog dirt are pointless as long as there is not enough personnel to enforce them.
-[e2] [opp] In individual cases they may indeed act as a deterrent,
-[e3] [pro] in general, however, a clean environment and the role model effect of others is more likely to motivate the dog owner to pick up the droppings than a potential fine.
+In individual cases higher penalties for dog dirt may indeed act as a deterrent,
+in general, however, a clean environment and the role model effect of others is more likely to motivate the dog owner to pick up the droppings than a potential fine.
+Higher penalties for dog dirt are pointless as long as there is not enough personnel to enforce them.
 
-1.Inspection
-
-1.1
-Inseparable bigrams: [e2,e3]
-No unit/bigram move no-go
-No unit/bigram position no-go
-
-1.2
-[e2]: “they”-> [e1] “Higher penalties for dog dirt”; NP: higher penalties for dog dirt
-
-2.Main claim[a1], [first->last]
-Move: [1,2,3]->[2,3,1]
-
-[e2] [opp] In individual cases they may indeed act as a deterrent,
-
-“they”->”higher penalties for dog dirt”
-->In individual cases higher penalties for dog dirt may indeed act as a deterrent,
-
-[e3] [pro] in general, however, a clean environment and the role model effect of others is more likely to motivate the dog owner to pick up the droppings than a potential fine.
-[e1] [pro] Higher penalties for dog dirt are pointless as long as there is not enough personnel to enforce them.
-
-Comment: usable for survey; replacing the pronoun with a full NP makes the rearrangement possible

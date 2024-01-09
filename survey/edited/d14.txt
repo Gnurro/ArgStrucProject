@@ -1,34 +1,7 @@
-d14
-Central claim unit: a1
 
-Original order:
-[e1] [pro] I think Fritz has never been in a fight in his life.
-[e2] [opp] As a boy he did use to scuffle with the other choirboys,
-[e3] [pro] but that hardly counts as a proper brawl.
-[e4] [pro] And he always chickens out when things get dicey.
-[e5] [pro] Yesterday, when the bouncer wouldn't let us in, he was suddenly gone.
+As a boy Fritz did use to scuffle with the other choirboys,
+but that hardly counts as a proper brawl.
+And he always chickens out when things get dicey.
+Yesterday, when the bouncer wouldn't let us in, he was suddenly gone.
+I think Fritz has never been in a fight in his life.
 
-1.Inspection
-
-1.1
-Inseparable bigrams: [e2,e3]
-No Unit/bigram move no-go
-No Unit/bigram position no-go
-
-1.2
-No referentials
-
-2.Main claim[a1], [first->last]
-Move:[ 1,2,3,4,5]->[2,3,4,5,1]
-
-[e2] [opp] As a boy he did use to scuffle with the other choirboys,
-
-“he”->”Fritz”
-->As a boy Fritz did use to scuffle with the other choirboys,
-
-[e3] [pro] but that hardly counts as a proper brawl.
-[e4] [pro] And he always chickens out when things get dicey.
-[e5] [pro] Yesterday, when the bouncer wouldn't let us in, he was suddenly gone.
-[e1] [pro] I think Fritz has never been in a fight in his life.
-
-Comment: usable for survey

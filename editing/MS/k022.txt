@@ -12,7 +12,7 @@ Original order:
 
 1.1
 
-Inseparable bigrams: [e2,e3] and [e4,e5]
+Inseparable bigrams: [e2,e3] and [e4,e5] in both cases would break sentence and reference
 No unit/bigram move no-go
 No unit/bigram position no-go
 

@@ -9,7 +9,7 @@ Original order:
 
 1.Inspection
 
-Inseparable bigrams: [e1,e2]
+Inseparable bigrams: [e1,e2] cause and effect relation, would undermine cohesion of the argumrnt
 No unit/bigram move no-go
 No unit/bigram position no-go
 

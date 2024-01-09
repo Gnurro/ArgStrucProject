@@ -1,61 +1,9 @@
-Central claim unit: a1
-
-Original order:
-[e1] [pro] Supermarkets and shopping centres should be allowed to open any Sundays and holidays at their discretion.
-[e2] [pro] For in this way, Sunday shopping days would be better spread out through the year.
-[e3] [pro] Also streets and shops would presumably be emptier
-[e4] [pro] as not everyone would be open on the same day.
-[e5] [opp] However then you'd have a worse overview of which shop is open on a given day.
-
-1.Inspection
-
-Inseparable bigrams: [e1,e2]
-No unit/bigram move no-go
-No unit/bigram position no-go
-
-1.2
-
-No referentials
-
-2.Main claim[a1]:First->last
-
-Move:[1,2,3,4,5]->[2,3,4,5,1]
 
 
-[e2] [pro] For in this way, Sunday shopping days would be better spread out through the year.
+Streets and shops would presumably be emptier
+as not everyone would be open on the same day.
+However then you'd have a worse overview of which shop is open on a given day.
+Sunday shopping days would be better spread out through the year.
+For in this way,supermarkets and shopping centres should be allowed to open any Sundays and holidays at their discretion.
 
--"For in this way"
-->Sunday shopping days would be better spread out through the year.
-
-[e3] [pro] Also streets and shops would presumably be emptier
-[e4] [pro] as not everyone would be open on the same day.
-[e5] [opp] However then you'd have a worse overview of which shop is open on a given day.
-[e1] [pro] Supermarkets and shopping centres should be allowed to open any Sundays and holidays at their discretion.
-
-Comment: too ambiguous and topically confusing, moving one more step
-
-
-Move:[2,3,4,5,1]->[3,4,5,2,1]
-
-
-
-[e3] [pro] Also streets and shops would presumably be emptier
-
--"Also"
-"streets"->"Streets"
-->Streets and shops would presumably be emptier
-[e4] [pro] as not everyone would be open on the same day.
-[e5] [opp] However then you'd have a worse overview of which shop is open on a given day.
-[e2] [pro] For in this way, Sunday shopping days would be better spread out through the year.
-
--"For in this way,"
-->Sunday shopping days would be better spread out through the year.
-[e1] [pro] Supermarkets and shopping centres should be allowed to open any Sundays and holidays at their discretion.
-
-+""For in this way,""
-"Supermarkets"->supermarkets
-
-->For in this way,supermarkets and shopping centres should be allowed to open any Sundays and holidays at their discretion.
-
-Comment: not sure this is allowed; if yes then the text could be usable(recheck)
 

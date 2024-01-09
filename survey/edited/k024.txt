@@ -1,62 +1,13 @@
-Central claim unit: a1
-
-Original order:
-[e1] [pro] Dog owners should pay higher fines for dog dirt left on pavements,
-[e2] [opp] although there aren't enough bins and bag-dispensers for dog dirt.
-[e3] [pro] One reason for this is that they have thus far hardly had to fear the consequences despite the obligation to clean up.
-[e4] [pro] A higher fine, so dog owners would have to dig deeper into their pockets, is supposed to be a deterrent after all.
-[e5] [pro] The city, especially the green spaces, should be kept tidy after all,
-[e6] [pro] for they are there for our recreation.
-[e7] [pro] Besides you're not allowed to leave other rubbish without punishment.
-
-1.Inspection
-
-1.1
-Inseparable bigrams: [e1,e2] seperating would break sentence and reference
-No unit/bigram move no-go
-No unit/bigram position no-go
-
-1.2
-[e3]:"this"->[e1]->" higher fines for dog dirt"; NP: "higher fines for dog dirt"
-[e3]:"they"->[e1]->"dog owners";NP:"dog owners"
-[e6]:"they"->[e5]->"green spaces";NP:"green spaces"
-
-2.Main claim[a1]:First->last
-
-Move:[1,2,3,4,5,6,7]->[2,3,4,5,6,7,1]
 
 
-[e2] [opp] although there aren't enough bins and bag-dispensers for dog dirt.
-[e3] [pro] One reason for this is that they have thus far hardly had to fear the consequences despite the obligation to clean up.
-[e4] [pro] A higher fine, so dog owners would have to dig deeper into their pockets, is supposed to be a deterrent after all.
-[e5] [pro] The city, especially the green spaces, should be kept tidy after all,
-[e6] [pro] for they are there for our recreation.
-[e7] [pro] Besides you're not allowed to leave other rubbish without punishment.
-[e1] [pro] Dog owners should pay higher fines for dog dirt left on pavements,
-
-Comment: Inseparable bigram [e1,e2] breaks; moving to the next step
-
-Move:[2,3,4,5,6,7,1]->[3,4,5,6,7,2,1]
-
-[e3] [pro] One reason for this is that they have thus far hardly had to fear the consequences despite the obligation to clean up.
-
-"this"->"higher fines for dog dirt"
-->One reason for higher fines for dog dirt is that they have thus far hardly had to fear the consequences despite the obligation to clean up.
-
-[e4] [pro] A higher fine, so dog owners would have to dig deeper into their pockets, is supposed to be a deterrent after all.
-[e5] [pro] The city, especially the green spaces, should be kept tidy after all,
-[e6] [pro] for they are there for our recreation.
-
-"this"->green spaces
-->for green spaces are there for our recreation.
-[e7] [pro] Besides you're not allowed to leave other rubbish without punishment.
-[e2] [opp] although there aren't enough bins and bag-dispensers for dog dirt.
-[e1] [pro] Dog owners should pay higher fines for dog dirt left on pavements,
-
-" ," -> "."
-
-->Dog owners should pay higher fines for dog dirt left on pavements.
+One reason for higher fines for dog dirt is that dog owners have thus far hardly had to fear the consequences despite the obligation to clean up.
+A higher fine, so dog owners would have to dig deeper into their pockets, is supposed to be a deterrent after all.
+The city, especially the green spaces, should be kept tidy after all,
+for green spaces are there for our recreation.
+Besides you're not allowed to leave other rubbish without punishment.
+although there aren't enough bins and bag-dispensers for dog dirt.
+Dog owners should pay higher fines for dog dirt left on pavements.
 
 
-Comment:text usable for survey after resolving the referentials
+
 

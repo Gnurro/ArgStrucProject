@@ -1,41 +1,8 @@
-Central claim unit: a1
-
-Original order:
-[e1] [pro] Considering what's on television these days, it would be appropriate to only have those people pay who actually (want to) follow the programming.
-[e2] [pro] In some cases there are only shows for older generations on at prime times, so why then should everyone pay for this?
-[e3] [pro] By now you have advertising on all channels,
-[e4] [pro] so there's no advantage for the current paying viewers of the public broadcasters.
-[e5] [opp] Nevertheless one has to point out that there'd probably be way fewer stations if it weren’t the whole of Germany that’s obliged to pay.
-[e6] [pro] That shouldn't be an issue though, given the sheer number of programmes and stations that essentially show the same things anyway.
-
-1.Inspection
-
-1.1
-No inseparable bigrams
-No unit/bigram move no-go
-No unit/bigram position no-go
-
-1.2
-[e2]:"this"->[e1]:"television"->television
-[e6]:"That"->[e5]:"there'd probably be way fewer stations";too complex to construct a simple NP
+In some cases there are only shows for older generations on at prime times, so why then should everyone pay for television?
+By now you have advertising on all channels,
+so there's no advantage for the current paying viewers of the public broadcasters.
+Nevertheless one has to point out that there'd probably be way fewer stations if it weren’t the whole of Germany that’s obliged to pay.
+That shouldn't be an issue though, given the sheer number of programmes and stations that essentially show the same things anyway.
+Considering what's on television these days, it would be appropriate to only have those people pay who actually (want to) follow the programming.
 
 
-2.Main claim[a1]:First->last
-
-Move:[1,2,3,4,5,6]->[2,3,4,5,6,1]
-
-
-[e2] [pro] In some cases there are only shows for older generations on at prime times, so why then should everyone pay for this?
-
-"this"->"televison"
-->In some cases there are only shows for older generations on at prime times, so why then should everyone pay for television?
-
-[e3] [pro] By now you have advertising on all channels,
-[e4] [pro] so there's no advantage for the current paying viewers of the public broadcasters.
-[e5] [opp] Nevertheless one has to point out that there'd probably be way fewer stations if it weren’t the whole of Germany that’s obliged to pay.
-[e6] [pro] That shouldn't be an issue though, given the sheer number of programmes and stations that essentially show the same things anyway.
-[e1] [pro] Considering what's on television these days, it would be appropriate to only have those people pay who actually (want to) follow the programming.
-
-
-Comment:Resolving the pronoun at [e2] requires less further editing (deleting "in some cases", for example, as it refers to [e1] and the fact that people have to pay for television even if they dont use it) and it could be also confused 
-as the emphatic rhetorical main claim. It seems now that [e1] is repeating somehow [e2] as a conclusion. Again a conclusive connecting could smoothen the text;but it is usable

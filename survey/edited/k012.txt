@@ -1,33 +1,6 @@
-Central claim unit: a1
+Tuition fees would simply mean that only those people with wealthy parents or a previous education and a part-time job while studying would be able to apply for a degree programme in the first place.
+Even without tuition fees half of the student population has to work while studying and hence has less time for studying or recreation.
+One could argue that an increase in tuition fees would allow institutions to be better equipped.
+But what is the good of a wonderfully outfitted university if it doesn't actually allow the majority of clever people to broaden their horizons with all that great equipment?
+German universities should on no account charge tuition fees.
 
-Original order:
-[e1] [pro] German universities should on no account charge tuition fees.
-[e2] [pro] This would simply mean that only those people with wealthy parents or a previous education and a part-time job while studying would be able to apply for a degree programme in the first place.
-[e3] [pro] Even without tuition fees half of the student population has to work while studying and hence has less time for studying or recreation.
-[e4] [opp] One could argue that an increase in tuition fees would allow institutions to be better equipped.
-[e5] [pro] But what is the good of a wonderfully outfitted university if it doesn't actually allow the majority of clever people to broaden their horizons with all that great equipment?
-
-1.Inspection
-
-1.1
-No inseparable bigrams
-No unit/bigram move no-go
-No unit/bigram position no-go
-
-1.2
-[e2]:"This"->[1]:"tuition fees";NP: "tuition fees"
-
-2.Main claim[a1]:First->last
-
-
-[e2] [pro] This would simply mean that only those people with wealthy parents or a previous education and a part-time job while studying would be able to apply for a degree programme in the first place.
-
-"This"->"Tuition fees"
-->Tuition fees would simply mean that only those people with wealthy parents or a previous education and a part-time job while studying would be able to apply for a degree programme in the first place.
-
-[e3] [pro] Even without tuition fees half of the student population has to work while studying and hence has less time for studying or recreation.
-[e4] [opp] One could argue that an increase in tuition fees would allow institutions to be better equipped.
-[e5] [pro] But what is the good of a wonderfully outfitted university if it doesn't actually allow the majority of clever people to broaden their horizons with all that great equipment?
-[e1] [pro] German universities should on no account charge tuition fees.
-
-Comment:Resolving the referentials in [e2] introduces topic in the first sentence. [e1] in the last position of the text provides a conclusive emphasis on the discourse pertaining to German universities

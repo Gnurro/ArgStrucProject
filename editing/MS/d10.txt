@@ -36,4 +36,4 @@ Move:[1,2,3,4,5]-> [2,3,4,5,1]
 “:”->”.”
 -> In a few decades our society will have a disproportionate number of old people
 
-Comment: usable for survey; even though it is the central claim, it gives the impression of a conclusive unit as well, after the listed arguments 
+Comment: usable for survey; even though it is the central claim, it gives the impression of a conclusive unit as well, particularly following the enumerated arguments 
