@@ -204,14 +204,14 @@ if __name__ == "__main__":
     # copy_original_texts()
     # copy_edited_texts()
 
-    picked = read_survey_texts_list("survey/picked_first_ogs.txt")
-    print(picked)
+    # picked = read_survey_texts_list("survey/picked_first_ogs.txt")
+    # print(picked)
 
-    """
+    """"""
     # load database:
     with open("extracted_db.json", 'r', encoding='utf-8') as db_file:
         database: dict = json.load(db_file)
-    """
+
     # survey_info = survey_texts_info(database)
     # print(survey_info)
 
@@ -225,4 +225,4 @@ if __name__ == "__main__":
     # print(survey_pairs)
 
     # pairs_to_csv(database)
-    # pairs_to_simple_list(database)
+    pairs_to_simple_list(database)
