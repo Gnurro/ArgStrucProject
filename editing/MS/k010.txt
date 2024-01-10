@@ -37,5 +37,8 @@ Move:[1,2,3,4,5,6]->[2,3,4,5,6,1]
 [e1] [pro] Considering what's on television these days, it would be appropriate to only have those people pay who actually (want to) follow the programming.
 
 
-Comment:Resolving the pronoun at [e2] requires less further editing (deleting "in some cases", for example, as it refers to [e1] and the fact that people have to pay for television even if they dont use it) and it could be also confused 
-as the emphatic rhetorical main claim. It seems now that [e1] is repeating somehow [e2] as a conclusion. Again a conclusive connecting could smoothen the text;but it is usable
+Comment:Resolving the pronoun at [e2] requires less further editing. 
+The potential confusion arises from the fact that [e2] alludes to [e1].
+Additionally, [e2] appears as an emphatic rhetorical main claim, 
+potentially leading to a perceived repetition of ideas in [e1]. 
+Adding a conclusive connection between [e1] and [e2] could enhance the overall coherence of the text without compromising its usability.

@@ -37,4 +37,4 @@ Move:[1,2,3,4,5,6]->[2,3,4,5,6,1]
 [e6] [pro] Furthermore, there's no need to keep shops open on Sundays.
 [e1] [pro] It is quite clear that Sunday should remain a day of rest.
 
-Comment:usable for survey
+Comment:after editing,usable for survey

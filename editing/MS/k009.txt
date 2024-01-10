@@ -29,9 +29,20 @@ Move:[1,2,3,4,5,6]->[2,3,4,5,6,1]
 
 
 [e2] [pro] If there were capital punishment, this would mean people are allowed to put themselves above others and rule over their lives.
+
+"their"->"other people's"
+->If there were capital punishment, this would mean people are allowed to put themselves above others and rule over other people's lives.
+
 [e3] [pro] Capital punishment would be murder and would have to be punished with the death penalty itself.
 [e4] [pro] What, then, ought to be done with criminals who have committed truly awful crimes such as murder or rape - should they simply be allowed to live on
+
+"they"->"criminals
+->What, then, ought to be done with criminals who have committed truly awful crimes such as murder or rape - should criminals simply be allowed to live on
+
 [e5] [opp] although they have taken or destroyed another life?
+
+"they"->"criminals"
+->although criminals have taken or destroyed another life?
 [e6] [pro] Yes, for it is a much graver punishment to be imprisoned forever and be tortured by one's own thoughts than to be killed quickly and easily by an injection.
 [e1] [pro] Germany should by no means introduce capital punishment.
 

@@ -22,6 +22,8 @@ No referentials
 
 2.Main claim[a1]:First->last
 
+Move:[1,2,3,4]->[2,3,4,1]
+
 
 [e2] [pro] as the population in Germany has, viewed demographically, a disproportionate number of old people,
 

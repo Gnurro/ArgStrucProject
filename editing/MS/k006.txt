@@ -20,6 +20,8 @@ No unit/bigram position no-go
 
 2.Main claim[a5]: Last->first
 
+Move:[1,2,3,4,5]->[5,1,2,3,4]
+
 [e5] [pro] We don't need it.
 [e1] [opp] If Germany were to introduce the death penalty, convicted felons could not be paroled or break out of prison and commit new felonies.
 [e2] [pro] However, a death would not be of any more use to those affected and their relatives than if the felon receives a long sentence.

@@ -11,7 +11,7 @@ Original order:
 1.1
 Inseparable bigrams:[e1,e2] if seperated breaks sentence and rebuttal
 No unit/bigram move no-go
-No unit/bigram position no-go
+Unit/bigram position no-go: all
 
 1.2
 
@@ -42,6 +42,10 @@ Move:[2,3,4,1]->[3,4,2,1]
 [e1] [pro] BER should be re-conceptualized from scratch,
 
 
-Comment: the contextual coherence is too ambiguous as only at the end one can realise what the topic is about. 
-Moving the main claim at the last position seem to undermine the efficiency of every argument,as they rely upon the main claim.
+Comment: Shuffling these sentences might disrupt the logical progression of the argument. 
+If,for example, [e1] is placed before [e4], it could create confusion, as [e1] appears to be the main claim without the context of the shortcomings presented in [e4]. 
+Placing [e2] before [e4] also disrupt the flow because the acknowledgment of financial investment in [e2] is better understood after the shortcomings are outlined in [e4].
+Basically, the original order follows a logical sequence: 
+identifying issues, presenting a counterpoint, and proposing a solution. 
+Shuffling might hinder the clarity and coherence of this argument.
 Not usable for survey.

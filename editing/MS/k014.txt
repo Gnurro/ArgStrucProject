@@ -24,8 +24,8 @@ No unit/bigram position no-go
 
 [e2] [pro] for, as the most recent NSA wiretapping scandal has shown, the federal state government is allegedly not always familiar with the scope of operations of its intelligence services.
 
--"for," backward connection to the main clause is not possible
--"as" backward connection to the main clause is not possible
+-"for," backward connection to the main claim is not possible
+-"as" backward connection to the main claim is not possible
 "the"->"The"
 ->The most recent NSA wiretapping scandal has shown, the federal state government is allegedly not always familiar with the scope of operations of its intelligence services.
 

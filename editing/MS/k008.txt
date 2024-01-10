@@ -31,3 +31,21 @@ Move:[1,2,3,4]->[2,3,4,1]
 Comment:inseparable bigram [e1,e2], moving to the next step
 
 Move:[2,3,4,1]->[3,4,2,1]
+
+
+[e3] [opp] Higher fines may not be ideal, particularly for financially weaker individuals,
+[e4] [pro] but cleaning up after their dogs does happen to be the obligation of the owners.
+[e2] [pro] which in turn would result in generally clean pavements.
+
+-"which" broken reference,doesnt apply backwards
+"in"->"In"
+"." -> ","
+->In turn would result in generally clean pavements,
+
+[e1] [pro] If there were higher fines for leaving dog dirt on pavements, there would presumably be less dog dirt,
+
+"If"->"if"
+"," -> "."
+->if there were higher fines for leaving dog dirt on pavements, there would presumably be less dog dirt.
+
+Comment: usable for survey;enough context is being given with[e3,e4] at the begging of the text;
