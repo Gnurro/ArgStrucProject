@@ -6,14 +6,15 @@ import shutil
 CORPUS_PATH = "corpus/en/"
 
 
-def read_survey_texts_list(texts_list_file: str = "survey/texts_for_survey.txt") -> list:
+def read_texts_list(texts_list_file: str = "survey/texts_for_survey.txt") -> list:
     """
-    Imports the survey text list.
+    Imports a txt corpus text ID list.
     :param texts_list_file: Path to the txt list.
     :return: List of corpus text IDs.
     """
     with open(texts_list_file, 'r', encoding='utf-8') as txt_list_file:
         txt_list: list = txt_list_file.read().strip().split("\n")
+
     return txt_list
 
 
@@ -23,35 +24,41 @@ def copy_original_texts(original_target_dir: str = "survey/original/"):
     :param original_target_dir: Target directory to copy to.
     :return: None, copies files on disk.
     """
-    texts_list: list = read_survey_texts_list()
+    texts_list: list = read_texts_list()
     for txt_id in texts_list:
         shutil.copy(f"{CORPUS_PATH}micro_{txt_id}.txt", original_target_dir)
 
 
-def copy_edited_texts(edited_target_dir: str = "survey/edited/"):
+def copy_edited_texts(edited_target_dir: str = "survey/edited/", cutoff_text_id: str = "b050",
+                      first_annotator_tag: str = "JJ", second_annotator_tag: str = "MS"):
     """
-    Copy the editing files from the editing directory to the survey directory.
+    Copy the editing files from the editing directory to the survey directory. Loads edited texts from to different
+    annotator/editor batches based on a cutoff corpus text ID.
     :param edited_target_dir: Target directory to copy to.
+    :param cutoff_text_id: First corpus text ID of the second annotator's batch of edited texts.
+    :param first_annotator_tag: Tag of the first batch annotator and name of directory containing their edited texts.
+    :param second_annotator_tag: Tag of the second batch annotator and name of directory containing their edited texts.
     :return: None, copies files on disk.
     """
-    texts_list: list = read_survey_texts_list()
+    texts_list: list = read_texts_list()
     second_batch: bool = False
     for txt_id in texts_list:
-        if txt_id == "b050":
+        if txt_id == cutoff_text_id:
             second_batch = True
         if not second_batch:
-            shutil.copy(f"editing/JJ/{txt_id}.txt", edited_target_dir)
+            shutil.copy(f"editing/{first_annotator_tag}/{txt_id}.txt", edited_target_dir)
         else:
-            shutil.copy(f"editing/MS/{txt_id}.txt", edited_target_dir)
+            shutil.copy(f"editing/{second_annotator_tag}/{txt_id}.txt", edited_target_dir)
 
 
 def survey_texts_info(text_database: dict, texts_list_file: str = "survey/texts_for_survey.txt") -> dict:
     """
     Get various information about the survey texts.
     :param text_database: Dict database of extracted corpus information.
+    :param texts_list_file: Path of the txt list file with all texts edited for the survey.
     :return: Dict {text ID:info}.
     """
-    texts_list: list = read_survey_texts_list(texts_list_file)
+    texts_list: list = read_texts_list(texts_list_file)
     texts_info: dict = dict()
 
     for txt_id in texts_list:
@@ -76,6 +83,7 @@ def survey_texts_frequencies(text_database: dict, texts_list_file: str = "survey
     """
     Get frequencies of text attributes for the survey texts.
     :param text_database: Dict database of extracted corpus information.
+    :param texts_list_file: Path of the txt list file with all texts edited for the survey.
     :return: Dict with frequencies.
     """
     survey_info = survey_texts_info(text_database, texts_list_file)
@@ -104,8 +112,8 @@ def survey_texts_frequencies(text_database: dict, texts_list_file: str = "survey
 def get_original_first(text_database: dict, texts_list_file: str = "survey/texts_for_survey.txt") -> list:
     """
     Get a list of originally central-first text IDs in the edited survey texts.
-    :param text_database:
-    :param texts_list_file:
+    :param text_database: Dict database of extracted corpus information.
+    :param texts_list_file: Path of the txt list file with all texts edited for the survey.
     :return:
     """
     texts_info: dict = survey_texts_info(text_database, texts_list_file)
@@ -119,9 +127,66 @@ def get_original_first(text_database: dict, texts_list_file: str = "survey/texts
     return first_text_ids
 
 
+def get_original_last(text_database: dict, texts_list_file: str = "survey/texts_for_survey.txt") -> list:
+    """
+    Get a list of originally central-last text IDs in the edited survey texts.
+    :param text_database: Dict database of extracted corpus information.
+    :param texts_list_file: Path of the txt list file with all edited texts edited for the survey.
+    :return:
+    """
+    texts_info: dict = survey_texts_info(text_database, texts_list_file)
+
+    last_text_ids: list = list()
+
+    for txt_id, txt_info in texts_info.items():
+        if txt_info['original_central'] == "last":
+            last_text_ids.append(txt_id)
+
+    return last_text_ids
+
+
+def create_balanced_text_list(text_database: dict, texts_list_file: str = "survey/texts_for_survey.txt",
+                              selected_og_first_file: str = "survey/picked_first_ogs.txt",
+                              final_list_file_name: str = "final_texts_list") -> list:
+    """
+    Create a list of corpus text IDs that is balanced between originally claim-first and originally claim-last texts,
+    and save it as a txt list. Since there are more originally claim-first texts in the edited texts, a manual
+    selection of them is defined in a separate list txt file which is loaded to build the final list of texts to be
+    used in the survey.
+    :param text_database: Dict database of extracted corpus information.
+    :param texts_list_file: Path of the txt list file with all texts edited for the survey.
+    :param selected_og_first_file: Path of the txt list file with selected originally claim-first texts edited for the
+    survey.
+    :param final_list_file_name: Name for the final texts list txt file.
+    :return: Balanced list of text IDs.
+    """
+    # get the IDs of the originally central-last texts:
+    survey_central_last = get_original_last(text_database, texts_list_file)
+    central_last_count = len(survey_central_last)
+    # get the list of selected originally claim-first texts:
+    picked = read_texts_list(selected_og_first_file)
+    central_first_count = len(picked)
+    # check that there are the same number of texts each:
+    assert central_last_count == central_first_count, (f"Imbalanced number of original central positions! "
+                                                       f"{central_last_count} central-last and "
+                                                       f"{central_first_count} central-first texts.")
+    # combine and sort balanced texts:
+    balanced_texts = survey_central_last + picked
+    balanced_texts = sorted(balanced_texts)
+    # convert to newline-separated string list:
+    balanced_list_str = "\n".join(balanced_texts)
+    # save to disk:
+    with open(f"survey/{final_list_file_name}.txt", 'w', encoding='utf-8') as out_list_file:
+        out_list_file.write(balanced_list_str)
+
+    return balanced_texts
+
+
 def build_survey_pairs(text_database: dict, texts_list_file: str = "survey/texts_for_survey.txt") -> dict:
     """
     Create database of original and edited texts for survey.
+    :param text_database: Dict database of extracted corpus information.
+    :param texts_list_file: Path of the txt list file with selected texts edited for the survey.
     :return: Dict {txtID:pair}
     """
     texts_info: dict = survey_texts_info(text_database, texts_list_file)
@@ -155,36 +220,37 @@ def pairs_to_csv(text_database: dict, texts_list_file: str = "survey/texts_for_s
                  separator: str = "\t", csv_file_name: str = "pairs"):
     """
     Create CSV file with survey text pairs.
-    :param text_database:
-    :param texts_list_file:
-    :return:
+    :param text_database: Dict database of extracted corpus information.
+    :param texts_list_file: Path of the txt file with the final list of edited texts for the survey.
+    :param separator: Separator string for CSV.
+    :param csv_file_name: Name for the CSV file saved to disk.
+    :return: None, file saved to disk.
     """
     pairs_db: dict = build_survey_pairs(text_database, texts_list_file)
-
+    # check for potential separators that occur in the text:
     if separator in [",", ";", "\n"]:
         print(f"Given separator '{separator}' can not be used. Tabulator character will be used instead.")
         separator = "\t"
-
+    # format rows:
     out_list: list = list()
-
     for txt_id, pair in pairs_db.items():
         out_row: str = f"{txt_id}{separator}{pair['claim_last']}{separator}{pair['claim_first']}"
         out_list.append(out_row)
-
+    # join rows:
     out_string: str = "\n".join(out_list)
-
+    # write to disk:
     with open(f"survey/{csv_file_name}.csv", 'w', encoding='utf-8') as csv_file:
         csv_file.write(out_string)
 
 
 def pairs_to_simple_list(text_database: dict, texts_list_file: str = "survey/texts_for_survey.txt",
-                        out_list_file_name: str = "pairs"):
+                         out_list_file_name: str = "pairs"):
     """
     Create simple text file with survey text pairs.
-    :param text_database:
-    :param texts_list_file:
-    :param out_list_file_name:
-    :return:
+    :param text_database: Dict database of extracted corpus information.
+    :param texts_list_file: Path of the txt file with the final list of edited texts for the survey.
+    :param out_list_file_name: Name for the file saved to disk.
+    :return: None, file saved to disk.
     """
     pairs_db: dict = build_survey_pairs(text_database, texts_list_file)
 
@@ -201,28 +267,22 @@ def pairs_to_simple_list(text_database: dict, texts_list_file: str = "survey/tex
 
 
 if __name__ == "__main__":
-    # copy_original_texts()
-    # copy_edited_texts()
-
-    # picked = read_survey_texts_list("survey/picked_first_ogs.txt")
-    # print(picked)
-
-    """"""
     # load database:
     with open("extracted_db.json", 'r', encoding='utf-8') as db_file:
         database: dict = json.load(db_file)
-
+    # get and show information about the texts edited for the survey:
     # survey_info = survey_texts_info(database)
     # print(survey_info)
-
-    # survey_central_first = get_original_first(database)
-    # print(survey_central_first)
-
+    # calculate and show variable value frequencies in the texts edited for the survey:
     # survey_freqs = survey_texts_frequencies(database)
     # print(survey_freqs)
-
-    # survey_pairs = build_survey_pairs(database)
+    # create a list with a balanced number of originally claim-first and originally claim-last texts:
+    # balanced_texts_list = create_balanced_text_list(database)
+    # print(balanced_texts_list)
+    # create a dict {textID:{claim-last, claim-first}} based on a txt list of texts selected for the survey.
+    # survey_pairs = build_survey_pairs(database, "survey/final_texts_list.txt")
     # print(survey_pairs)
-
-    # pairs_to_csv(database)
-    pairs_to_simple_list(database)
+    # save a CSV with the final survey data to disk:
+    pairs_to_csv(database, "survey/final_texts_list.txt")
+    # save a txt with the final survey data in easily copy-able format to disk:
+    pairs_to_simple_list(database, "survey/final_texts_list.txt")
