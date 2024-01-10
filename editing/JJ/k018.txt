@@ -6,3 +6,27 @@ e3 pro the last 20 years have seen the Sunday off work increasingly sacrificed t
 e4 pro But after all, the purpose of having a day off is not just to make time to go to church.
 e5 pro Rather it should give people the chance to have a mental break.
 e6 pro That's why there ought to be one day a week when supermarkets and shopping centres stay closed.
+
+1.Inspection
+
+1.1
+
+No inseparable bigrams
+No unit/bigram move no-go
+No unit/bigram position no-go
+
+1.2
+
+No referentials
+
+2.
+Move: [1,2,3,4,5,6]->[6,1,2,3,4,5]
+e6 pro That's why there ought to be one day a week when supermarkets and shopping centres stay closed.
+[-"That's why "] COMMENT: no backwards reference possible
+["there"->"There"]
+->There ought to be one day a week when supermarkets and shopping centres stay closed.
+e1 pro Our society is in danger of overheating due to 'never clocking off'.
+e2 opp Even though politicians stress the Christian character of our country,
+e3 pro the last 20 years have seen the Sunday off work increasingly sacrificed to commerce.
+e4 pro But after all, the purpose of having a day off is not just to make time to go to church.
+e5 pro Rather it should give people the chance to have a mental break.
