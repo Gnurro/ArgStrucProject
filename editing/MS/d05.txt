@@ -19,4 +19,6 @@ Unit/bigram position no-go: all.
 
 No referentials
 
-Comment: No shuffling is possible
+Comment: No shuffling is possible. The logical and coherent progression of the speaker's decision-making process would be disrupted. 
+For example, if [e5] comes before [e1], it creates confusion, as the positive outcome is mentioned before the decision to delete the account is established.
+The inherent logic and coherence of the text are preserved when the sentences are presented in their original order.

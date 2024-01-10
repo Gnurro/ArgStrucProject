@@ -31,4 +31,8 @@ Move:[1,2,3,4,5]->[2,3,4,5,1]
 [e5] [pro] and it mustn't be that this wannabe-adventurer has one up on me.
 [e1] [pro] Tomorrow I will skydive for the first time in my life.
 
-Comment:usable for survey
+Comment:In the case of this text, shuffling the sentences disrupts the natural flow of the narrative and diminish the clarity of the intended message.
+The original order of the sentences follows a logical sequence: introducing the upcoming skydiving experience, acknowledging the risks, expressing the desire for freedom,
+mentioning a side note about Jochen, and concluding with a competitive motivation.
+Shuffling the sentences may results in a less coherent and engaging narrative.
+In this case, the original order is more effective in conveying the intended progression of ideas.

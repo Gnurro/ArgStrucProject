@@ -10,7 +10,7 @@ Original order:
 
 1.Inspection
 1.1
-Inseparable bigrams: [e3,e4] 
+Inseparable bigrams: [e3,e4] strong semantic relation
 No Unit/bigram move no-go
 No Unit/bigram position no-go
 

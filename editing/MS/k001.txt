@@ -20,14 +20,16 @@ No unit/bigram position no-go
 
 [e6]: "them"-> [e6]: "the licence payers";NP: "the licence payers"
 
-2.Mainclaim[a1]: Ffirst->last
+2.Mainclaim[a1]: First->last
 
 
 
 [e2] [pro] Particularly the younger generations are no longer dependent on the programming of public broadcasters.
--"Particularly"
+
+-"Particularly"backwards reference is not possible
 "the"->"The"
 ->The younger generations are no longer dependent on the programming of public broadcasters
+
 [e3] [pro] US series are preferred over “Tatort”,
 [e4] [pro] and online magazines are turned to instead of the “Tagesthemen”.
 [e5] [opp] The TV & radio licence enables economically independent journalism.

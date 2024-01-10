@@ -17,4 +17,13 @@ Unit/bigram position no-go: Every argument leads to the next one, is strongly co
 1.2
 No referentials
 
-Comment: No shuffling is possible
+Comment: No shuffling is possible;by shuffling these sentences, the logical flow of information and the development of the narrative is disrupted. 
+For example, if [e5] comes before [e1], the mention of online sales struggling would lack context, as the success of the tour hadn't been introduced yet. 
+Similarly, if [e2] and [e3] are separated, the specific details about the length of queues does not align cohesively. 
+Therefore, the original order of sentences maintains a logical and coherent progression in conveying the success of Tokio Hotel's tour.
+
+
+
+
+
+

@@ -16,7 +16,7 @@ No bigram/unit move no-gos
 No clear unit/position no-gos
 
 1.2
-[e2]: “those” -> [e2] “who are physically and mentally fit is increasing steadily”; no simple NP possible
+[e2]: “those” -> [e2] “who are physically and mentally fit”; no simple NP possible
 
 
 

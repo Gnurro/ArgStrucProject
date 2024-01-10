@@ -18,5 +18,7 @@ Unit/bigram position no-go: it is important, that all units/bigram position does
 1.2
 No referentials
 
-Comment: No shuffling is possible,also this is a text of a personal argument in comparison with the majority of the others. The main claim serves 
-as a suggestion as well directly to a person with implications.
+Comment: No shuffling is possible; the logical progression in this text involves presenting advice ([e1]),
+providing a reason for the advice ([e2]), offering a specific example ([e3]), introducing an exception ([e4]), 
+and then reinforcing the original advice with specific examples ([e5]). By shuffling these sentences, the coherence in the flow of information,
+from general advice to specific examples and exceptions, will be disrupted. The original order ensures a logical and cohesive presentation of the argument against excessive television watching.

@@ -28,4 +28,7 @@ Move: [1,2,3,4,5,6]->[6,1,2,3,4,5]
 [e4] [pro] Closing down Tegel will have health benefits for hundreds of thousands in the approach path.
 [e5] [pro] These areas will be upgraded economically due to these factors (housing health and employment).
 
+"these"->"Inner-city areas"
+->Inner-city areas will be upgraded economically due to these factors (housing health and employment).
+
 Comment: usable for survey

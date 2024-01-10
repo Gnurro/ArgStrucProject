@@ -9,7 +9,7 @@ Original order:
 
 1.Inspection
 1.1
-Inseparable bigrams: [e1,e2,e3] and [e4],[e5]
+Inseparable bigrams: [e1,e2,e3] and [e4],[e5], would break sentence sequence in tje text
 Unit/bigram move no-go: again simple moves are not possible here, all units are building up on each other
 Unit/bigram position no-go: the text is tightly structured and cohesive, for this reason every pre-existing condition should not be disrupted 
 
@@ -30,3 +30,6 @@ Move: [1,2,3,4,5]->[2,3,4,5,1]
 [e1] [pro] Berlin's basketball team has just come out of a sobering season.
 
 Comment: Shuffling not possible;the text is becoming unbiguous, without major changes and moving far from the original text.
+In general,the sentences are connected in a sequence that progresses from the overall assessment of the team's season ([e1]), 
+through specific details and examples ([e2] and [e3]), to a contrasting viewpoint about the team's league position ([e4]),
+and finally, a critical perspective that adds nuance to the positive outcome ([e5]).
