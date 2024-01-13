@@ -282,7 +282,30 @@ if __name__ == "__main__":
     # create a dict {textID:{claim-last, claim-first}} based on a txt list of texts selected for the survey.
     # survey_pairs = build_survey_pairs(database, "survey/final_texts_list.txt")
     # print(survey_pairs)
+
     # save a CSV with the final survey data to disk:
-    pairs_to_csv(database, "survey/final_texts_list.txt")
+    # pairs_to_csv(database, "survey/final_texts_list.txt")
     # save a txt with the final survey data in easily copy-able format to disk:
-    pairs_to_simple_list(database, "survey/final_texts_list.txt")
+    # pairs_to_simple_list(database, "survey/final_texts_list.txt")
+
+    to_cull = read_texts_list("survey/20_cull.txt")
+    tested_list = read_texts_list("survey/final_texts_list.txt")
+    remaining = [txt_id for txt_id in tested_list if txt_id not in to_cull]
+    print(remaining)
+    txt_not_culled = False
+    for txt_id in to_cull:
+        if txt_id in remaining:
+            print(txt_id)
+            txt_not_culled = True
+    if txt_not_culled:
+        print("text not culled!")
+    else:
+        print("texts culled!")
+
+    new_list_txt = "\n".join(remaining)
+
+    with open("survey/new_final_texts_list.txt", 'w', encoding="utf-8") as outfile:
+        outfile.write(new_list_txt)
+
+    new_freqs = survey_texts_frequencies(database, "survey/new_final_texts_list.txt")
+    print(new_freqs)
