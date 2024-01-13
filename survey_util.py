@@ -287,7 +287,7 @@ if __name__ == "__main__":
     # pairs_to_csv(database, "survey/final_texts_list.txt")
     # save a txt with the final survey data in easily copy-able format to disk:
     # pairs_to_simple_list(database, "survey/final_texts_list.txt")
-
+    """
     to_cull = read_texts_list("survey/20_cull.txt")
     tested_list = read_texts_list("survey/final_texts_list.txt")
     remaining = [txt_id for txt_id in tested_list if txt_id not in to_cull]
@@ -309,3 +309,13 @@ if __name__ == "__main__":
 
     new_freqs = survey_texts_frequencies(database, "survey/new_final_texts_list.txt")
     print(new_freqs)
+    """
+    print(survey_texts_frequencies(database, "survey/final_30.txt"))
+    # print(get_original_first(database, "survey/final_30.txt"))
+    """
+    earlier = get_original_last(database, "survey/final_texts_list.txt")
+    now = get_original_last(database, "survey/final_30.txt")
+    overlap = [txt_id for txt_id in earlier if not txt_id in now]
+    print(overlap)
+    """
+    pairs_to_simple_list(database, "survey/final_30.txt", out_list_file_name="30_pairs")
