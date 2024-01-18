@@ -175,3 +175,24 @@ def abstract_lin_strat_frequencies(texts_db: dict = database) -> dict:
 
 
 # print(abstract_lin_strat_frequencies())
+
+
+def claim_position_frequencies(texts_db: dict = database) -> dict:
+    """
+    Frequencies of claim-first/last and other orders.
+    :return: Dictionary with frequencies of claim-first/last and other orders.
+    """
+    abs_lin_strat_freqs: dict = abstract_lin_strat_frequencies(database)
+    claim_pos_counts: dict = {'claim-first': 0, 'claim-last': 0, 'other': 0}
+    for abs_lin_strat in abs_lin_strat_freqs:
+        # print(abs_lin_strat)
+        if abs_lin_strat[0] == "c":
+            claim_pos_counts['claim-first'] += abs_lin_strat_freqs[abs_lin_strat]
+        elif abs_lin_strat[-1] == "c":
+            claim_pos_counts['claim-last'] += abs_lin_strat_freqs[abs_lin_strat]
+        else:
+            claim_pos_counts['other'] += abs_lin_strat_freqs[abs_lin_strat]
+
+    return claim_pos_counts
+
+print(claim_position_frequencies(database))
