@@ -2,6 +2,7 @@
 
 import json
 import shutil
+import pandas
 
 CORPUS_PATH = "corpus/en/"
 
@@ -216,6 +217,45 @@ def build_survey_pairs(text_database: dict, texts_list_file: str = "survey/texts
     return pairs_db
 
 
+def survey_processing_pairs(text_database: dict, texts_list_file: str = "survey/texts_for_survey.txt") -> dict:
+    """
+    Create database of original and edited texts for survey.
+    :param text_database: Dict database of extracted corpus information.
+    :param texts_list_file: Path of the txt list file with selected texts edited for the survey.
+    :return: Dict {txtID:pair}
+    """
+    texts_info: dict = survey_texts_info(text_database, texts_list_file)
+
+    pairs_db: dict = dict()
+
+    form_text_number: int = 1
+
+    for txt_id, txt_info in texts_info.items():
+        # load original text:
+        with open(f"survey/original/micro_{txt_id}.txt", 'r', encoding='utf-8') as og_file:
+            original_text: str = og_file.read()
+
+        # load edited text:
+        with open(f"survey/edited/{txt_id}.txt", 'r', encoding='utf-8') as edit_file:
+            edited_text: str = edit_file.read()
+
+        pair_dict: dict = dict()
+
+        pair_dict['form_text_id'] = f"Text {form_text_number}"
+
+        if txt_info['original_central'] == "last":
+            pair_dict['claim_last'] = {'text': original_text, 'edited': False}
+            pair_dict['claim_first'] = {'text': edited_text, 'edited': True}
+        else:
+            pair_dict['claim_last'] = {'text': edited_text, 'edited': True}
+            pair_dict['claim_first'] = {'text': original_text, 'edited': False}
+
+        pairs_db[txt_id] = pair_dict
+        form_text_number += 1
+
+    return pairs_db
+
+
 def pairs_to_csv(text_database: dict, texts_list_file: str = "survey/texts_for_survey.txt",
                  separator: str = "\t", csv_file_name: str = "pairs"):
     """
@@ -266,6 +306,53 @@ def pairs_to_simple_list(text_database: dict, texts_list_file: str = "survey/tex
         out_list_file.write(out_string)
 
 
+def process_survey_answers(text_database: dict, texts_list_file: str = "survey/texts_for_survey.txt",
+                           answers_csv: str = "survey/survey_answers.csv"):
+    """
+    Process raw survey answer data into usable pandas.DataFrame with
+    [original text id, #claim-last choices, #claim-first choices, #edited choices, #unedited choices].
+    :param text_database: Dict database of extracted corpus information.
+    :param texts_list_file: Path of the txt file with the final list of edited texts for the survey.
+    :param answers_csv: Path to the raw survey answers CSV file.
+    :return: A pandas.DataFrame with the processed answer counts.
+    """
+    # read the raw CSV into a DataFrame:
+    answers_df: pandas.DataFrame = pandas.read_csv(answers_csv)
+    # get a dict db with processing info:
+    processing_db: dict = survey_processing_pairs(text_database, texts_list_file)
+    # create list to collect results:
+    results_list: list = list()
+    # iterate over texts:
+    for txt_id, pair_data in processing_db.items():
+        # create dict to collect individual text results:
+        txt_result_dict: dict = dict()
+        txt_result_dict['txt_id'] = txt_id
+        txt_result_dict['claim_last'] = 0
+        txt_result_dict['claim_first'] = 0
+        txt_result_dict['edited'] = 0
+        txt_result_dict['unedited'] = 0
+        # iterate over chosen answers:
+        for answer in answers_df[pair_data['form_text_id']]:
+            if answer == pair_data['claim_last']['text']:
+                txt_result_dict['claim_last'] += 1
+                if pair_data['claim_last']['edited']:
+                    txt_result_dict['edited'] += 1
+                else:
+                    txt_result_dict['unedited'] += 1
+            else:
+                txt_result_dict['claim_first'] += 1
+                if pair_data['claim_first']['edited']:
+                    txt_result_dict['edited'] += 1
+                else:
+                    txt_result_dict['unedited'] += 1
+        # collect results:
+        results_list.append(txt_result_dict)
+    # create DataFrame from results list:
+    results_df = pandas.DataFrame(results_list)
+
+    return results_df
+
+
 if __name__ == "__main__":
     # load database:
     with open("extracted_db.json", 'r', encoding='utf-8') as db_file:
@@ -310,7 +397,8 @@ if __name__ == "__main__":
     new_freqs = survey_texts_frequencies(database, "survey/new_final_texts_list.txt")
     print(new_freqs)
     """
-    print(survey_texts_frequencies(database, "survey/final_30.txt"))
+
+    # print(survey_texts_frequencies(database, "survey/final_30.txt"))
     # print(get_original_first(database, "survey/final_30.txt"))
     """
     earlier = get_original_last(database, "survey/final_texts_list.txt")
@@ -318,4 +406,21 @@ if __name__ == "__main__":
     overlap = [txt_id for txt_id in earlier if not txt_id in now]
     print(overlap)
     """
-    pairs_to_simple_list(database, "survey/final_30.txt", out_list_file_name="30_pairs")
+    # pairs_to_simple_list(database, "survey/final_30.txt", out_list_file_name="30_pairs")
+
+    # survey_pairs_db = survey_processing_pairs(database, "survey/final_30.txt")
+    # print(survey_pairs_db)
+
+    survey_results_df = process_survey_answers(database, "survey/final_30.txt",
+                                               "survey/survey_answers_raw_010324.csv")
+    # print(survey_results_df)
+
+    # print(survey_results_df['claim_last'])
+
+    claim_last_sum = sum(survey_results_df['claim_last'])
+    claim_first_sum = sum(survey_results_df['claim_first'])
+    print("claim last:", claim_last_sum, "claim first:", claim_first_sum)
+
+    edited_sum = sum(survey_results_df['edited'])
+    unedited_sum = sum(survey_results_df['unedited'])
+    print("edited:", edited_sum, "unedited:", unedited_sum)
