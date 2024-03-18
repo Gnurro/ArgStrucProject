@@ -401,6 +401,8 @@ if __name__ == "__main__":
     # load database:
     with open("extracted_db.json", 'r', encoding='utf-8') as db_file:
         database: dict = json.load(db_file)
+
+    # SURVEY TEXT SELECTION
     # get and show information about the texts edited for the survey:
     # survey_info = survey_texts_info(database)
     # print(survey_info)
@@ -410,55 +412,37 @@ if __name__ == "__main__":
     # create a list with a balanced number of originally claim-first and originally claim-last texts:
     # balanced_texts_list = create_balanced_text_list(database)
     # print(balanced_texts_list)
-    # create a dict {textID:{claim-last, claim-first}} based on a txt list of texts selected for the survey.
-    # survey_pairs = build_survey_pairs(database, "survey/final_texts_list.txt")
+
+    # SURVEY DATA PREPARATION
+    # create a dict {textID:{claim-last, claim-first}} based on a txt list of texts selected for the survey:
+    # survey_pairs = build_survey_pairs(database, "survey/final_30.txt")
     # print(survey_pairs)
-
     # save a CSV with the final survey data to disk:
-    # pairs_to_csv(database, "survey/final_texts_list.txt")
-    # save a txt with the final survey data in easily copy-able format to disk:
-    # pairs_to_simple_list(database, "survey/final_texts_list.txt")
-    """
-    to_cull = read_texts_list("survey/20_cull.txt")
-    tested_list = read_texts_list("survey/final_texts_list.txt")
-    remaining = [txt_id for txt_id in tested_list if txt_id not in to_cull]
-    print(remaining)
-    txt_not_culled = False
-    for txt_id in to_cull:
-        if txt_id in remaining:
-            print(txt_id)
-            txt_not_culled = True
-    if txt_not_culled:
-        print("text not culled!")
-    else:
-        print("texts culled!")
+    # pairs_to_csv(database, "survey/final_30.txt")
 
-    new_list_txt = "\n".join(remaining)
-
-    with open("survey/new_final_texts_list.txt", 'w', encoding="utf-8") as outfile:
-        outfile.write(new_list_txt)
-
-    new_freqs = survey_texts_frequencies(database, "survey/new_final_texts_list.txt")
-    print(new_freqs)
-    """
-
+    # show frequencies of text factors for survey texts:
     # print(survey_texts_frequencies(database, "survey/final_30.txt"))
+    # show originally claim-first texts in survey texts:
     # print(get_original_first(database, "survey/final_30.txt"))
-    """
-    earlier = get_original_last(database, "survey/final_texts_list.txt")
-    now = get_original_last(database, "survey/final_30.txt")
-    overlap = [txt_id for txt_id in earlier if not txt_id in now]
-    print(overlap)
-    """
+
+    # create simple, easily copyable text pairs file:
     # pairs_to_simple_list(database, "survey/final_30.txt", out_list_file_name="30_pairs")
 
+    # text pairs were manually copied from 30_pairs.txt to Google Forms
+
+    # SURVEY OUTCOMES
+    # create and show utility dict that maps pair texts to examined variable factors:
     # survey_pairs_db = survey_processing_pairs(database, "survey/final_30.txt")
     # print(survey_pairs_db)
 
+    # Google Forms survey answers were downloaded as survey_answers_raw_010324.csv for processing
+
+    # process answers into by-factor boolean value table:
     # processed_answers = process_survey_answers(database, "survey/final_30.txt",
     #                       "survey/survey_answers_raw_010324.csv")
     # print(processed_answers)
 
+    # calculate counts for variable factors, crossing edited/claim-position variables:
     cross_df = survey_cross_counts(database, "survey/final_30.txt",
                                    "survey/survey_answers_raw_010324.csv")
     print(cross_df)
