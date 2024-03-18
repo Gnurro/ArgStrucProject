@@ -309,6 +309,125 @@ def pairs_to_simple_list(text_database: dict, texts_list_file: str = "survey/tex
 def process_survey_answers(text_database: dict, texts_list_file: str = "survey/texts_for_survey.txt",
                            answers_csv: str = "survey/survey_answers.csv"):
     """
+    Process raw survey answer data into pandas.DataFrame with boolean values for all participants, variable factors and
+    texts.
+    :param text_database: Dict database of extracted corpus information.
+    :param texts_list_file: Path of the txt file with the final list of edited texts for the survey.
+    :param answers_csv: Path to the raw survey answers CSV file.
+    :return: A pandas.DataFrame with the processed answers.
+    """
+    # read the raw CSV into a DataFrame:
+    answers_df: pandas.DataFrame = pandas.read_csv(answers_csv)
+    # print(answers_df)
+
+    # get a dict db with processing info:
+    processing_db: dict = survey_processing_pairs(text_database, texts_list_file)
+    # print(processing_db)
+
+    # create list to collect results:
+    answers_list: list = list()
+
+    # iterate over participant rows:
+    for part_num in range(0, 25):
+
+        part_dict = dict()
+
+        part_answers = answers_df.iloc[part_num]
+        # print(part_answers)
+
+        for txt_id, pair_data in processing_db.items():
+            # print(txt_id, pair_data)
+
+            answer = part_answers[pair_data['form_text_id']]
+
+            # print(answer)
+
+            if answer == pair_data['claim_last']['text']:
+                # print('claim-last')
+                part_dict[f'{txt_id}-claim-last'] = True
+                part_dict[f'{txt_id}-claim-first'] = False
+                # print("edited:", pair_data['claim_last']['edited'])
+                if pair_data['claim_last']['edited']:
+                    part_dict[f'{txt_id}-edited'] = True
+                    part_dict[f'{txt_id}-unedited'] = False
+                else:
+                    part_dict[f'{txt_id}-edited'] = False
+                    part_dict[f'{txt_id}-unedited'] = True
+            else:
+                # print('claim-first')
+                part_dict[f'{txt_id}-claim-last'] = False
+                part_dict[f'{txt_id}-claim-first'] = True
+                # print("edited:", pair_data['claim_first']['edited'])
+                if pair_data['claim_first']['edited']:
+                    part_dict[f'{txt_id}-edited'] = True
+                    part_dict[f'{txt_id}-unedited'] = False
+                else:
+                    part_dict[f'{txt_id}-edited'] = False
+                    part_dict[f'{txt_id}-unedited'] = True
+
+
+            # break
+
+        # print(part_dict)
+        answers_list.append(part_dict)
+
+        # break
+    # print(answers_list)
+
+    # create DataFrame from answers list:
+    answers_df = pandas.DataFrame(answers_list)
+    # print(answers_df)
+
+    return answers_df
+
+
+def survey_cross_counts(text_database: dict, texts_list_file: str = "survey/texts_for_survey.txt",
+                        answers_csv: str = "survey/survey_answers.csv"):
+    """
+    Process raw survey answer data into pandas.DataFrame with cross counts between variable factors and total counts.
+    :param text_database: Dict database of extracted corpus information.
+    :param texts_list_file: Path of the txt file with the final list of edited texts for the survey.
+    :param answers_csv: Path to the raw survey answers CSV file.
+    :return: A pandas.DataFrame with the processed answer counts.
+    """
+    # get processed boolean answer DF:
+    processed_answers = process_survey_answers(text_database, texts_list_file, answers_csv)
+    # get a dict db with processing info:
+    processing_db: dict = survey_processing_pairs(text_database, texts_list_file)
+    # initialize dict for specific counts:
+    collect_dict = {'claim-first': {'unedited': 0, 'edited': 0},
+                    'claim-last': {'unedited': 0, 'edited': 0},
+                    'total': {'unedited': 0, 'edited': 0}}
+    # iterate over all participant rows:
+    for part_id in range(0, 25):
+        part_row = processed_answers.iloc[part_id]
+        # iterate over texts and count crossed factors:
+        for txt_id in processing_db:
+            if part_row[f'{txt_id}-claim-last']:
+                if part_row[f'{txt_id}-edited']:
+                    collect_dict['claim-last']['edited'] += 1
+                elif part_row[f'{txt_id}-unedited']:
+                    collect_dict['claim-last']['unedited'] += 1
+            elif part_row[f'{txt_id}-claim-first']:
+                if part_row[f'{txt_id}-edited']:
+                    collect_dict['claim-first']['edited'] += 1
+                elif part_row[f'{txt_id}-unedited']:
+                    collect_dict['claim-first']['unedited'] += 1
+    # sum up totals:
+    collect_dict['claim-last']['total'] = collect_dict['claim-last']['edited'] + collect_dict['claim-last']['unedited']
+    collect_dict['claim-first']['total'] = collect_dict['claim-first']['edited'] + collect_dict['claim-first']['unedited']
+    collect_dict['total']['unedited'] = collect_dict['claim-last']['edited'] + collect_dict['claim-first']['edited']
+    collect_dict['total']['edited'] = collect_dict['claim-last']['unedited'] + collect_dict['claim-first']['unedited']
+    collect_dict['total']['total'] = collect_dict['total']['unedited'] + collect_dict['total']['edited']
+    # create DF:
+    cross_df = pandas.DataFrame(collect_dict)
+
+    return cross_df
+
+
+def process_survey_counts(text_database: dict, texts_list_file: str = "survey/texts_for_survey.txt",
+                           answers_csv: str = "survey/survey_answers.csv"):
+    """
     Process raw survey answer data into usable pandas.DataFrame with
     [original text id, #claim-last choices, #claim-first choices, #edited choices, #unedited choices].
     :param text_database: Dict database of extracted corpus information.
@@ -347,6 +466,7 @@ def process_survey_answers(text_database: dict, texts_list_file: str = "survey/t
                     txt_result_dict['unedited'] += 1
         # collect results:
         results_list.append(txt_result_dict)
+    # print(results_list)
     # create DataFrame from results list:
     results_df = pandas.DataFrame(results_list)
 
@@ -411,12 +531,17 @@ if __name__ == "__main__":
     # survey_pairs_db = survey_processing_pairs(database, "survey/final_30.txt")
     # print(survey_pairs_db)
 
-    survey_results_df = process_survey_answers(database, "survey/final_30.txt",
-                                               "survey/survey_answers_raw_010324.csv")
+    # processed_answers = process_survey_answers(database, "survey/final_30.txt",
+    #                       "survey/survey_answers_raw_010324.csv")
+    # print(processed_answers)
+
+    conf = survey_cross_counts(database, "survey/final_30.txt",
+                           "survey/survey_answers_raw_010324.csv")
+
+    # survey_results_df = process_survey_counts(database, "survey/final_30.txt",
+    #                                           "survey/survey_answers_raw_010324.csv")
     # print(survey_results_df)
-
-    # print(survey_results_df['claim_last'])
-
+    """
     claim_last_sum = sum(survey_results_df['claim_last'])
     claim_first_sum = sum(survey_results_df['claim_first'])
     print("claim last:", claim_last_sum, "claim first:", claim_first_sum)
@@ -424,3 +549,4 @@ if __name__ == "__main__":
     edited_sum = sum(survey_results_df['edited'])
     unedited_sum = sum(survey_results_df['unedited'])
     print("edited:", edited_sum, "unedited:", unedited_sum)
+    """
