@@ -4,3 +4,162 @@ e1 pro No one should have the possibility to pick up the morning-after pill over
 e2 opp Though there'd be the advantage of forgoing the embarrassment of a visit to the doctor or a nighttime trip to the walk-in clinic,
 e3 pro women should still be informed about the risks and have a gynaecological examination before taking it.
 e4 pro Furthermore there's the risk that women could use the over-the-counter morning-after pill as a substitute for contraception.
+1. Inspection:
+1.1
+Inseparable bigrams: [(e2,e3)]; COMMENT: (e2,e3) are separable at a glance, but splitting up the two-clause sentence might remove interpretation of the rebuttal relation.
+No bigram/unit move no-gos
+No clear unit/position no-gos
+1.2
+e3 'it' [99:101] -> e1 'the morning-after pill'
+2.
+Move [1,2,3,4]->[1,3,2,4]
+e1 pro No one should have the possibility to pick up the morning-after pill over the counter at the pharmacy.
+
+e3 pro women should still be informed about the risks and have a gynaecological examination before taking it.
+["women"->"Women"]
+["."->","]
+-> Women should still be informed about the risks and have a gynaecological examination before taking it,
+
+e2 opp Though there'd be the advantage of forgoing the embarrassment of a visit to the doctor or a nighttime trip to the walk-in clinic,
+["Though"->"though"]
+[","->"."]
+-> though there'd be the advantage of forgoing the embarrassment of a visit to the doctor or a nighttime trip to the walk-in clinic.
+
+e4 pro Furthermore there's the risk that women could use the over-the-counter morning-after pill as a substitute for contraception.
+---
+Move [1,2,3,4]->[1,4,2,3]
+e1 pro No one should have the possibility to pick up the morning-after pill over the counter at the pharmacy.
+
+e4 pro Furthermore there's the risk that women could use the over-the-counter morning-after pill as a substitute for contraception.
+[-"Furthermore"] COMMENT: Enumerative connector before mention of other premises.
+["there's"->"There's"]
+-> There's the risk that women could use the over-the-counter morning-after pill as a substitute for contraception.
+
+e2 opp Though there'd be the advantage of forgoing the embarrassment of a visit to the doctor or a nighttime trip to the walk-in clinic,
+e3 pro women should still be informed about the risks and have a gynaecological examination before taking it.
+---
+Move [1,4,2,3]->[1,4,3,2]
+e1 pro No one should have the possibility to pick up the morning-after pill over the counter at the pharmacy.
+
+e4 pro Furthermore there's the risk that women could use the over-the-counter morning-after pill as a substitute for contraception.
+[-"Furthermore"] COMMENT: Enumerative connector before mention of other premises.
+["there's"->"There's"]
+-> There's the risk that women could use the over-the-counter morning-after pill as a substitute for contraception.
+
+e3 pro women should still be informed about the risks and have a gynaecological examination before taking it.
+["women"->"Women"]
+["."->","]
+-> Women should still be informed about the risks and have a gynaecological examination before taking it,
+
+e2 opp Though there'd be the advantage of forgoing the embarrassment of a visit to the doctor or a nighttime trip to the walk-in clinic,
+["Though"->"though"]
+[","->"."]
+-> though there'd be the advantage of forgoing the embarrassment of a visit to the doctor or a nighttime trip to the walk-in clinic.
+---
+Move [1,2,3,4]->[2,3,1,4]
+e2 opp Though there'd be the advantage of forgoing the embarrassment of a visit to the doctor or a nighttime trip to the walk-in clinic,
+
+e3 pro women should still be informed about the risks and have a gynaecological examination before taking it.
+["it"->"the morning-after pill"]
+-> women should still be informed about the risks and have a gynaecological examination before taking the morning-after pill.
+
+e1 pro No one should have the possibility to pick up the morning-after pill over the counter at the pharmacy.
+e4 pro Furthermore there's the risk that women could use the over-the-counter morning-after pill as a substitute for contraception.
+---
+Move [2,3,1,4]->[2,3,4,1]
+e2 opp Though there'd be the advantage of forgoing the embarrassment of a visit to the doctor or a nighttime trip to the walk-in clinic,
+
+e3 pro women should still be informed about the risks and have a gynaecological examination before taking it.
+["it"->"the morning-after pill"]
+-> women should still be informed about the risks and have a gynaecological examination before taking the morning-after pill.
+
+e4 pro Furthermore there's the risk that women could use the over-the-counter morning-after pill as a substitute for contraception.
+e1 pro No one should have the possibility to pick up the morning-after pill over the counter at the pharmacy.
+---
+Move [2,3,1,4]->[3,2,1,4]
+e3 pro women should still be informed about the risks and have a gynaecological examination before taking it.
+["women"->"Women"]
+["it"->"the morning-after pill"]
+["."->","]
+-> Women should still be informed about the risks and have a gynaecological examination before taking the morning-after pill,
+
+e2 opp Though there'd be the advantage of forgoing the embarrassment of a visit to the doctor or a nighttime trip to the walk-in clinic,
+["Though"->"though"]
+[","->"."]
+-> though there'd be the advantage of forgoing the embarrassment of a visit to the doctor or a nighttime trip to the walk-in clinic.
+
+e1 pro No one should have the possibility to pick up the morning-after pill over the counter at the pharmacy.
+e4 pro Furthermore there's the risk that women could use the over-the-counter morning-after pill as a substitute for contraception.
+---
+Move [3,2,1,4]->[3,2,4,1]
+e3 pro women should still be informed about the risks and have a gynaecological examination before taking it.
+["women"->"Women"]
+["it"->"the morning-after pill"]
+["."->","]
+-> Women should still be informed about the risks and have a gynaecological examination before taking the morning-after pill,
+
+e2 opp Though there'd be the advantage of forgoing the embarrassment of a visit to the doctor or a nighttime trip to the walk-in clinic,
+["Though"->"though"]
+[","->"."]
+-> though there'd be the advantage of forgoing the embarrassment of a visit to the doctor or a nighttime trip to the walk-in clinic.
+
+e4 pro Furthermore there's the risk that women could use the over-the-counter morning-after pill as a substitute for contraception.
+e1 pro No one should have the possibility to pick up the morning-after pill over the counter at the pharmacy.
+---
+Move [1,2,3,4]->[4,1,2,3]
+e4 pro Furthermore there's the risk that women could use the over-the-counter morning-after pill as a substitute for contraception.
+[-"Furthermore"] COMMENT: Enumerative connector before mention of other premises.
+["there's"->"There's"]
+-> There's the risk that women could use the over-the-counter morning-after pill as a substitute for contraception.
+
+e1 pro No one should have the possibility to pick up the morning-after pill over the counter at the pharmacy.
+e2 opp Though there'd be the advantage of forgoing the embarrassment of a visit to the doctor or a nighttime trip to the walk-in clinic,
+e3 pro women should still be informed about the risks and have a gynaecological examination before taking it.
+---
+Move [4,1,2,3]->[4,1,3,2]
+e4 pro Furthermore there's the risk that women could use the over-the-counter morning-after pill as a substitute for contraception.
+[-"Furthermore"] COMMENT: Enumerative connector before mention of other premises.
+["there's"->"There's"]
+-> There's the risk that women could use the over-the-counter morning-after pill as a substitute for contraception.
+
+e1 pro No one should have the possibility to pick up the morning-after pill over the counter at the pharmacy.
+
+e3 pro women should still be informed about the risks and have a gynaecological examination before taking it.
+["women"->"Women"]
+["it"->"the morning-after pill"]
+["."->","]
+-> Women should still be informed about the risks and have a gynaecological examination before taking the morning-after pill,
+
+e2 opp Though there'd be the advantage of forgoing the embarrassment of a visit to the doctor or a nighttime trip to the walk-in clinic,
+["Though"->"though"]
+[","->"."]
+-> though there'd be the advantage of forgoing the embarrassment of a visit to the doctor or a nighttime trip to the walk-in clinic.
+---
+Move [4,1,2,3]->[4,2,3,1]
+e4 pro Furthermore there's the risk that women could use the over-the-counter morning-after pill as a substitute for contraception.
+[-"Furthermore"] COMMENT: Enumerative connector before mention of other premises.
+["there's"->"There's"]
+-> There's the risk that women could use the over-the-counter morning-after pill as a substitute for contraception.
+
+e2 opp Though there'd be the advantage of forgoing the embarrassment of a visit to the doctor or a nighttime trip to the walk-in clinic,
+e3 pro women should still be informed about the risks and have a gynaecological examination before taking it.
+e1 pro No one should have the possibility to pick up the morning-after pill over the counter at the pharmacy.
+---
+Move [4,2,3,1]->[4,3,2,1]
+e4 pro Furthermore there's the risk that women could use the over-the-counter morning-after pill as a substitute for contraception.
+[-"Furthermore"] COMMENT: Enumerative connector before mention of other premises.
+["there's"->"There's"]
+-> There's the risk that women could use the over-the-counter morning-after pill as a substitute for contraception.
+
+e3 pro women should still be informed about the risks and have a gynaecological examination before taking it.
+["women"->"Women"]
+["it"->"the morning-after pill"]
+["."->","]
+-> Women should still be informed about the risks and have a gynaecological examination before taking the morning-after pill,
+
+e2 opp Though there'd be the advantage of forgoing the embarrassment of a visit to the doctor or a nighttime trip to the walk-in clinic,
+["Though"->"though"]
+[","->"."]
+-> though there'd be the advantage of forgoing the embarrassment of a visit to the doctor or a nighttime trip to the walk-in clinic.
+
+e1 pro No one should have the possibility to pick up the morning-after pill over the counter at the pharmacy.
