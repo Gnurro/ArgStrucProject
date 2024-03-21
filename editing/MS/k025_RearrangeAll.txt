@@ -1,0 +1,267 @@
+Central claim unit: a5
+
+Original order:
+[e1] [opp] Capital punishment is not a solution,
+[e2] [opp] as it cannot be ruled out that the judicial process may make mistakes.
+[e3] [pro] Criminals should not be put in luxury prisons, though.
+[e4] [pro] After all there are criminals who enjoy 'living' in prison for its decent board, no taxes to be paid, no stress with work.
+[e5] [pro] Still, the state needs the death penalty as a deterrent to horrific crimes.
+
+1.Inspection
+
+1.1
+
+Inseparable bigrams: [e1,e2] would break sentence and support reference
+No unit/bigram move no-go
+No unit/bigram position no-go
+
+1.2
+
+No referentials
+
+2.
+
+Move:[1,2,3,4,5]->[5,1,2,3,4]
+
+
+[e5] [pro] Still, the state needs the death penalty as a deterrent to horrific crimes.
+
+-"Still" indicates that despite previous arguments this one holds, but no previous arguments are introduced, thus not applicable
+"the"->"The"
+->The state needs the death penalty as a deterrent to horrific crimes.
+[e1] [opp] Capital punishment is not a solution,
+
++"still" allowed rearrangement of connective i the text
+->Capital punishment is still not a solution,
+
+[e2] [opp] as it cannot be ruled out that the judicial process may make mistakes.
+[e3] [pro] Criminals should not be put in luxury prisons, though.
+[e4] [pro] After all there are criminals who enjoy 'living' in prison for its decent board, no taxes to be paid, no stress with work.
+
+
+[1,2,3,4,5]->[1,2,4,3,5]
+
+[e1] [opp] Capital punishment is not a solution,
+[e2] [opp] as it cannot be ruled out that the judicial process may make mistakes.
+[e4] [pro] After all there are criminals who enjoy 'living' in prison for its decent board, no taxes to be paid, no stress with work.
+[e3] [pro] Criminals should not be put in luxury prisons, though.
+[e5] [pro] Still, the state needs the death penalty as a deterrent to horrific crimes.
+
+Comment:e5 appears disconnected from the preceding arguments which can potentially weaken the coherence of the argument
+
+[1,2,3,4,5]-> [2,1,3,4,5]
+
+[e2] [opp] as it cannot be ruled out that the judicial process may make mistakes.
+
+"as"->"As"
+"."->","
+
+->As it cannot be ruled out that the judicial process may make mistakes,
+
+[e1] [opp] Capital punishment is not a solution,
+
+"Capital"->"capital"
+"," -> "."
+
+->capital punishment is not a solution.
+
+[e3] [pro] Criminals should not be put in luxury prisons, though.
+[e4] [pro] After all there are criminals who enjoy 'living' in prison for its decent board, no taxes to be paid, no stress with work.
+[e5] [pro] Still, the state needs the death penalty as a deterrent to horrific crimes.
+
+Comment: same as the previous variant applies here
+
+[5,1,2,3,4]->[4,5,1,2,3]
+
+[e4] [pro] After all there are criminals who enjoy 'living' in prison for its decent board, no taxes to be paid, no stress with work.
+
+-"After all" conclusive reference backwards cannot be applied
+
+[e5] [pro] Still, the state needs the death penalty as a deterrent to horrific crimes.
+[e1] [opp] Capital punishment is not a solution,
+[e2] [opp] as it cannot be ruled out that the judicial process may make mistakes.
+[e3] [pro] Criminals should not be put in luxury prisons, though.
+
+
+[4,5,1,2,3]->[5,4,1,2,3]
+
+[e5] [pro] Still, the state needs the death penalty as a deterrent to horrific crimes.
+
+-"Still" indicates that despite previous arguments this one holds, but no previous arguments are introduced, thus not applicable
+"the"->"The"
+
+->The state needs the death penalty as a deterrent to horrific crimes.
+[e4] [pro] After all there are criminals who enjoy 'living' in prison for its decent board, no taxes to be paid, no stress with work.
+
+-"After all" cannot be supported contectually in this position
+[e1] [opp] Capital punishment is not a solution,
+[e2] [opp] as it cannot be ruled out that the judicial process may make mistakes.
+[e3] [pro] Criminals should not be put in luxury prisons, though.
+
+
+[1,2,4,3,5]->[5,1,2,4,3]
+
+[e5] [pro] Still, the state needs the death penalty as a deterrent to horrific crimes.
+
+-"Still" indicates that despite previous arguments this one holds, but no previous arguments are introduced, thus not applicable
+"the"->"The"
+
+->The state needs the death penalty as a deterrent to horrific crimes.
+[e1] [opp] Capital punishment is not a solution,
+[e2] [opp] as it cannot be ruled out that the judicial process may make mistakes.
+[e4] [pro] After all there are criminals who enjoy 'living' in prison for its decent board, no taxes to be paid, no stress with work.
+[e3] [pro] Criminals should not be put in luxury prisons, though.
+
+
+[2,1,3,4,5]->[2,1,4,3,5]
+
+[e2] [opp] as it cannot be ruled out that the judicial process may make mistakes.
+
+"as"->"As"
+"."->","
+
+->As it cannot be ruled out that the judicial process may make mistakes,
+[e1] [opp] Capital punishment is not a solution,
+
+"Capital"->"capital"
+"," -> "."
+
+->capital punishment is not a solution. 
+[e4] [pro] After all there are criminals who enjoy 'living' in prison for its decent board, no taxes to be paid, no stress with work.
+[e3] [pro] Criminals should not be put in luxury prisons, though.
+[e5] [pro] Still, the state needs the death penalty as a deterrent to horrific crimes.
+
+Comment: the transition to e3 and in the following to e5 feels abrupt weaking overall the argument
+
+[2,1,4,3,5]->[5,2,1,3,4]
+
+[e5] [pro] Still, the state needs the death penalty as a deterrent to horrific crimes.
+
+-"Still" indicates that despite previous arguments this one holds, but no previous arguments are introduced, thus not applicable
+"the"->"The"
+
+->The state needs the death penalty as a deterrent to horrific crimes.
+[e2] [opp] as it cannot be ruled out that the judicial process may make mistakes.
+
+"as"->"As"
+
+->As it cannot be ruled out that the judicial process may make mistakes,
+
+[e1] [opp] Capital punishment is not a solution,
+
+","->"."
+
+->Capital punishment is not a solution.
+[e3] [pro] Criminals should not be put in luxury prisons, though.
+
+"Criminals"->"criminals
+
+->criminals should not be put in luxury prisons, though.
+
+[e4] [pro] After all there are criminals who enjoy 'living' in prison for its decent board, no taxes to be paid, no stress with work.
+
+
+
+
+[5,2,1,3,4]->[5,2,1,4,3]
+
+[e5] [pro] Still, the state needs the death penalty as a deterrent to horrific crimes.
+
+-"Still" indicates that despite previous arguments this one holds, but no previous arguments are introduced, thus not applicable
+"the"->"The"
+
+->The state needs the death penalty as a deterrent to horrific crimes.
+[e2] [opp] as it cannot be ruled out that the judicial process may make mistakes.
+
+"as"->"As"
+
+->As it cannot be ruled out that the judicial process may make mistakes,
+
+[e1] [opp] Capital punishment is not a solution,
+
+","->"."
+
+->Capital punishment is not a solution.
+[e4] [pro] After all there are criminals who enjoy 'living' in prison for its decent board, no taxes to be paid, no stress with work.
+[e3] [pro] Criminals should not be put in luxury prisons, though.
+
+
+[5,2,1,4,3]->[3,5,2,1,4]
+
+[e3] [pro] Criminals should not be put in luxury prisons, though.
+
+-"thought" indicates contradiction to what is prior, but there is not in this case
+
+->Criminals should not be put in luxury prisons.
+[e5] [pro] Still, the state needs the death penalty as a deterrent to horrific crimes.
+[e2] [opp] as it cannot be ruled out that the judicial process may make mistakes.
+
+"as"->"As"
+
+->As it cannot be ruled out that the judicial process may make mistakes,
+
+[e1] [opp] Capital punishment is not a solution,
+
+","->"."
+
+->Capital punishment is not a solution.
+[e4] [pro] After all there are criminals who enjoy 'living' in prison for its decent board, no taxes to be paid, no stress with work.
+
+Comment: e3 before e5 disrupts the flow of the argument, from discussing the necessity of the death penalty to discussing the drawbacks of luxury prisons before returning to the argument against capital punishment
+
+[3,5,2,1,4]->[4,3,5,2,1]
+
+[e4] [pro] After all there are criminals who enjoy 'living' in prison for its decent board, no taxes to be paid, no stress with work.
+
+-"After all" conclusive reference backwards is not applicable
+"there"->"There"
+
+->There are criminals who enjoy 'living' in prison for its decent board, no taxes to be paid, no stress with work.
+[e3] [pro] Criminals should not be put in luxury prisons, though.
+[e5] [pro] Still, the state needs the death penalty as a deterrent to horrific crimes.
+[e2] [opp] as it cannot be ruled out that the judicial process may make mistakes.
+
+"as"->"As"
+
+->As it cannot be ruled out that the judicial process may make mistakes,
+
+[e1] [opp] Capital punishment is not a solution,
+
+","->"."
+
+->Capital punishment is not a solution.
+
+Comment:it seems that e4 before e3 strengthens the coherence of the argument but still transition from e3 to e5 seems bumpy
+
+[4,3,5,2,1]->[4,3,5,1,2]
+
+[e4] [pro] After all there are criminals who enjoy 'living' in prison for its decent board, no taxes to be paid, no stress with work.
+
+-"After all" conclusive reference backwards is not applicable
+"there"->"There"
+
+->There are criminals who enjoy 'living' in prison for its decent board, no taxes to be paid, no stress with work.
+[e3] [pro] Criminals should not be put in luxury prisons, though.
+[e5] [pro] Still, the state needs the death penalty as a deterrent to horrific crimes.
+[e1] [opp] Capital punishment is not a solution,
+[e2] [opp] as it cannot be ruled out that the judicial process may make mistakes.
+
+
+[4,3,5,1,2]->[3,4,5,1,2]
+
+[e3] [pro] Criminals should not be put in luxury prisons, though.
+
+-"thought" indicates contradiction to what is prior, but there is not in this case
+
+->Criminals should not be put in luxury prisons.
+[e4] [pro] After all there are criminals who enjoy 'living' in prison for its decent board, no taxes to be paid, no stress with work.
+[e5] [pro] Still, the state needs the death penalty as a deterrent to horrific crimes.
+[e1] [opp] Capital punishment is not a solution,
+[e2] [opp] as it cannot be ruled out that the judicial process may make mistakes.
+
+Comment: even thought it is understandbale placing e1,e2 before e5 seems also to weaken the argument
+
+
+
+
+

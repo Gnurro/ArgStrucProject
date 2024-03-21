@@ -1,0 +1,294 @@
+Central claim unit: a1
+
+Original order:
+[e1] [pro] The TV license fee should only be collected from those who actually make use of the programming of the public broadcasters.
+[e2] [pro] After all there are many people in Germany who pay the fee although they merely use a computer to work.
+[e3] [pro] Yet the fees are demanded from everybody who does not apply for a waiver, no matter how many receiver devices actually exist in the household and how they are being used.
+[e4] [opp] However it is obvious that the license fee officers are not in a position to check the usage of every single device.
+
+1.Inspection
+
+1.1
+No iseparable bigrams
+No unit/bigram move no-go
+No unit/bigram position no-go
+
+1.2
+
+[e2]:"the fee"->[e1]:"the TV fee"; NP: "the TV licence fee"
+[e3]:"the fees"-> [e1]:"the TV licence fees"
+
+2.
+
+[1,2,3,4]->[2,3,4,1]
+
+[e2] [pro] After all there are many people in Germany who pay the TV licence fee although they merely use a computer to work.
+
+-"After all" conclusive reference backwards
+"there"->"There
+
+->There are many people in Germany who pay the TV licence fee although they merely use a computer to work.
+[e3] [pro] Yet the TV licence fees are demanded from everybody who does not apply for a waiver, no matter how many receiver devices actually exist in the household and how they are being used.
+[e4] [opp] However it is obvious that the license fee officers are not in a position to check the usage of every single device.
+[e1] [pro] The TV license fee should only be collected from those who actually make use of the programming of the public broadcasters.
+
+
+
+[1,2,3,4]->[4,3,1,2]
+
+[e4] [opp] However it is obvious that the license fee officers are not in a position to check the usage of every single device.
+
+-"However" contradictive reference backwrads not possible
+"it"->"It"
+
+->It is obvious that the license fee officers are not in a position to check the usage of every single device.
+[e3] [pro] Yet the fees are demanded from everybody who does not apply for a waiver, no matter how many receiver devices actually exist in the household and how they are being used.
+[e1] [pro] The TV license fee should only be collected from those who actually make use of the programming of the public broadcasters.
+[e2] [pro] After all there are many people in Germany who pay the fee although they merely use a computer to work.
+
+
+
+[1,2,3,4]-> [4,1,2,3]
+
+[e4] [opp] However it is obvious that the license fee officers are not in a position to check the usage of every single device.
+
+-"However" contradictive reference backwrads not possible
+"it"->"It"
+
+->It is obvious that the license fee officers are not in a position to check the usage of every single device.
+[e1] [pro] The TV license fee should only be collected from those who actually make use of the programming of the public broadcasters.
+[e2] [pro] After all there are many people in Germany who pay the fee although they merely use a computer to work.
+[e3] [pro] Yet the fees are demanded from everybody who does not apply for a waiver, no matter how many receiver devices actually exist in the household and how they are being used.
+
+Comment:a connective betwwen [e4],[e1] could make the transition smoother
+
+
+[1,2,3,4]->[1,4,3,2]
+
+[e1] [pro] The TV license fee should only be collected from those who actually make use of the programming of the public broadcasters.
+[e4] [opp] However it is obvious that the license fee officers are not in a position to check the usage of every single device.
+[e3] [pro] Yet the fees are demanded from everybody who does not apply for a waiver, no matter how many receiver devices actually exist in the household and how they are being used.
+[e2] [pro] After all there are many people in Germany who pay the fee although they merely use a computer to work.
+
+
+[2,3,4,1]->[3,2,4,1]
+
+[e3] [pro] Yet the TV licence fees are demanded from everybody who does not apply for a waiver, no matter how many receiver devices actually exist in the household and how they are being used.
+
+-"Yet" contradictive reference backwards is not possible
+"the"->"The"
+
+->The TV licence fees are demanded from everybody who does not apply for a waiver, no matter how many receiver devices actually exist in the household and how they are being used.
+[e2] [pro] After all there are many people in Germany who pay the TV licence fee although they merely use a computer to work.
+[e4] [opp] However it is obvious that the license fee officers are not in a position to check the usage of every single device.
+[e1] [pro] The TV license fee should only be collected from those who actually make use of the programming of the public broadcasters.
+
+
+[3,2,4,1]->[3,2,1,4]
+
+[e3] [pro] Yet the TV licence fees are demanded from everybody who does not apply for a waiver, no matter how many receiver devices actually exist in the household and how they are being used.
+
+-"Yet" contradictive reference backwards is not possible
+"the"->"The"
+
+->The TV licence fees are demanded from everybody who does not apply for a waiver, no matter how many receiver devices actually exist in the household and how they are being used.
+[e2] [pro] After all there are many people in Germany who pay the TV licence fee although they merely use a computer to work.
+[e1] [pro] The TV license fee should only be collected from those who actually make use of the programming of the public broadcasters.
+[e4] [opp] However it is obvious that the license fee officers are not in a position to check the usage of every single device.
+
+[3,2,1,4]->[4,3,2,1]
+
+[e4] [opp] However it is obvious that the license fee officers are not in a position to check the usage of every single device.
+
+-"However" contradictive reference backwrads not possible
+"it"->"It"
+
+->It is obvious that the license fee officers are not in a position to check the usage of every single device.
+[e3] [pro] Yet the TV licence fees are demanded from everybody who does not apply for a waiver, no matter how many receiver devices actually exist in the household and how they are being used.
+[e2] [pro] After all there are many people in Germany who pay the TV licence fee although they merely use a computer to work.
+[e1] [pro] The TV license fee should only be collected from those who actually make use of the programming of the public broadcasters.
+
+
+[4,3,2,1] -> [1,4,3,2]
+
+[e1] [pro] The TV license fee should only be collected from those who actually make use of the programming of the public broadcasters.
+[e4] [opp] However it is obvious that the license fee officers are not in a position to check the usage of every single device.
+[e3] [pro] Yet the TV licence fees are demanded from everybody who does not apply for a waiver, no matter how many receiver devices actually exist in the household and how they are being used.
+[e2] [pro] After all there are many people in Germany who pay the TV licence fee although they merely use a computer to work.
+
+[1,4,3,2] -> [2,1,4,3]
+
+[e2] [pro] After all there are many people in Germany who pay the TV licence fee although they merely use a computer to work.
+
+-"After all" conclusive referenmce backwards is not possible
+"there"->"There"
+
+->There are many people in Germany who pay the TV licence fee although they merely use a computer to work.
+[e1] [pro] The TV license fee should only be collected from those who actually make use of the programming of the public broadcasters.
+[e4] [opp] However it is obvious that the license fee officers are not in a position to check the usage of every single device.
+[e3] [pro] Yet the TV licence fees are demanded from everybody who does not apply for a waiver, no matter how many receiver devices actually exist in the household and how they are being used.
+
+[2,1,4,3] -> [3,2,1,4]
+
+[e3] [pro] Yet the TV licence fees are demanded from everybody who does not apply for a waiver, no matter how many receiver devices actually exist in the household and how they are being used.
+
+-"Yet" contradictive reference backwards is not possible
+"the"->"The"
+
+->The TV licence fees are demanded from everybody who does not apply for a waiver, no matter how many receiver devices actually exist in the household and how they are being used.
+[e2] [pro] After all there are many people in Germany who pay the TV licence fee although they merely use a computer to work.
+[e4] [opp] However it is obvious that the license fee officers are not in a position to check the usage of every single device.
+[e1] [pro] The TV license fee should only be collected from those who actually make use of the programming of the public broadcasters.
+
+
+[4,3,1,2] -> [2,4,3,1]
+
+[e2] [pro] After all there are many people in Germany who pay the TV licence fee although they merely use a computer to work.
+
+-"After all" conclusive referenmce backwards is not possible
+"there"->"There"
+
+->There are many people in Germany who pay the TV licence fee although they merely use a computer to work.
+[e4] [opp] However it is obvious that the license fee officers are not in a position to check the usage of every single device.
+[e3] [pro] Yet the TV licence fees are demanded from everybody who does not apply for a waiver, no matter how many receiver devices actually exist in the household and how they are being used.
+[e1] [pro] The TV license fee should only be collected from those who actually make use of the programming of the public broadcasters.
+
+
+[2,4,3,1] -> [1,2,4,3]
+
+[e1] [pro] The TV license fee should only be collected from those who actually make use of the programming of the public broadcasters.
+[e2] [pro] After all there are many people in Germany who pay the TV licence fee although they merely use a computer to work.
+[e4] [opp] However it is obvious that the license fee officers are not in a position to check the usage of every single device.
+[e3] [pro] Yet the TV licence fees are demanded from everybody who does not apply for a waiver, no matter how many receiver devices actually exist in the household and how they are being used.
+
+[1,2,4,3] -> [3,1,2,4]
+
+[e3] [pro] Yet the TV licence fees are demanded from everybody who does not apply for a waiver, no matter how many receiver devices actually exist in the household and how they are being used.
+
+-"Yet" contradictive reference backwards is not possible
+"the"->"The"
+
+->The TV licence fees are demanded from everybody who does not apply for a waiver, no matter how many receiver devices actually exist in the household and how they are being used.
+[e1] [pro] The TV license fee should only be collected from those who actually make use of the programming of the public broadcasters.
+[e2] [pro] After all there are many people in Germany who pay the TV licence fee although they merely use a computer to work.
+[e4] [opp] However it is obvious that the license fee officers are not in a position to check the usage of every single device.
+
+
+[3,2,1,4] -> [4,1,3,2]  SOS SOS SOS
+
+[e4] [opp] However it is obvious that the license fee officers are not in a position to check the usage of every single device.
+
+-"However" contradictive reference backwrads not possible
+"it"->"It"
+
+->It is obvious that the license fee officers are not in a position to check the usage of every single device.
+[e1] [pro] The TV license fee should only be collected from those who actually make use of the programming of the public broadcasters.
+[e2] [pro] After all there are many people in Germany who pay the TV licence fee although they merely use a computer to work.
+
+[e3] [pro] Yet the TV licence fees are demanded from everybody who does not apply for a waiver, no matter how many receiver devices actually exist in the household and how they are being used.
+
+
+
+[4,1,3,2] -> [2,4,1,3]
+
+
+[e2] [pro] After all there are many people in Germany who pay the TV licence fee although they merely use a computer to work.
+
+-"After all" conclusive referenmce backwards is not possible
+"there"->"There"
+
+->There are many people in Germany who pay the TV licence fee although they merely use a computer to work.
+[e4] [opp] However it is obvious that the license fee officers are not in a position to check the usage of every single device.
+[e1] [pro] The TV license fee should only be collected from those who actually make use of the programming of the public broadcasters.
+[e3] [pro] Yet the TV licence fees are demanded from everybody who does not apply for a waiver, no matter how many receiver devices actually exist in the household and how they are being used.
+
+[2,4,1,3] -> [3,2,4,1]
+
+[e3] [pro] Yet the TV licence fees are demanded from everybody who does not apply for a waiver, no matter how many receiver devices actually exist in the household and how they are being used.
+
+-"Yet" contradictive reference backwards is not possible
+"the"->"The"
+
+->The TV licence fees are demanded from everybody who does not apply for a waiver, no matter how many receiver devices actually exist in the household and how they are being used.
+[e2] [pro] After all there are many people in Germany who pay the TV licence fee although they merely use a computer to work.
+[e4] [opp] However it is obvious that the license fee officers are not in a position to check the usage of every single device.
+[e1] [pro] The TV license fee should only be collected from those who actually make use of the programming of the public broadcasters.
+
+[3,2,4,1] -> [1,3,2,4]
+
+[e1] [pro] The TV license fee should only be collected from those who actually make use of the programming of the public broadcasters.
+[e3] [pro] Yet the TV licence fees are demanded from everybody who does not apply for a waiver, no matter how many receiver devices actually exist in the household and how they are being used.
+[e2] [pro] After all there are many people in Germany who pay the TV licence fee although they merely use a computer to work.
+[e4] [opp] However it is obvious that the license fee officers are not in a position to check the usage of every single device.
+
+[3,2,1,4] -> [2,3,1,4]
+
+[e2] [pro] After all there are many people in Germany who pay the TV licence fee although they merely use a computer to work.
+
+-"After all" conclusive referenmce backwards is not possible
+"there"->"There"
+
+->There are many people in Germany who pay the TV licence fee although they merely use a computer to work.
+[e3] [pro] Yet the TV licence fees are demanded from everybody who does not apply for a waiver, no matter how many receiver devices actually exist in the household and how they are being used.
+[e1] [pro] The TV license fee should only be collected from those who actually make use of the programming of the public broadcasters.
+[e4] [opp] However it is obvious that the license fee officers are not in a position to check the usage of every single device.
+
+
+
+
+[3,1,4,2] -> [4,3,1,2]
+
+[e4] [opp] However it is obvious that the license fee officers are not in a position to check the usage of every single device.
+
+-"However" contradictive reference backwrads not possible
+"it"->"It"
+
+->It is obvious that the license fee officers are not in a position to check the usage of every single device.
+[e3] [pro] Yet the TV licence fees are demanded from everybody who does not apply for a waiver, no matter how many receiver devices actually exist in the household and how they are being used.
+[e1] [pro] The TV license fee should only be collected from those who actually make use of the programming of the public broadcasters.
+[e2] [pro] After all there are many people in Germany who pay the TV licence fee although they merely use a computer to work.
+
+[4,3,1,2] -> [1,4,2,3]
+
+[e1] [pro] The TV license fee should only be collected from those who actually make use of the programming of the public broadcasters.
+[e4] [opp] However it is obvious that the license fee officers are not in a position to check the usage of every single device.
+[e2] [pro] After all there are many people in Germany who pay the TV licence fee although they merely use a computer to work.
+[e3] [pro] Yet the TV licence fees are demanded from everybody who does not apply for a waiver, no matter how many receiver devices actually exist in the household and how they are being used.
+
+[1,4,2,3] -> [4,1,2,3]
+
+[e4] [opp] However it is obvious that the license fee officers are not in a position to check the usage of every single device.
+
+-"However" contradictive reference backwrads not possible
+"it"->"It"
+
+->It is obvious that the license fee officers are not in a position to check the usage of every single device.
+[e1] [pro] The TV license fee should only be collected from those who actually make use of the programming of the public broadcasters.
+[e2] [pro] After all there are many people in Germany who pay the TV licence fee although they merely use a computer to work.
+[e3] [pro] Yet the TV licence fees are demanded from everybody who does not apply for a waiver, no matter how many receiver devices actually exist in the household and how they are being used.
+
+
+[4,1,2,3] -> [2,4,3,1]
+
+[e2] [pro] After all there are many people in Germany who pay the TV licence fee although they merely use a computer to work.
+
+-"After all" conclusive referenmce backwards is not possible
+"there"->"There"
+
+->There are many people in Germany who pay the TV licence fee although they merely use a computer to work.
+[e4] [opp] However it is obvious that the license fee officers are not in a position to check the usage of every single device.
+[e3] [pro] Yet the TV licence fees are demanded from everybody who does not apply for a waiver, no matter how many receiver devices actually exist in the household and how they are being used.
+[e1] [pro] The TV license fee should only be collected from those who actually make use of the programming of the public broadcasters.
+
+[2,4,3,1] -> [3,2,4,1]
+
+[e3] [pro] Yet the TV licence fees are demanded from everybody who does not apply for a waiver, no matter how many receiver devices actually exist in the household and how they are being used.
+
+-"Yet" contradictive reference backwards is not possible
+"the"->"The"
+
+->The TV licence fees are demanded from everybody who does not apply for a waiver, no matter how many receiver devices actually exist in the household and how they are being used.
+[e2] [pro] After all there are many people in Germany who pay the TV licence fee although they merely use a computer to work.
+[e4] [opp] However it is obvious that the license fee officers are not in a position to check the usage of every single device.
+[e1] [pro] The TV license fee should only be collected from those who actually make use of the programming of the public broadcasters.
+

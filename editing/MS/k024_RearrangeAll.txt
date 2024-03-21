@@ -1,0 +1,527 @@
+Central claim unit: a1
+
+Original order:
+[e1] [pro] Dog owners should pay higher fines for dog dirt left on pavements,
+[e2] [opp] although there aren't enough bins and bag-dispensers for dog dirt.
+[e3] [pro] One reason for this is that they have thus far hardly had to fear the consequences despite the obligation to clean up.
+[e4] [pro] A higher fine, so dog owners would have to dig deeper into their pockets, is supposed to be a deterrent after all.
+[e5] [pro] The city, especially the green spaces, should be kept tidy after all,
+[e6] [pro] for they are there for our recreation.
+[e7] [pro] Besides you're not allowed to leave other rubbish without punishment.
+
+1.Inspection
+
+1.1
+Inseparable bigrams: [e1,e2] [e5,e6] seperating would break rebuttal and support relatioship respectively
+No unit/bigram move no-go
+No unit/bigram position no-go
+
+1.2
+[e3]:"this"->[e1]->" higher fines for dog dirt"; NP: "higher fines for dog dirt"
+[e3]:"they"->[e1]->"dog owners";NP:"dog owners"
+[e6]:"they"->[e5]->"green spaces";NP:"green spaces"
+
+2.
+          
+[1,2,3,4,5,6,7]->[1,2,4,3,5,6,7]
+
+[e1] [pro] Dog owners should pay higher fines for dog dirt left on pavements,
+[e2] [opp] although there aren't enough bins and bag-dispensers for dog dirt.
+[e4] [pro] A higher fine, so dog owners would have to dig deeper into their pockets, is supposed to be a deterrent after all.
+[e3] [pro] One reason for higher fines for dog dirt is that dog owners have thus far hardly had to fear the consequences despite the obligation to clean up.
+[e5] [pro] The city, especially the green spaces, should be kept tidy after all,
+[e6] [pro] for green spaces are there for our recreation.
+[e7] [pro] Besides you're not allowed to leave other rubbish without punishment.
+
+[1,2,3,4,5,6,7]->[1,2,3,4,7,5,6]
+
+[e1] [pro] Dog owners should pay higher fines for dog dirt left on pavements,
+[e2] [opp] although there aren't enough bins and bag-dispensers for dog dirt.
+[e3] [pro] One reason for higher fines for dog dirt is that dog owners have thus far hardly had to fear the consequences despite the obligation to clean up.
+[e4] [pro] A higher fine, so dog owners would have to dig deeper into their pockets, is supposed to be a deterrent after all.
+[e7] [pro] Besides you're not allowed to leave other rubbish without punishment.
+[e5] [pro] The city, especially the green spaces, should be kept tidy after all,
+[e6] [pro] for green spaces are there for our recreation.
+
+
+[1,2,3,4,5,6,7]->[1,2,3,5,6,7,4]  
+
+[e1] [pro] Dog owners should pay higher fines for dog dirt left on pavements,
+[e2] [opp] although there aren't enough bins and bag-dispensers for dog dirt.
+[e3] [pro] One reason for higher fines for dog dirt is that dog owners have thus far hardly had to fear the consequences despite the obligation to clean up.
+[e5] [pro] The city, especially the green spaces, should be kept tidy after all,
+[e6] [pro] for green spaces are there for our recreation.
+[e7] [pro] Besides you're not allowed to leave other rubbish without punishment.
+[e4] [pro] A higher fine, so dog owners would have to dig deeper into their pockets, is supposed to be a deterrent after all.
+
+                                                                                                                  
+[1,2,3,4,5,6,7]->[1,2,7,3,4,5,6]
+
+[e1] [pro] Dog owners should pay higher fines for dog dirt left on pavements,
+[e2] [opp] although there aren't enough bins and bag-dispensers for dog dirt.
+[e7] [pro] Besides you're not allowed to leave other rubbish without punishment.
+[e3] [pro] One reason for higher fines for dog dirt is that dog owners have thus far hardly had to fear the consequences despite the obligation to clean up.
+[e4] [pro] A higher fine, so dog owners would have to dig deeper into their pockets, is supposed to be a deterrent after all.
+[e5] [pro] The city, especially the green spaces, should be kept tidy after all,
+[e6] [pro] for green spaces are there for our recreation.
+
+
+[1,2,3,4,5,6,7]->[2,1,3,4,5,6,7]
+
+
+[e2] [opp] although there aren't enough bins and bag-dispensers for dog dirt.
+
+"although"->"Although"
+"."->","
+
+->Although there aren't enough bins and bag-dispensers for dog dirt,
+
+[e1] [pro] Dog owners should pay higher fines for dog dirt left on pavements,
+
+"Dog owners"->"dog owners"
+","->"."
+
+->dog owners should pay higher fines for dog dirt left on pavements.
+[e3] [pro] One reason for higher fines for dog dirt is that dog owners have thus far hardly had to fear the consequences despite the obligation to clean up.
+[e4] [pro] A higher fine, so dog owners would have to dig deeper into their pockets, is supposed to be a deterrent after all.
+[e5] [pro] The city, especially the green spaces, should be kept tidy after all,
+[e6] [pro] for green spaces are there for our recreation.
+[e7] [pro] Besides you're not allowed to leave other rubbish without punishment.
+
+
+[1,2,3,4,5,6,7]->[1,2,4,3,5,6,7]
+
+[e1] [pro] Dog owners should pay higher fines for dog dirt left on pavements,
+[e2] [opp] although there aren't enough bins and bag-dispensers for dog dirt.
+[e4] [pro] A higher fine, so dog owners would have to dig deeper into their pockets, is supposed to be a deterrent after all.
+[e3] [pro] One reason for higher fines for dog dirt is that dog owners have thus far hardly had to fear the consequences despite the obligation to clean up.
+[e5] [pro] The city, especially the green spaces, should be kept tidy after all,
+[e6] [pro] for green spaces are there for our recreation.
+[e7] [pro] Besides you're not allowed to leave other rubbish without punishment.
+
+
+[1,2,3,4,7,5,6]->[1,2,3,5,6,7,4]
+
+[e1] [pro] Dog owners should pay higher fines for dog dirt left on pavements,
+[e2] [opp] although there aren't enough bins and bag-dispensers for dog dirt.
+[e3] [pro] One reason for higher fines for dog dirt is that dog owners have thus far hardly had to fear the consequences despite the obligation to clean up.
+[e5] [pro] The city, especially the green spaces, should be kept tidy after all,
+[e6] [pro] for green spaces are there for our recreation.
+[e7] [pro] Besides you're not allowed to leave other rubbish without punishment.
+[e4] [pro] A higher fine, so dog owners would have to dig deeper into their pockets, is supposed to be a deterrent after all.
+
+
+[1,2,3,5,6,7,4]->[1,2,4,3,6,5,7]
+
+[e1] [pro] Dog owners should pay higher fines for dog dirt left on pavements,
+[e2] [opp] although there aren't enough bins and bag-dispensers for dog dirt.
+[e4] [pro] A higher fine, so dog owners would have to dig deeper into their pockets, is supposed to be a deterrent after all.
+[e3] [pro] One reason for higher fines for dog dirt is that dog owners have thus far hardly had to fear the consequences despite the obligation to clean up.
+[e6] [pro] for green spaces are there for our recreation.
+
+"for"->"For"
+"."->","
+
+->For green spaces are there for our recreation,
+[e5] [pro] The city, especially the green spaces, should be kept tidy after all,
+
+"the"->"The
+","->"."
+
+->the city, especially the green spaces, should be kept tidy after all.
+
+[e7] [pro] Besides you're not allowed to leave other rubbish without punishment.
+
+Comment:the transition [e3]->[e6]->[e7] could be smoother, they are all supportive arguments of the main claim,but the fact that [e6] actually supports [e5] makes the tranistion bumpy
+
+[1,2,4,3,6,5,7]->[2,1,3,4,5,6,7]
+
+[e2] [opp] although there aren't enough bins and bag-dispensers for dog dirt.
+
+"although"->"Although"
+"."->","
+
+->Although there aren't enough bins and bag-dispensers for dog dirt,
+
+[e1] [pro] Dog owners should pay higher fines for dog dirt left on pavements,
+
+"Dog owners"->"dog owners"
+","->"."
+
+->dog owners should pay higher fines for dog dirt left on pavements.
+
+[e3] [pro] One reason for higher fines for dog dirt is that dog owners have thus far hardly had to fear the consequences despite the obligation to clean up.
+[e4] [pro] A higher fine, so dog owners would have to dig deeper into their pockets, is supposed to be a deterrent after all.
+[e5] [pro] The city, especially the green spaces, should be kept tidy after all,
+[e6] [pro] for green spaces are there for our recreation.
+[e7] [pro] Besides you're not allowed to leave other rubbish without punishment.
+
+
+[1,2,4,3,5,6,7]-> [2,1,3,4,7,5,6]
+
+[e2] [opp] although there aren't enough bins and bag-dispensers for dog dirt.
+
+"although"->"Although"
+"."->","
+
+->Although there aren't enough bins and bag-dispensers for dog dirt,
+
+[e1] [pro] Dog owners should pay higher fines for dog dirt left on pavements,
+
+"Dog owners"->"dog owners"
+","->"."
+
+->dog owners should pay higher fines for dog dirt left on pavements.
+
+[e3] [pro] One reason for higher fines for dog dirt is that dog owners have thus far hardly had to fear the consequences despite the obligation to clean up.
+[e4] [pro] A higher fine, so dog owners would have to dig deeper into their pockets, is supposed to be a deterrent after all.
+[e7] [pro] Besides you're not allowed to leave other rubbish without punishment.
+[e5] [pro] The city, especially the green spaces, should be kept tidy after all,
+[e6] [pro] for green spaces are there for our recreation.
+
+
+
+[1,2,3,4,7,5,6]->[1,2,3,7,4,5,6]
+
+[e1] [pro] Dog owners should pay higher fines for dog dirt left on pavements,
+[e2] [opp] although there aren't enough bins and bag-dispensers for dog dirt.
+[e3] [pro] One reason for higher fines for dog dirt is that dog owners have thus far hardly had to fear the consequences despite the obligation to clean up.
+[e7] [pro] Besides you're not allowed to leave other rubbish without punishment.
+[e4] [pro] A higher fine, so dog owners would have to dig deeper into their pockets, is supposed to be a deterrent after all.
+[e5] [pro] The city, especially the green spaces, should be kept tidy after all,
+[e6] [pro] for green spaces are there for our recreation.
+
+
+[1,2,3,5,6,7,4]->[1,2,3,6,5,7,4] 
+
+
+[e1] [pro] Dog owners should pay higher fines for dog dirt left on pavements,
+[e2] [opp] although there aren't enough bins and bag-dispensers for dog dirt.
+[e3] [pro] One reason for higher fines for dog dirt is that dog owners have thus far hardly had to fear the consequences despite the obligation to clean up.
+
+[e6] [pro] for green spaces are there for our recreation.
+
+"for"->"For"
+"."->","
+
+->For green spaces are there for our recreation,
+[e5] [pro] The city, especially the green spaces, should be kept tidy after all,
+
+"the"->"The
+","->"."
+
+->the city, especially the green spaces, should be kept tidy after all.
+
+[e7] [pro] Besides you're not allowed to leave other rubbish without punishment.
+[e4] [pro] A higher fine, so dog owners would have to dig deeper into their pockets, is supposed to be a deterrent after all.
+
+
+[1,2,4,3,6,5,7]->[4,1,2,3,6,5,7]
+
+[e4] [pro] A higher fine, so dog owners would have to dig deeper into their pockets, is supposed to be a deterrent after all.
+
+-"after all" conlcusive reference backwards cannot be applied
+
+->A higher fine, so dog owners would have to dig deeper into their pockets, is supposed to be a deterrent.
+
+[e1] [pro] Dog owners should pay higher fines for dog dirt left on pavements,
+[e2] [opp] although there aren't enough bins and bag-dispensers for dog dirt.
+[e3] [pro] One reason for higher fines for dog dirt is that dog owners have thus far hardly had to fear the consequences despite the obligation to clean up.
+[e6] [pro] for green spaces are there for our recreation.
+
+"for"->"For"
+"."->","
+
+->For green spaces are there for our recreation,
+[e5] [pro] The city, especially the green spaces, should be kept tidy after all,
+
+"the"->"The
+","->"."
+
+->the city, especially the green spaces, should be kept tidy after all.
+
+[e7] [pro] Besides you're not allowed to leave other rubbish without punishment.
+
+
+[2,1,3,4,5,6,7]->[3,4,5,6,7,2,1] moving e1,e2 together in one move
+
+
+
+[e3] [pro] One reason for higher fines for dog dirt is that dog owners have thus far hardly had to fear the consequences despite the obligation to clean up.
+[e4] [pro] A higher fine, so dog owners would have to dig deeper into their pockets, is supposed to be a deterrent after all.
+[e5] [pro] The city, especially the green spaces, should be kept tidy after all,
+[e6] [pro] for green spaces are there for our recreation.
+[e7] [pro] Besides you're not allowed to leave other rubbish without punishment.
+[e2] [opp] although there aren't enough bins and bag-dispensers for dog dirt.
+
+"although"->"Although"
+"."->","
+
+->Although there aren't enough bins and bag-dispensers for dog dirt,
+
+[e1] [pro] Dog owners should pay higher fines for dog dirt left on pavements,
+
+"Dog owners"->"dog owners"
+","->"."
+
+->dog owners should pay higher fines for dog dirt left on pavements.
+
+
+[1,2,4,3,5,6,7]->[5,6,1,2,3,7]moving e5,e6 in one move
+
+[e5] [pro] The city, especially the green spaces, should be kept tidy after all,
+[e6] [pro] for green spaces are there for our recreation.
+[e1] [pro] Dog owners should pay higher fines for dog dirt left on pavements,
+[e2] [opp] although there aren't enough bins and bag-dispensers for dog dirt.
+[e3] [pro] One reason for higher fines for dog dirt is that dog owners have thus far hardly had to fear the consequences despite the obligation to clean up.
+[e4] [pro] A higher fine, so dog owners would have to dig deeper into their pockets, is supposed to be a deterrent after all.
+[e7] [pro] Besides you're not allowed to leave other rubbish without punishment.
+
+[1,2,3,5,6,7,4]-> [3,1,2,5,6,7,4]
+
+[e3] [pro] One reason for higher fines for dog dirt is that dog owners have thus far hardly had to fear the consequences despite the obligation to clean up.
+[e1] [pro] Dog owners should pay higher fines for dog dirt left on pavements,
+[e2] [opp] although there aren't enough bins and bag-dispensers for dog dirt.
+[e5] [pro] The city, especially the green spaces, should be kept tidy after all,
+[e6] [pro] for green spaces are there for our recreation.
+[e7] [pro] Besides you're not allowed to leave other rubbish without punishment.
+[e4] [pro] A higher fine, so dog owners would have to dig deeper into their pockets, is supposed to be a deterrent after all.
+
+
+[1,2,4,3,6,5,7]->[7,1,2,3,4,5,6]
+
+[e7] [pro] Besides you're not allowed to leave other rubbish without punishment.
+
+-"Besides" is used here as a transitional adverd to support an additional point, backwards reference cannot be applied
+
+"you're"->"You're"
+
+->You're not allowed to leave other rubbish without punishment.
+
+[e1] [pro] Dog owners should pay higher fines for dog dirt left on pavements,
+[e2] [opp] although there aren't enough bins and bag-dispensers for dog dirt.
+[e3] [pro] One reason for higher fines for dog dirt is that dog owners have thus far hardly had to fear the consequences despite the obligation to clean up.
+[e4] [pro] A higher fine, so dog owners would have to dig deeper into their pockets, is supposed to be a deterrent after all.
+[e5] [pro] The city, especially the green spaces, should be kept tidy after all,
+[e6] [pro] for green spaces are there for our recreation.
+
+Comment: [e7] at the beggining even though it effectivelly introduces the general notion of consequencies for failing to comply with regulations, its contextual placement is not beneficial for the argument
+
+
+[3,4,5,6,7,2,1]-> [4,5,6,7,2,1,3]
+
+[e4] [pro] A higher fine, so dog owners would have to dig deeper into their pockets, is supposed to be a deterrent after all.
+
+-"after all" conclusive reference backwards cannot be applied
+
+->A higher fine, so dog owners would have to dig deeper into their pockets, is supposed to be a deterrent.
+[e5] [pro] The city, especially the green spaces, should be kept tidy after all,
+[e6] [pro] for green spaces are there for our recreation.
+[e7] [pro] Besides you're not allowed to leave other rubbish without punishment.
+[e2] [opp] although there aren't enough bins and bag-dispensers for dog dirt.
+
+"although"->"Although"
+"."->","
+
+->Although there aren't enough bins and bag-dispensers for dog dirt,
+
+[e1] [pro] Dog owners should pay higher fines for dog dirt left on pavements,
+
+"Dog owners"->"dog owners"
+","->"."
+
+->dog owners should pay higher fines for dog dirt left on pavements.
+
+
+[e3] [pro] One reason for higher fines for dog dirt is that dog owners have thus far hardly had to fear the consequences despite the obligation to clean up.
+
+
+
+[4,5,6,7,2,1,3]->[5,6,7,2,1,3,4]
+
+[e5] [pro] The city, especially the green spaces, should be kept tidy after all,
+
+-"after all" conclusive reference backwards cannot be applied
+
+->The city, especially the green spaces, should be kept tidy,
+
+[e6] [pro] for green spaces are there for our recreation.
+[e7] [pro] Besides you're not allowed to leave other rubbish without punishment.
+
+-"other" indicates addition but nothing has been introduced prior
+
+->Besides you're not allowed to leave rubbish without punishment.
+
+[e2] [opp] although there aren't enough bins and bag-dispensers for dog dirt.
+
+"although"->"Although"
+"."->","
+
+->Although there aren't enough bins and bag-dispensers for dog dirt,
+
+[e1] [pro] Dog owners should pay higher fines for dog dirt left on pavements,
+
+"Dog owners"->"dog owners"
+","->"."
+
+->dog owners should pay higher fines for dog dirt left on pavements.
+
+[e3] [pro] One reason for higher fines for dog dirt is that dog owners have thus far hardly had to fear the consequences despite the obligation to clean up.
+[e4] [pro] A higher fine, so dog owners would have to dig deeper into their pockets, is supposed to be a deterrent after all.
+
+Comment:late introduction of main topic which may lead to confusion
+
+[5,6,7,2,1,3,4]->[7,2,1,3,4,5,6]
+
+[e7] [pro] Besides you're not allowed to leave other rubbish without punishment.
+
+-"Besides" is used here as a transitional adverd to support an additional point, backwards reference cannot be applied
+
+"you're"->"You're"
+
+->You're not allowed to leave other rubbish without punishment.
+
+[e2] [opp] although there aren't enough bins and bag-dispensers for dog dirt.
+
+"although"->"Although"
+"."->","
+
+->Although there aren't enough bins and bag-dispensers for dog dirt,
+
+[e1] [pro] Dog owners should pay higher fines for dog dirt left on pavements,
+
+"Dog owners"->"dog owners"
+","->"."
+
+->dog owners should pay higher fines for dog dirt left on pavements.
+[e3] [pro] One reason for higher fines for dog dirt is that dog owners have thus far hardly had to fear the consequences despite the obligation to clean up.
+[e4] [pro] A higher fine, so dog owners would have to dig deeper into their pockets, is supposed to be a deterrent after all.
+[e5] [pro] The city, especially the green spaces, should be kept tidy after all,
+[e6] [pro] for green spaces are there for our recreation.
+
+
+[7,2,1,3,4,5,6]->[7,2,1,4,3,5,6]
+
+
+[e7] [pro] Besides you're not allowed to leave other rubbish without punishment.
+
+-"Besides" is used here as a transitional adverd to support an additional point, backwards reference cannot be applied
+
+"you're"->"You're"
+
+->You're not allowed to leave other rubbish without punishment.
+
+[e2] [opp] although there aren't enough bins and bag-dispensers for dog dirt.
+
+"although"->"Although"
+"."->","
+
+->Although there aren't enough bins and bag-dispensers for dog dirt,
+
+[e1] [pro] Dog owners should pay higher fines for dog dirt left on pavements,
+
+"Dog owners"->"dog owners"
+","->"."
+
+->dog owners should pay higher fines for dog dirt left on pavements.
+
+[e4] [pro] A higher fine, so dog owners would have to dig deeper into their pockets, is supposed to be a deterrent after all.
+[e3] [pro] One reason for higher fines for dog dirt is that dog owners have thus far hardly had to fear the consequences despite the obligation to clean up.
+[e5] [pro] The city, especially the green spaces, should be kept tidy after all,
+[e6] [pro] for green spaces are there for our recreation.
+
+[7,2,1,4,3,5,6]->[7,2,1,4,3,6,5]
+
+[e7] [pro] Besides you're not allowed to leave other rubbish without punishment.
+
+-"Besides" is used here as a transitional adverd to support an additional point, backwards reference cannot be applied
+
+"you're"->"You're"
+
+->You're not allowed to leave other rubbish without punishment.
+
+[e2] [opp] although there aren't enough bins and bag-dispensers for dog dirt.
+
+"although"->"Although"
+"."->","
+
+->Although there aren't enough bins and bag-dispensers for dog dirt,
+
+[e1] [pro] Dog owners should pay higher fines for dog dirt left on pavements,
+
+"Dog owners"->"dog owners"
+","->"."
+
+->dog owners should pay higher fines for dog dirt left on pavements.
+[e4] [pro] A higher fine, so dog owners would have to dig deeper into their pockets, is supposed to be a deterrent after all.
+[e3] [pro] One reason for higher fines for dog dirt is that dog owners have thus far hardly had to fear the consequences despite the obligation to clean up.
+[e6] [pro] for green spaces are there for our recreation.
+
+"for"->"For"
+"."->","
+
+->For green spaces are there for our recreation,
+[e5] [pro] The city, especially the green spaces, should be kept tidy after all,
+
+"the"->"The
+","->"."
+
+->the city, especially the green spaces, should be kept tidy after all.
+
+[3,4,5,6,7,2,1]->[3,5,6,7,2,1,4]
+
+
+
+[e3] [pro] One reason for higher fines for dog dirt is that dog owners have thus far hardly had to fear the consequences despite the obligation to clean up.
+[e5] [pro] The city, especially the green spaces, should be kept tidy after all,
+[e6] [pro] for green spaces are there for our recreation.
+[e7] [pro] Besides you're not allowed to leave other rubbish without punishment.
+[e2] [opp] although there aren't enough bins and bag-dispensers for dog dirt.
+
+"although"->"Although"
+"."->","
+
+->Although there aren't enough bins and bag-dispensers for dog dirt,
+
+[e1] [pro] Dog owners should pay higher fines for dog dirt left on pavements,
+
+"Dog owners"->"dog owners"
+","->"."
+
+->dog owners should pay higher fines for dog dirt left on pavements.
+[e4] [pro] A higher fine, so dog owners would have to dig deeper into their pockets, is supposed to be a deterrent after all.
+
+
+
+
+[3,4,5,6,7,2,1]->[3,4,7,5,6,2,1]
+
+
+[e3] [pro] One reason for this is that they have thus far hardly had to fear the consequences despite the obligation to clean up.
+
+"this"->"higher fines for dog dirt"
+"they"->"dog owners"
+->One reason for higher fines for dog dirt is that dog owners have thus far hardly had to fear the consequences despite the obligation to clean up.
+
+[e4] [pro] A higher fine, so dog owners would have to dig deeper into their pockets, is supposed to be a deterrent after all.
+[e7] [pro] Besides you're not allowed to leave other rubbish without punishment.
+[e5] [pro] The city, especially the green spaces, should be kept tidy after all,
+[e6] [pro] for they are there for our recreation.
+
+"this"->green spaces
+->for green spaces are there for our recreation.
+
+[e2] [opp] although there aren't enough bins and bag-dispensers for dog dirt.
+
+"although"->"Although"
+"."->","
+
+->Although there aren't enough bins and bag-dispensers for dog dirt,
+
+[e1] [pro] Dog owners should pay higher fines for dog dirt left on pavements,
+
+"Dog owners"->"dog owners"
+","->"."
+
+->dog owners should pay higher fines for dog dirt left on pavements.
+
