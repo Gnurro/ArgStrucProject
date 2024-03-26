@@ -1,15 +1,11 @@
 """ Calculating various statistics etc from extracted database """
 
 import json
-from copy import deepcopy
 
 
 # load database:
 with open("extracted_db.json", 'r', encoding='utf-8') as db_file:
     database: dict = json.load(db_file)
-
-# print(database)
-# print(database['b001'])
 
 
 def topic_frequencies() -> dict:
@@ -26,7 +22,9 @@ def topic_frequencies() -> dict:
     return topic_counts
 
 
-# print(topic_frequencies())
+print("Topic frequencies:")
+print(topic_frequencies())
+
 
 def length_frequencies() -> dict:
     """
@@ -43,7 +41,8 @@ def length_frequencies() -> dict:
     return length_counts
 
 
-# print(length_frequencies())
+print("Text length (in units) frequencies:")
+print(length_frequencies())
 
 
 def central_position_frequencies(texts_db: dict = database) -> dict:
@@ -61,7 +60,8 @@ def central_position_frequencies(texts_db: dict = database) -> dict:
     return central_pos_counts
 
 
-# print(central_position_frequencies())
+print("Central claim position frequencies:")
+print(central_position_frequencies())
 
 
 def unit_role_frequencies() -> dict:
@@ -87,14 +87,15 @@ def unit_role_frequencies() -> dict:
     return {'frequencies': unit_role_counts, 'opp_positions': opp_pos_counts}
 
 
-# print(unit_role_frequencies())
+print("Unit role frequencies:")
+print(unit_role_frequencies())
 
 
 def relation_frequencies(topic: str = "", stance: str = "") -> dict:
     """
     Relation frequencies in the corpus.
-    :param topic:
-    :param stance:
+    :param topic: Limit the counts to texts with a specific topic.
+    :param stance: Limit the counts to texts with a specific main stance.
     :return: Dictionary with type and category frequencies.
     """
     rel_counts: dict = dict()
@@ -121,9 +122,12 @@ def relation_frequencies(topic: str = "", stance: str = "") -> dict:
     return rel_counts
 
 
-# print(relation_frequencies())
-# print(relation_frequencies(topic="waste_separation"))
-# print(relation_frequencies(stance="pro"))
+print("Relation frequencies for all texts:")
+print(relation_frequencies())
+print('Relation frequencies for texts with the "waste_separation" topic:')
+print(relation_frequencies(topic="waste_separation"))
+print('Relation frequencies for texts with the "pro" main stance:')
+print(relation_frequencies(stance="pro"))
 
 
 def linear_strategy_frequencies(texts_db: dict = database) -> dict:
@@ -141,7 +145,8 @@ def linear_strategy_frequencies(texts_db: dict = database) -> dict:
     return lin_strat_counts
 
 
-# print(linear_strategy_frequencies())
+print("Linearization strategy frequencies:")
+print(linear_strategy_frequencies())
 
 
 def abstract_lin_strat_frequencies(texts_db: dict = database) -> dict:
@@ -174,7 +179,8 @@ def abstract_lin_strat_frequencies(texts_db: dict = database) -> dict:
     return abs_lin_strat_counts
 
 
-# print(abstract_lin_strat_frequencies())
+print("Abstracted linearization strategy frequencies:")
+print(abstract_lin_strat_frequencies())
 
 
 def claim_position_frequencies(texts_db: dict = database) -> dict:
@@ -195,4 +201,6 @@ def claim_position_frequencies(texts_db: dict = database) -> dict:
 
     return claim_pos_counts
 
+
+print("Claim position frequencies:")
 print(claim_position_frequencies(database))
