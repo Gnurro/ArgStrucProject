@@ -31,6 +31,8 @@ corpus. The script can be run to show the various features examined.
 `unit_bigram_ex.py` contains an experimental attempt at identifying inseparable unit bigrams, which was soon abandoned 
 as it showed that the corpus data is too inconsistent to automate this. The script can be run to show the exploration 
 for a single text (b001).  
+Various scripts with 'explore'/'exploration' in their names were created as part of the corpus exploration, and while 
+they were tnot used further, they are left here in their original form for work documentation.
 ### Text editing utilities
 `shuffle_test.py` contains an attempt to automatically produce all linear order variants of a corpus text. This was 
 abandoned in favor of manual inspection and preliminary exclusion of non-viable order variants. The script can be run to 
@@ -65,4 +67,6 @@ Google Forms editing interface for quick addition of choices.
 and analysis. Result is returned as Pandas DataFrame.  
 `survey_cross_counts()` uses the processed survey data to count participant choices, separated by edited/unedited and 
 claim-first/-last. Result is returned as Pandas DataFrame.  
-
+#### Intermediate survey creation files
+Multiple files created during survey preparation and processing are left in the `survey` directory for work 
+documentation purposes.
