@@ -104,7 +104,7 @@ if __name__ == "__main__":
     # load database:
     with open("extracted_db.json", 'r', encoding='utf-8') as db_file:
         database: dict = json.load(db_file)
-    """
+
     print("pro texts:")
     pro_texts = get_pro_db(database)
     pro_lin_strats = linear_strategy_frequencies(pro_texts)
@@ -118,11 +118,11 @@ if __name__ == "__main__":
     print(con_lin_strats)
     con_abs_lin_strats = abstract_lin_strat_frequencies(con_texts)
     print(con_abs_lin_strats)
-    """
+
 
     stance_lin_strats = stance_lin_strat_comparison(database)
     full_lin_strats = stance_lin_strats[0]
-    # print(full_lin_strats)
+    print(full_lin_strats)
     abs_lin_strats = stance_lin_strats[1]
     print(abs_lin_strats)
 

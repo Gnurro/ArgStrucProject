@@ -7,11 +7,11 @@ import json
 with open("extracted_db.json", 'r', encoding='utf-8') as db_file:
     database: dict = json.load(db_file)
 
-# inst_id = "b009"
 inst_id = "b001"
 instance = database[inst_id]
 
-# print(instance)
+print(f"Extracted information of text {inst_id}:")
+print(instance)
 
 
 def sublist_match(main_list, sub_list) -> bool:
@@ -28,23 +28,15 @@ def sublist_match(main_list, sub_list) -> bool:
         return False
 
 
-# print(sublist_match(['a','b','c','d'], ['b','c']))
-# print(sublist_match(['a','b','c','d'], ['b','d']))
-
-
-""""""
 for unit_idx, unit in enumerate(instance['units']):
-    print(unit)
-    """
+    print(f"Checking unit {unit}...")
     if unit['attach_dist'] == -1:
-        # if instance['units'][unit_idx-1]['arg_trace'] in unit['arg_trace']:
         if sublist_match(unit['arg_trace'], instance['units'][unit_idx-1]['arg_trace']):
             print(f"relation overlap with prior unit {unit_idx}")
     if unit['attach_dist']:
-        # if instance['units'][unit_idx-1]['arg_trace'] in unit['arg_trace']:
         if sublist_match(unit['arg_trace'], instance['units'][unit_idx+unit['attach_dist']]['arg_trace']):
             print(f"relation overlap with unit {unit_idx}")
-    """
+
     for other_unit_idx, other_unit in enumerate(instance['units']):
         if other_unit_idx != unit_idx:
             if sublist_match(unit['arg_trace'], other_unit['arg_trace']):

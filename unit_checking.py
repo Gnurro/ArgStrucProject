@@ -27,34 +27,24 @@ def split_clause_prior_rel_inspect():
     split_units: list = get_split_units(database)
 
     for split_unit in split_units:
-        # print(split_unit)
-        # print(split_unit[1]['text'])
         if split_unit[1]['attach_dist'] == -1 and split_unit[1]['text'][0].islower():
             prior_text = database[split_unit[0]]['units'][int(split_unit[1]['edu_id'][1:]) - 2]['text']
-            # print(prior_text)
-            # print(prior_text, split_unit[1]['text'])
-            # print(split_unit[1]['rel']['type'])
             print(f"{prior_text}[<-{split_unit[1]['rel']['type']}]{split_unit[1]['text']}")
 
 
-# split_clause_prior_rel_inspect()
+split_clause_prior_rel_inspect()
 
 
 def split_clause_follow_rel_inspect():
     split_units: list = get_split_units(database)
 
     for split_unit in split_units:
-        # print(split_unit)
-        # print(split_unit[1]['text'])
         if split_unit[1]['attach_dist'] == 1 and split_unit[1]['text'][-1] not in [".", "!", "?"]:
             follow_text = database[split_unit[0]]['units'][int(split_unit[1]['edu_id'][1:])]['text']
-            # print(prior_text)
-            # print(prior_text, split_unit[1]['text'])
-            # print(split_unit[1]['rel']['type'])
             print(f"{split_unit[1]['text']}[{split_unit[1]['rel']['type']}->]{follow_text}")
 
 
-# split_clause_follow_rel_inspect()
+split_clause_follow_rel_inspect()
 
 
 # ANAPHORA
@@ -70,19 +60,11 @@ def get_pronoun_units():
         for unit in inst_units:
             pronouns = re.findall(PRONOUN_PATTERN, unit['text'], re.IGNORECASE)
             pronouns += re.findall(PRONOUN_PATTERN_2, unit['text'], re.IGNORECASE)
-            # print(pronouns)
             if pronouns:
                 pronoun_units.append((inst_id, pronouns, unit))
-        # break
 
     return pronoun_units
 
-
-"""
-pronoun_units = get_pronoun_units()
-for pronoun_unit in pronoun_units:
-    print(pronoun_unit)
-"""
 
 # COMBINED FEATURES SETS
 
@@ -104,7 +86,7 @@ def get_simple_set() -> set:
     return simple_set
 
 
-# print(get_simple_set())
+print(get_simple_set())
 
 
 def get_nonsplit_db(texts_db: dict) -> dict:
@@ -128,7 +110,7 @@ def get_nonsplit_db(texts_db: dict) -> dict:
     return texts_db
 
 
-# print(get_nonsplit_db(database))
+print(get_nonsplit_db(database))
 
 
 # LINEARIZATION STRATEGIES
@@ -142,10 +124,8 @@ def get_central_first_texts(texts_db: dict) -> dict:
     return central_first_texts
 
 
-"""
 for text_id, content in get_central_first_texts().items():
     print(text_id, content)
-"""
 
 
 def get_central_last_texts(texts_db: dict) -> dict:
@@ -156,10 +136,8 @@ def get_central_last_texts(texts_db: dict) -> dict:
     return central_last_texts
 
 
-"""
 for text_id, content in get_central_last_texts().items():
     print(text_id, content)
-"""
 
 
 def get_central_other_texts(texts_db: dict) -> dict:
