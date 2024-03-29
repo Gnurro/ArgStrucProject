@@ -404,43 +404,43 @@ if __name__ == "__main__":
 
     # SURVEY TEXT SELECTION
     # get and show information about the texts edited for the survey:
-    # survey_info = survey_texts_info(database)
-    # print(survey_info)
+    survey_info = survey_texts_info(database)
+    print(survey_info)
     # calculate and show variable value frequencies in the texts edited for the survey:
-    # survey_freqs = survey_texts_frequencies(database)
-    # print(survey_freqs)
+    survey_freqs = survey_texts_frequencies(database)
+    print(survey_freqs)
     # create a list with a balanced number of originally claim-first and originally claim-last texts:
-    # balanced_texts_list = create_balanced_text_list(database)
-    # print(balanced_texts_list)
+    balanced_texts_list = create_balanced_text_list(database)
+    print(balanced_texts_list)
 
     # SURVEY DATA PREPARATION
     # create a dict {textID:{claim-last, claim-first}} based on a txt list of texts selected for the survey:
-    # survey_pairs = build_survey_pairs(database, "survey/final_30.txt")
-    # print(survey_pairs)
+    survey_pairs = build_survey_pairs(database, "survey/final_30.txt")
+    print(survey_pairs)
     # save a CSV with the final survey data to disk:
-    # pairs_to_csv(database, "survey/final_30.txt")
+    pairs_to_csv(database, "survey/final_30.txt")
 
     # show frequencies of text factors for survey texts:
-    # print(survey_texts_frequencies(database, "survey/final_30.txt"))
+    print(survey_texts_frequencies(database, "survey/final_30.txt"))
     # show originally claim-first texts in survey texts:
-    # print(get_original_first(database, "survey/final_30.txt"))
+    print(get_original_first(database, "survey/final_30.txt"))
 
     # create simple, easily copyable text pairs file:
-    # pairs_to_simple_list(database, "survey/final_30.txt", out_list_file_name="30_pairs")
+    pairs_to_simple_list(database, "survey/final_30.txt", out_list_file_name="30_pairs")
 
     # text pairs were manually copied from 30_pairs.txt to Google Forms
 
     # SURVEY OUTCOMES
     # create and show utility dict that maps pair texts to examined variable factors:
-    # survey_pairs_db = survey_processing_pairs(database, "survey/final_30.txt")
-    # print(survey_pairs_db)
+    survey_pairs_db = survey_processing_pairs(database, "survey/final_30.txt")
+    print(survey_pairs_db)
 
     # Google Forms survey answers were downloaded as survey_answers_raw_010324.csv for processing
 
     # process answers into by-factor boolean value table:
-    # processed_answers = process_survey_answers(database, "survey/final_30.txt",
-    #                       "survey/survey_answers_raw_010324.csv")
-    # print(processed_answers)
+    processed_answers = process_survey_answers(database, "survey/final_30.txt",
+                           "survey/survey_answers_raw_010324.csv")
+    print(processed_answers)
 
     # calculate counts for variable factors, crossing edited/claim-position variables:
     cross_df = survey_cross_counts(database, "survey/final_30.txt",

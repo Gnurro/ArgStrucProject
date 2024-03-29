@@ -37,4 +37,28 @@ abandoned in favor of manual inspection and preliminary exclusion of non-viable 
 annotations of unit indices and unit stances. These plain text files are to be used for manual rearrangement and editing.
 ### Survey scripts
 `survey_util.py` contains all functions used to prepare the survey and to process the raw survey replies.  
-TODO: explain the parts and steps, as it's a lot
+Much of this script relies on raw text files that list corpus text IDs, with IDs separated by newline in the files. The 
+`read_texts_list()` function reads these files and returns them as `list`.  
+The functions `copy_original_texts()` and `copy_edited_texts()` are used to conveniently copy original text files from #
+the corpus and edited text files to the survey directories for further use.  
+`survey_texts_info()` is used check the balance of originally claim-first and -last texts to be used for the survey, 
+based on manually created text list files. It also provides information about the topics and main stances of the listed 
+texts. `survey_texts_frequencies()` expresses the information from the former function as a `dict` of counts.  
+`get_original_first()` and `get_original_last()` are utility functions used to conveniently get `list`s of text IDs 
+based on their original order being claim-first or -last.  
+As there were more originally claim-first texts in our initial selection of texts to edit, `create_balanced_text_list()` 
+was used to assure that a selected subset of these texts stored as a text ID list file correctly matches the number of 
+originally claim-last files to be edited. It also saves a text ID list file to disk when the selection is balanced.  
+`build_survey_pairs()` creates a `dict` containing both the original texts and their edited versions for further 
+processing. `survey_processing_pairs()` creates a similar `dict`, but also contains the number of each text on the 
+survey form and table data retrieved after the survey period.  
+`pairs_to_csv()` creates a CSV file with the pairs of edited and unedited texts used in the survey.  
+`pairs_to_simple_list()` creates a plain text file with the pairs of edited and unedited texts, ordered as to be 
+presented on the survey form. The format in the saved file allows for convenient copying of the text pairs into the 
+Google Forms editing interface for quick addition of choices.  
+`process_survey_answers()` processes the retrieved raw survey data from CSV to a boolean format for further processing 
+and analysis. Result is returned as Pandas DataFrame.  
+`survey_cross_counts()` uses the processed survey data to count participant choices, separated by edited/unedited and 
+claim-first/-last. Result is returned as Pandas DataFrame.  
+
+`survey_util.py` can be run to reproduce the preparation and result processing.
