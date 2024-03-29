@@ -10,7 +10,7 @@ Prepared survey data, and raw and processed survey replies are located in the `s
 This project requires the [Potsdam Argumentative Microtext Corpus](https://angcl.ling.uni-potsdam.de/resources/argmicro.html).  
 The required corpus files are available at https://github.com/peldszus/arg-microtexts.  
 Download the `corpus` directory found in the linked repository and place it in the root directory of this project.  
-This project's code is written with the assumption that the corpus data accessible under the path `corpus/`.
+This project's code is written with the assumption that the corpus data is accessible at the path `corpus/`.
 ### Requirements
 Python library requirements are listed in `requirements.txt`.
 ## Scripts
@@ -45,9 +45,9 @@ The script can be run to show the resulting format and reproduce the first step 
 `survey_util.py` can be run to reproduce the preparation and result processing for the survey.
 #### Survey script functions
 Much of this script relies on raw text files that list corpus text IDs, with IDs separated by newline in the files. The 
-`read_texts_list()` function reads these files and returns them as `list`.  
+`read_texts_list()` function reads these files and returns their content as `list`.  
 The functions `copy_original_texts()` and `copy_edited_texts()` are used to conveniently copy original text files from
-the corpus and edited text files to the survey directories for further use.  
+the corpus and edited text files from the `editing` directory to the survey directories for further use.  
 `survey_texts_info()` is used check the balance of originally claim-first and -last texts to be used for the survey, 
 based on manually created text list files. It also provides information about the topics and main stances of the listed 
 texts. `survey_texts_frequencies()` expresses the information from the former function as a `dict` of counts.  
@@ -55,11 +55,12 @@ texts. `survey_texts_frequencies()` expresses the information from the former fu
 based on their original order being claim-first or -last.  
 As there were more originally claim-first texts in our initial selection of texts to edit, `create_balanced_text_list()` 
 was used to assure that a selected subset of these texts stored as a text ID list file correctly matches the number of 
-originally claim-last files to be edited. It also saves a text ID list file to disk when the selection is balanced.  
+originally claim-last files to be edited. It also saves a text ID list file to disk when the selection is balanced, 
+which contains the IDs of all texts to be used for the survey.  
 `build_survey_pairs()` creates a `dict` containing both the original texts and their edited versions for further 
-processing. `survey_processing_pairs()` creates a similar `dict`, but also contains the number of each text on the 
-survey form and table data retrieved after the survey period.  
-`pairs_to_csv()` creates a CSV file with the pairs of edited and unedited texts used in the survey.  
+processing. `survey_processing_pairs()` creates a similar `dict`, which additionally contains the number of each text 
+on the survey form and table data retrieved after the survey period.  
+`pairs_to_csv()` creates a CSV file with the pairs of edited and unedited texts to be used in the survey.  
 `pairs_to_simple_list()` creates a plain text file with the pairs of edited and unedited texts, ordered as to be 
 presented on the survey form. The format in the saved file allows for convenient copying of the text pairs into the 
 Google Forms editing interface for quick addition of choices.  
