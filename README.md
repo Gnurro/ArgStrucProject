@@ -32,7 +32,7 @@ corpus. The script can be run to show the various features examined.
 as it showed that the corpus data is too inconsistent to automate this. The script can be run to show the exploration 
 for a single text (b001).  
 Various scripts with 'explore'/'exploration' in their names were created as part of the corpus exploration, and while 
-they were tnot used further, they are left here in their original form for work documentation.
+they were not used further, they are left here in their original form for work documentation.
 ### Text editing utilities
 `shuffle_test.py` contains an attempt to automatically produce all linear order variants of a corpus text. This was 
 abandoned in favor of manual inspection and preliminary exclusion of non-viable order variants. The script can be run to 
